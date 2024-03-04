@@ -1,0 +1,113 @@
+﻿@model IEnumerable<Projet.Areas.Coordonnateur.Models.EmploiTemps>
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Projet.Areas.Coordonnateur.Models;
+@if (User.IsInRole("Admin"))
+{
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+else if (User.IsInRole("Directeur"))
+{
+    Layout = "~/Areas/Directeur/Views/Shared/_Directeur.cshtml";
+}
+else if (User.IsInRole("Coordonnateur"))
+{
+    Layout = "~/Areas/Coordonnateur/Views/Shared/_CordDashbord.cshtml";
+}
+else if (User.IsInRole("Chef"))
+{
+
+    Layout = "~/Areas/Chef/Views/Shared/_Chef.cshtml";
+
+}
+
+   
+<style>
+    .table-bordered th {
+        border: none;
+    }
+
+</style>
+<div class="container">
+    <div class="card bg-white shadow">
+        <div class="card-body border-white">
+            <div class="table-responsive">
+                <div class="d-flex align-items-center">
+                    <h4 class="font-weight-bold mr-5" style="color:#0a73f7">
+                        @ViewBag.Enseignant.NomComplet
+                    </h4>
+                    <form method="get" asp-action="EmploiEnseignant" asp-controller="Enseignants" class="mb-3 ml-5">
+                        @if (ViewBag.Enseignant != null)
+                        {
+                            <input type="hidden" name="IdEns" value="@ViewBag.Enseignant.IdEnseignant" />
+                        }
+
+
+                        @foreach (var semestre in ViewBag.Semestres)
+                        {
+                            <button type="submit" name="IdS" value="@semestre.IdSemestre" class="btn btn-outline-primary @(ViewBag.selectedSemester == semestre.IdSemestre ? "active" : "")">@semestre.NomSemestre</button>
+                        }
+                    </form>
+
+                    @if (ViewBag.remplie)
+                    {
+                        <form method="get" asp-action="GeneratePdf" asp-controller="Enseignants" class="ml-2 mb-3">
+                            <input type="hidden" name="IdEns" value="@ViewBag.IdE" />
+                            <input type="hidden" name="IdS" value="@ViewBag.selectedSemester" />
+                            <button type="submit" class="btn btn-primary ">
+                                <i class="typcn typcn-download mx-0"></i>
+                            </button>
+                        </form>
+                    }
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="text-center"></th>
+                            @foreach (var s in ViewBag.Seances)
+                            {
+                                <th class="text-center" style="background-color:#00BFFF; height:30px; white-space: pre-wrap;">@s.dateDebut.ToString(@"hh\:mm")-@s.dateFin.ToString(@"hh\:mm")</th>
+
+                            }
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var j in ViewBag.Jours)
+                        {
+                            <tr>
+                                <td style=" vertical-align: middle;background-color:#00BFFF ;width:40px;" class="table-cell">@j.NomJour</td>
+                                @foreach (var s in ViewBag.Seances)
+                                {
+                                    var matchingTempsList = Model.Where(temps => temps.IdSeance == s.IdSeance && temps.IdJour == j.IdJour && temps.IdSemestre == ViewBag.selectedSemester).ToList();
+                                    <td class="border border-3 text-center" style="position: relative;">
+                                        <div style="position: absolute; top: 0; right: 0;" class="mt-1">
+                                        </div>
+
+                                        @foreach (var matchingTemp in matchingTempsList)
+                                        {
+                                            <div class="text-center">
+                                                @if (matchingTemp.Matiere != null)
+                                                {
+                                                    <p class=" ">@matchingTemp.Matiere.NomMatiere</p>
+                                                }
+                                                @if (matchingTemp.Niveau != null)
+                                                {
+                                                    <span class="">@matchingTemp.Niveau.NomNiveau</span>
+                                                }
+                                                @if (matchingTemp.Groupe != null)
+                                                {
+                                                    <span class=" ">:@matchingTemp.Groupe.NomGroup</span>
+                                                }
+                                                <p class="font-weight-bold" style="color:#0a73f7">s-@matchingTemp.SemaineDebut s-@matchingTemp.SemaineFin</p>
+                                            </div>
+                                        }
+                                    </td>
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

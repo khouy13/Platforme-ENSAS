@@ -1,0 +1,15 @@
+﻿<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+@if (TempData["success"]!=null)
+{
+	<div class="alert alert-success m-2" role="alert">
+		@TempData["success"]
+	</div>
+}
+@if (TempData["error"] != null)
+{
+	<div class="alert alert-danger m-2" role="alert">
+		@TempData["error"]
+	</div>
+}

@@ -1,0 +1,41 @@
+﻿@using Microsoft.AspNetCore.Mvc.ViewFeatures
+@using Microsoft.EntityFrameworkCore
+@using System.Linq
+@using System.Security.Claims
+@using Projet.Data 
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@inject Projet.Data.AppDbContext _context
+
+@{
+
+    var semestres = _context.semestres.ToList();
+
+
+    ViewBag.semestre = semestres;
+
+}
+
+
+<li class="nav-item">
+    <a class="nav-link" data-toggle="collapse" href="#form-surveillance" aria-expanded="false" aria-controls="form-surveillance">
+        <i class="bi bi-clock "></i>
+        <span class="menu-title  ml-2">charges horaires de surveillance</span>
+        
+    </a>
+    <div class="collapse" id="form-surveillance">
+        <ul class="nav flex-column sub-menu">
+            @if (ViewBag.semestre != null)
+            {
+                @foreach (var n in ViewBag.semestre)
+                {
+                    <li class="nav-item"><a asp-action="CalculChargeSurveillant" asp-controller="Surveillant" asp-area="Directeur" asp-route-IdS="@n.IdSemestre" class="nav-link">@n.NomSemestre</a></li>
+                }
+
+            }
+            <li class="nav-item"><a class="nav-link" href="@Url.Action("CalculChargeSurveillantAnnuel","Surveillant", new { area = "Directeur" })">Annuelle</a></li>
+        </ul>
+    </div>
+
+</li>
+

@@ -1,0 +1,32 @@
+﻿@model Projet.Areas.Coordonnateur.Models.TypeLocal
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+
+
+<div class="row mb-5">
+    <!-- Utilisation de la classe "mx-auto" pour centrer la colonne horizontalement -->
+    <div class="card shadow p-3 mb-5 bg-white rounded mt-3 custom-card mx-auto" style="max-width: 600px; overflow-y: auto;">
+        <div class="card-body">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdTypeLocal" />
+            <div class="form-group">
+                <label asp-for="Nom" class="control-label"></label>
+                <input asp-for="Nom" class="form-control" />
+                <span asp-validation-for="Nom" class="text-danger"></span>
+            </div>
+                <div class="form-group">
+                    <input type="submit" value="Enregistrer" class="btn btn-primary" />
+                    <a class="btn btn-secondary ml-2" href="@Url.Action("Index", "TypeLocals", new { area = "Responsable" })">Annuler</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div>
+
+
+

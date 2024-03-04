@@ -1,0 +1,46 @@
+﻿@model Projet.Areas.Coordonnateur.Models.Semestre
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+
+<div class="row">
+    <!-- Utilisation de la classe "mx-auto" pour centrer la colonne horizontalement -->
+    <div class="card shadow p-3 mb-5 bg-white rounded mt-3 custom-card mx-auto" style="max-width: 600px; overflow-y: auto;">
+        <div class="card-body">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+             
+                    <input asp-for="NomSemestre" class="form-control" placeholder="Semestre" />
+                <span asp-validation-for="NomSemestre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+               
+                    <input asp-for="SemaineDebut" class="form-control" placeholder="Semaine de Début" />
+                <span asp-validation-for="SemaineDebut" class="text-danger"></span>
+            </div>
+                <div class="form-group">
+                    <input asp-for="SemaineFin" class="form-control" placeholder="Semaine de Fin" />
+                    <span asp-validation-for="SemaineFin" class="text-danger"></span>
+                </div>
+            <div class="form-group">
+            
+                    <input asp-for="DateDebut" class="form-control" placeholder="Date de Début" />
+                <span asp-validation-for="DateDebut" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+               
+                    <input asp-for="DateFin" class="form-control" placeholder="Date de Fin" />
+                <span asp-validation-for="DateFin" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Ajouter" class="btn btn-primary" />
+                    <a class="btn btn-secondary ml-2" href="@Url.Action("Index", "Semestres", new { area = "Responsable" })">Annuler</a>
+
+            </div>
+        </form>
+    </div>
+</div>

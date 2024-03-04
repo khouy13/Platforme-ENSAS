@@ -1,0 +1,113 @@
+﻿@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "~/Areas/Professeur/Views/Shared/_Prof.cshtml";
+}
+<style>
+    /* Ajoutez ici vos couleurs personnalisées */
+    .custom-blue {
+        background-color: #0a73f7;
+    }
+
+    .custom-dark-blue {
+        background-color: #0715aa;
+    }
+
+    .custom-light-blue {
+        background-color: #30b8eb;
+    }
+
+    /* Style pour les lignes paires */
+
+
+</style>
+<div class="container">
+    <div class="row">
+        @{
+            var colors = new[] { "custom-blue", "custom-dark-blue", "custom-light-blue" };
+            var colorIndex = 0;
+        }
+
+        @foreach (var statistique in ViewBag.StatistiquesChargeHoraire)
+        {
+
+
+
+            <div class="col-md-6 stretch-card">
+                <div class="card profile-card bg-gradient-white @colors[colorIndex]">
+
+                    <div class="card-body">
+                        <div class="row align-items-center h-100">
+                            <div class="col-md-4">
+                                <figure class="avatar mx-auto mb-4 mb-md-0">
+                                    <i class="bi bi-clock text-white"></i>
+                                </figure>
+                            </div>
+                            <div class="col-md-8">
+                                <h5 class="text-white text-center text-md-left">Charge Horaire @statistique.Semestre.NomSemestre</h5>
+                                <p class="text-white text-center text-md-left"></p>
+                                <div class="d-flex align-items-center justify-content-between info pt-2">
+                                    <div class="text-center">
+
+                                        <span data-purecounter-start="0" data-purecounter-end="@statistique.ChargeHoraire" data-purecounter-duration="1" class="purecounter text-white"></span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            colorIndex = (colorIndex + 1) % colors.Length; // Rotation des couleurs
+        }
+    </div>
+   
+</div>
+<div class="card mt-3">
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th class="text-center custom-column-width">Semestre</th>
+                        <th class="text-center custom-column-width">Matière</th>
+                        <th class="text-center custom-column-width">Niveau</th>
+                        <th class="text-center custom-column-width">Type d'Enseignement</th>
+                        <th class="text-center custom-column-width">Semaine de Début</th>
+                        <th class="text-center custom-column-width">Semaine de Fin</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (ViewBag.EmploiTempsInfosParSemestre != null)
+                    {
+                        foreach (var kvp in ViewBag.EmploiTempsInfosParSemestre)
+                        {
+                            var semestre = kvp.Key;
+                            var emploiTempsInfos = kvp.Value;
+
+                            <tr>
+                                <td>@semestre.NomSemestre</td>
+                                <td colspan="5"></td> <!-- Pour afficher le nom du semestre dans la première colonne -->
+                            </tr>
+
+                            @foreach (var emploiTempsInfo in emploiTempsInfos)
+                            {
+                                <tr>
+                                    <td></td> <!-- Pour laisser la première colonne vide dans les lignes suivantes du même semestre -->
+                                    <td class="text-center custom-column-width">@emploiTempsInfo.NomMatiere</td>
+                                    <td class="text-center custom-column-width">@emploiTempsInfo.NiveauDistinct</td>
+                                    <td class="text-center custom-column-width">@emploiTempsInfo.TypesEnseignement</td>
+                                    <td class="text-center custom-column-width">@emploiTempsInfo.SemaineDebut</td>
+                                    <td class="text-center custom-column-width">@emploiTempsInfo.SemaineFin</td>
+                                   
+                                </tr>
+                            }
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

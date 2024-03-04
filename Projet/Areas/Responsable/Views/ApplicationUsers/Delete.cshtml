@@ -1,0 +1,25 @@
+﻿@using Projet.Areas.Responsable.Models
+@model ApplicationUserViewModel
+@addTagHelper *,AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+
+<div class="card shadow p-3 mb-5 bg-white rounded mt-3" style="max-width: 500px; margin: 0 auto;">
+    
+
+    <div class="mb-3 text-center">
+        <img src="/@Model.ImagePath" alt="Profile Image" style="max-width: 30%; max-height: 30%; border-radius: 60%;" />
+    </div>
+    @*<p class="text-center font-weight-bold">@Model.FirstName @Model.LastName</p>*@
+    <p class="text-center">Êtes-vous sûr de vouloir supprimer cet utilisateur ?</p>
+
+    <form asp-action="Delete"  method="post">
+        <div class="d-flex justify-content-center">
+            <input type="hidden" asp-for="@Model.Id" />
+            <button type="submit" class="btn btn-danger mr-2">Supprimer</button>
+            <a class="btn btn-secondary ml-2" href="@Url.Action("Index", "ApplicationUsers", new { area = "Responsable" })">Annuler</a>
+        </div>
+    </form>
+</div>

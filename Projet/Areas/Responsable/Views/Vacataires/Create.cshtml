@@ -1,0 +1,93 @@
+﻿@model Projet.Areas.Responsable.Models.Vacataire
+
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@if (User.IsInRole("Admin"))
+{
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+else if (User.IsInRole("Directeur"))
+{
+    Layout = "~/Areas/Directeur/Views/Shared/_Directeur.cshtml";
+}
+else if (User.IsInRole("Coordonnateur"))
+{
+    Layout = "~/Areas/Coordonnateur/Views/Shared/_CordDashbord.cshtml";
+}
+else if (User.IsInRole("Chef"))
+{
+
+    Layout = "~/Areas/Chef/Views/Shared/_Chef.cshtml";
+
+}
+
+<div class="row">
+    <!-- Utilisation de la classe "mx-auto" pour centrer la colonne horizontalement -->
+    <div class="card shadow p-3 mb-5 bg-white rounded mt-3 custom-card mx-auto" style="max-width: 600px; overflow-y: auto;">
+        <div class="card-body">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                    
+                    <input asp-for="Nom" class="form-control" placeholder="Nom" />
+                <span asp-validation-for="Nom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+               
+                    <input asp-for="Prenom" class="form-control" placeholder="Prenom" />
+                <span asp-validation-for="Prenom" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+             
+                    <input asp-for="Email" class="form-control" placeholder="Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+                @if (User.IsInRole("Directeur") || User.IsInRole("Admin"))
+                {
+                    <div class="form-group">
+
+                        <select asp-for="IdDepartement" class="form-select" aria-required="true">
+                            <option disabled selected>Département</option>
+                            @foreach (var dep in ViewBag.Departements)
+                            {
+                                <option value="@dep.IdDepartement">@dep.NomDepartementt</option>
+                            }
+                        </select>
+                        <input type="hidden" asp-for="IdDepartement"  />
+                    </div>
+
+                }
+                @if (User.IsInRole("Chef") || User.IsInRole("Coordonnateur"))
+                {
+                    <div class="form-group">
+                        <input asp-for="IdDepartement" type="hidden" value="@ViewBag.Dept" />
+                    </div>
+                }
+                <div class="form-group">
+
+                    <select asp-for="GradeId" class="form-select" aria-required="true">
+                        <option disabled selected>Grade</option>
+                        @foreach (var dep in ViewBag.Grades)
+                        {
+                            <option value="@dep.GradeId">@dep.GradeNomComplet</option>
+                        }
+                    </select>
+                    <input type="hidden" asp-for="GradeId" />
+                </div>
+            <div class="form-group">
+               
+                    <input asp-for="specialité" class="form-control" placeholder="specialité" />
+                <span asp-validation-for="specialité" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Ajouter" class="btn btn-primary" />
+                    <a class="btn btn-secondary ml-2" href="@Url.Action("First", "Vacataires", new { area = "Responsable",DId = ViewBag.Dept })">Annuler</a>
+
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+
+

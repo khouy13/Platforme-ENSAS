@@ -1,0 +1,55 @@
+﻿@model Projet.Areas.Responsable.Models.Filiere
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+
+
+
+<div class="row mb-5">
+    <!-- Utilisation de la classe "mx-auto" pour centrer la colonne horizontalement -->
+    <div class="card shadow p-3 mb-5 bg-white rounded mt-3 custom-card mx-auto" style="max-width: 600px; overflow-y: auto;">
+        <div class="card-body">
+        <form asp-action="Edit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdFiliere" />
+            <div class="form-group">
+                    <label asp-for="NomFiliere" class="control-label"></label>
+                <input asp-for="NomFiliere" class="form-control" value="@Model.NomFiliere" />
+                <span asp-validation-for="NomFiliere" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                
+                        <select asp-for="IdDepartement" class="form-control" asp-items="ViewBag.IdDepartement"></select>
+
+                     
+
+            </div>
+                <input type="hidden" asp-for="IdDepartement" />
+            <div class="form-group">
+                    <select asp-for="ApplicationUserId" class="form-select form-select-sm" aria-required="true">
+                        <option disabled selected value="">Coordonnateur</option>
+                        @foreach (var dep in ViewBag.Coordenateur)
+                        {
+                            if (dep.Enseignant != null) // Vérifiez si Enseignant n'est pas nul
+                            {
+                                <option value="@dep.Id">@dep.Enseignant.NomComplet</option>
+                            }
+                        }
+                    </select>
+
+            </div>
+                <input type="hidden" asp-for="ApplicationUserId" />
+            <div class="form-group">
+                <input type="submit" value="Enregistrer" class="btn btn-primary" />
+                <a class="btn btn-secondary" href="@Url.Action("Index", "Filieres", new { area = "Responsable" })">Annuler</a>
+            </div>
+        </form>
+        </div>
+    </div>
+
+</div>
+
+

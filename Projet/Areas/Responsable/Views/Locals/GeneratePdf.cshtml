@@ -1,0 +1,124 @@
+﻿@model EmploiViewModel
+@using Projet.Areas.Coordonnateur.Models;
+@{
+    Layout = null;
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/asset/css/rotativa.css" asp-append-version="true" />
+    <title>@ViewData["Title"] - Projet</title>
+</head>
+<body>
+    <div class="container">
+        <table class="table-title-report">
+            <tr>
+
+                <td class="td-iconReport">
+                    <img src="~/asset/images/ensa.png" class="center-block img-iconReport" />
+                </td>
+                <td style=" text-align: center;">
+                    <h2>EMPLOI DU TEMPS:@Model.NomLocal</h2>
+
+
+                    <h2> (@Model.Semestre.NomSemestre) @Model.nomAnneeScolaire</h2>
+
+                </td>
+                <td class="td-iconReport">
+                    <img src="~/asset/images/uca.png" class="center-block" width="170px;" height="" />
+                </td>
+            </tr>
+           
+        </table>
+
+        <br />
+
+        <table class="custom-bordered-table">
+            <thead>
+                <tr>
+                    <th class="table-header no-border-top-left" style=" vertical-align: middle ;width:40px;border: 2px solid #FFF;"></th>
+
+
+                    @foreach (var s in Model.Seances)
+                    {
+                        <th style="background-color:#00BFFF; height:30px; white-space: nowrap;" class="table-header">
+                            <span style="display: inline-block;">@s.dateDebut.ToString(@"hh\:mm")</span> - <span style="display: inline-block;">@s.dateFin.ToString(@"hh\:mm")</span>
+                        </th>
+
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var j in Model.Jours)
+                {
+                    <tr>
+                        <td style=" vertical-align: middle;background-color:#00BFFF ;width:40px;border: 0.5px solid #000000;" class="table-cell">@j.NomJour</td>
+                        @foreach (var s in Model.Seances)
+                        {
+                            var matchingTempsList = Model.Emplois.Where(temps => temps.IdSeance == s.IdSeance && temps.IdJour == j.IdJour).ToList();
+                            <td style="border: 0.5px solid #000000;">
+                                @foreach (var matchingTemp in matchingTempsList)
+                                {
+                                    <div class="table-content">
+                                        <div class="content-item">
+                                            @if (matchingTemp.Matiere != null)
+                                            {
+                                                <span class="">  @matchingTemp.Matiere.NomMatiere </span>
+
+                                                <br />
+                                            }
+                                            @if (matchingTemp.TypeEnseignement != null)
+                                            {
+                                                <span class="">  @matchingTemp.TypeEnseignement.NomEn </span>
+
+                                                <br />
+                                            }
+
+                                            @if (matchingTemp.Niveau != null)
+                                            {
+                                                <span class="">  @matchingTemp.Niveau.NomNiveau </span>
+
+                                                <br />
+                                            }
+                                            @if (matchingTemp.Enseignant != null)
+                                            {
+                                                <span>@matchingTemp.Enseignant.NomComplet</span>
+                                            }
+                                            @if (matchingTemp.Vacataire != null)
+                                            {
+                                                <span>@matchingTemp.Vacataire.NomComplet</span>
+                                            }
+                                            <br />
+                                            <span>S @matchingTemp.SemaineDebut - S @matchingTemp.SemaineFin</span><br />
+                                            @if (matchingTemp.Niveau!= null)
+                                            {
+                                                <span style="color:#1E90FF">@matchingTemp.Niveau.NomNiveau</span>
+
+                                                <br />
+                                            }
+
+                                            @if (matchingTemp.Groupe != null)
+                                            {
+
+                                                <span style="color:#00BFFF">@matchingTemp.Groupe.NomGroup</span>
+
+                                            }
+                                            
+                                        </div>
+
+                                    </div>
+                                }
+
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,190 @@
+﻿@model Projet.Areas.Coordonnateur.Models.EmploiTemps
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+        @if (User.IsInRole("Coordonnateur"))
+        {
+            Layout = "_CordDashbord";
+        }
+        else if (User.IsInRole("Directeur"))
+        {
+            Layout = "~/Areas/Directeur/Views/Shared/_Directeur.cshtml";
+        }
+        else if (User.IsInRole("Chef"))
+        {
+
+            Layout = "~/Areas/Chef/Views/Shared/_Chef.cshtml";
+
+        }
+<div class="container">
+    @if (!string.IsNullOrEmpty(TempData["EmploiMessage"] as string))
+{
+    <span class="container d-flex justify-content-end">
+        <span class="alert alert-danger alert-dismissible fade show" role="alert">
+                @TempData["EmploiMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </span>
+    </span>
+
+
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header text-center">
+                Séance de  @if (Model.Jour!= null)
+                {
+                    @Model.Jour.NomJour
+                } de
+                @if (Model.Seance != null)
+                {
+                    @Model.Seance.dateDebut
+
+                    @Html.Raw("à")
+                    @Model.Seance.dateFin
+                   }
+            </div>
+
+            <div class="card-body">
+        <form asp-action="Edit" method="post"> 
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdEmploi" />
+         
+            <input type="hidden" asp-for="IdNiveau" class="form-control mt-2" value="@Model.IdNiveau" />
+
+             <input type="hidden" asp-for="IdSemestre" class="form-control mt-2" value="@ViewBag.IdSemestre" />
+             <span asp-validation-for="IdSemestre" class="text-danger"></span>
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <div class="form-group">
+
+                                <select asp-for="IdSeance" class="form-control" asp-items="ViewBag.IdSeance"></select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-group">
+
+                                <select asp-for="IdJour" class="form-control" asp-items="ViewBag.IdJour"></select>
+                            </div>
+                        </div>
+                    </div>
+            <select asp-for="IdMatiere" class="form-control mt-2">
+                <option value="">Matiere</option>
+                @if (Model.Matiere != null)
+                {
+                    <option value="@Model.IdMatiere">@Model.Matiere.NomMatiere</option>
+                }
+                @foreach (var M in ViewBag.matieres)
+                {
+                    <option value="@M.IdMatiere">@M.NomMatiere</option>
+                }
+            </select>
+            <span asp-validation-for="IdMatiere" class="text-danger"></span>
+
+            <select asp-for="IdTypeEnseignement" class="form-control mt-2">
+                <option value="">Type Enseignement</option>
+                @if (Model.TypeEnseignement != null)
+                {
+                    <option value="@Model.IdTypeEnseignement">@Model.TypeEnseignement.NomEn</option>
+                }
+                @foreach (var E in ViewBag.TypEnseignant)
+                {
+                    <option value="@E.Id">@E.NomEn</option>
+                }
+            </select>
+            <span asp-validation-for="IdTypeEnseignement" class="text-danger mt-2"></span>
+
+            <div class="row mt-2">
+                <div class="col">
+                    <input asp-for="SemaineDebut" class="form-control form-control-sm" value="@Model.SemaineDebut">
+                    <span asp-validation-for="SemaineDebut"></span>
+                </div>
+                <div class="col">
+                    <input asp-for="SemaineFin" class="form-control form-control-sm" value="@Model.SemaineFin">
+                                <span asp-validation-for="SemaineFin"></span>
+                </div>
+            </div>
+                    <div class="row mt-2 mb-2">
+                        <div class="col">
+                            <select asp-for="IdEnseignant" class="form-control mt-2">
+                                <option value="">Enseignant</option>
+                                @if (Model.Enseignant != null)
+                                {
+                                    <option value="@Model.IdEnseignant" selected>@Model.Enseignant.NomEnseignant @Model.Enseignant.PrenomEnseignant </option>
+                                }
+                                @foreach (var E in ViewBag.Enseignants)
+                                {
+                                    <option value="@E.IdEnseignant">
+                                        @E.NomEnseignant @E.PrenomEnseignant
+                                    </option>
+                                }
+                            </select>
+                        </div>
+                        <div class="col-auto d-flex align-items-center">
+                            <span class="mx-1">ou</span>
+                        </div>
+                            <div class="col">
+                                <select asp-for="IdVacataire" class="form-control mt-2">
+                                    <option value="">Vacataire</option>
+                                    @if (Model.Vacataire != null)
+                                    {
+                                        <option value="@Model.IdVacataire" selected>@Model.Vacataire.NomComplet </option>
+                                    }
+                                    @foreach (var v in ViewBag.Vacataires)
+                                    {
+                                        <option value="@v.IdVacataire">
+                                            @v.NomComplet
+                                        </option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+            <select asp-for="IdLocal" class="form-control mt-2">
+                @if (Model.Local != null)
+                {
+                    <option value="@Model.IdLocal">@Model.Local.NomLocal</option>
+                }
+                <option value="">Local</option>
+                @foreach (var l in ViewBag.Local)
+                {
+                    <option value="@l.IdLocal">@l.NomLocal</option>
+                }
+            </select>
+            <span asp-validation-for="IdLocal" class="text-danger mt-2"></span>
+
+            <select class="form-control mt-2" asp-for="IdGroupe">
+                @if (Model.Groupe != null)
+                {
+                    <option value="@Model.IdGroupe">@Model.Groupe.NomGroup</option>
+                }
+                <option value="">Groupe</option>
+                @foreach (var l in ViewBag.groupe)
+                {
+                    <option value="@l.IdGroupe">@l.NomGroup</option>
+                }
+            </select>
+            <span asp-validation-for="IdGroupe" class="text-danger mt-2"></span>
+
+           
+
+            <div class="form-group mt-2">
+                            <button type="submit" class="btn btn-primary" id="btnSave">Enregister</button>
+                            <a class="btn btn-secondary" asp-controller="Emploi" asp-area="coordonnateur" asp-action="TempsEmploi" asp-route-IdS="@ViewBag.IdSemestre" asp-route-IdN="@ViewBag.idNeveau">Annuler</a>
+                       
+            </div>
+    </form>
+            </div>
+        </div>
+    </div>
+</div>
+   
+</div>
+
+@section Scripts {   
+     <partial name="~/Views/Shared/_ValidationScriptsPartial.cshtml" /> 
+}
+
+
+

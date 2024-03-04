@@ -1,0 +1,222 @@
+2023-10-20 00:32:25.6450|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 00:32:31.4144|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 00:33:05.7260|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération d'ajout de seance 1 du  Mardi dans l'emploi du temps de GIIA-1. 
+2023-10-20 00:34:56.2735|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 00:35:18.5821|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 00:35:49.1606|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification  de seance 4 du Lundi  dans l 'emploi de temps de GIIA-1 
+2023-10-20 00:37:33.1625|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 00:37:55.0802|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 00:40:58.1200|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 00:41:05.2989|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 00:41:38.5814|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération d'ajout de seance 1 du  Jeudi dans l'emploi du temps de GIIA-1. 
+2023-10-20 00:41:47.9777|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de suppression  de seance 1 du  Jeudi dans l 'emploi de temps de GIIA-1 
+2023-10-20 00:43:09.7917|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération d'ajout de seance 2 du  Lundi dans l'emploi du temps de GIIA-INFO-2. 
+2023-10-20 00:45:32.5802|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 00:45:38.7091|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 00:46:46.5600|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération d'ajout de seance 4 du  Mercredi dans l'emploi du temps de GIIA-1. 
+2023-10-20 00:47:46.3458|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-20 00:47:46.3644|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 10:06:22.4709|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 10:06:59.1716|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 10:15:11.7100|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 10:15:21.7446|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 10:26:08.6785|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 10:26:18.5201|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 10:32:35.5568|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 10:32:46.6611|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 10:36:30.6241|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 10:37:01.4600|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 10:45:10.7780|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 10:45:23.1131|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 10:51:16.5017|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 11:21:09.9393|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 11:21:38.2050|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 11:24:22.5191|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 11:24:28.1737|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 11:25:21.7106|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération d'ajout d un Examen   java Pour GIIA-INFO-2. 
+2023-10-20 11:30:26.9307|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 11:30:33.8621|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 11:30:47.3463|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de suppression Examen N°     dans l 'emploi des examens de GIIA-INFO-2 
+2023-10-20 11:32:07.1756|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération d'ajout d un Examen   java Pour GIIA-INFO-2. 
+2023-10-20 11:32:15.6304|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de suppression Examen N°     dans l 'emploi des examens de GIIA-INFO-2 
+2023-10-20 11:32:29.1194|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération d'ajout d un Examen   java Pour GIIA-INFO-2. 
+2023-10-20 11:40:25.0395|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 11:40:32.7384|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 11:40:54.1137|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de suppression Examen N°     dans l 'emploi des examens de GIIA-INFO-2 
+2023-10-20 11:41:23.4507|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération d'ajout d un Examen   c# Pour GIIA-INFO-2. 
+2023-10-20 11:46:51.6597|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-20 11:46:51.6914|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 11:46:57.1108|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 11:47:10.1000|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 11:47:35.1287|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-10-20 11:51:31.5990|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-20 11:51:31.6113|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 11:51:38.0515|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-10-20 11:53:03.8339|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-20 11:53:03.8792|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 11:53:13.9621|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 12:10:17.0918|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 12:11:17.1296|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 12:11:48.6470|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération d'ajout d un Examen   c# Pour GIIA-INFO-2. 
+2023-10-20 12:13:53.1243|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 12:14:46.3500|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 12:24:00.6539|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 12:24:08.4474|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 12:44:53.0508|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 12:45:19.0985|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 12:45:21.6585|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 12:51:08.3613|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 12:52:40.9713|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 12:57:25.7052|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 12:57:34.6277|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 13:10:46.6900|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 13:11:13.5177|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 13:12:49.2781|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération d'ajout d un Examen   Mathématiques Pour GIIA-1. 
+2023-10-20 13:26:37.9411|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 13:27:16.9103|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 13:34:13.0067|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 13:38:11.8864|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération d'ajout d un Examen   Déveleppement web Pour GIIA-1. 
+2023-10-20 13:49:49.0571|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 13:49:58.8030|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 13:50:15.8985|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de suppression Examen N°     dans l 'emploi des examens de GIIA-1 
+2023-10-20 14:08:50.5486|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 14:09:33.8295|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 14:14:24.7845|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 14:14:33.4258|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 14:17:31.8240|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 14:22:05.7523|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 14:22:15.9232|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 14:23:06.9288|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification d'Emploi Examen N°  Pour Inconnu 
+2023-10-20 14:23:42.4783|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification d'Emploi Examen N°  Pour Inconnu 
+2023-10-20 14:26:00.9500|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 14:26:07.3533|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 14:26:26.8058|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification d'Emploi Examen N°  Pour Inconnu 
+2023-10-20 14:26:40.3804|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification d'Emploi Examen N°  Pour Inconnu 
+2023-10-20 14:26:57.4820|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification d'Emploi Examen N°  Pour Inconnu 
+2023-10-20 14:30:33.8640|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 14:30:42.1480|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 14:34:38.8797|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 14:34:51.0179|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 14:45:09.3269|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 14:45:34.1602|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 14:45:51.6335|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-20 14:45:51.6524|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 14:45:55.9475|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 14:45:58.8470|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-20 14:45:58.8681|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 14:46:04.8785|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-10-20 14:46:40.5363|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-20 14:46:40.5522|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 14:46:48.3366|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 14:48:58.8733|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-20 14:48:58.8915|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 14:49:07.4321|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-10-20 14:49:21.4824|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-20 14:49:21.4824|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 14:49:29.3946|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 14:51:57.0095|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 14:52:14.0516|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 14:54:13.4203|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 14:57:57.6374|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 14:58:04.5796|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 15:01:00.7227|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 15:01:07.6644|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 15:06:49.0889|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 15:07:05.4610|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 15:09:23.7077|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 15:09:36.6163|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 15:10:04.7831|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification d'Emploi Examen N°  Pour Inconnu 
+2023-10-20 15:24:22.6136|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification d'Emploi Examen N°  Pour Inconnu 
+2023-10-20 15:24:38.4676|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification d'Emploi Examen N°  Pour Inconnu 
+2023-10-20 15:27:59.5140|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 15:28:20.0679|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 15:30:18.1619|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification d'Emploi Examen N°  Pour Inconnu 
+2023-10-20 15:30:42.4898|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification d'Emploi Examen N°  Pour Inconnu 
+2023-10-20 15:31:04.8642|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de suppression Examen N°     dans l 'emploi des examens de GIIA-1 
+2023-10-20 15:31:25.8923|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification d'Emploi Examen N°  Pour Inconnu 
+2023-10-20 15:31:48.4551|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification d'Emploi Examen N°  Pour Inconnu 
+2023-10-20 15:33:08.7693|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération d'ajout d un Examen   Déveleppement web Pour GIIA-1. 
+2023-10-20 15:33:41.4706|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification d'Emploi Examen N°  Pour Inconnu 
+2023-10-20 15:34:46.4376|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification d'Emploi Examen N°  Pour Inconnu 
+2023-10-20 15:36:06.8608|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération d'ajout d un Examen   java Pour GIIA-INFO-2. 
+2023-10-20 15:36:56.0760|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de suppression Examen N°     dans l 'emploi des examens de GIIA-INFO-2 
+2023-10-20 15:43:30.2711|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 15:43:55.0702|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 15:52:31.4571|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 15:53:24.8982|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 15:58:34.8428|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 15:59:48.9260|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 16:02:39.3767|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification  de seance 2 du Lundi  dans l 'emploi de temps de GIIA-1 
+2023-10-20 16:08:36.6316|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 16:09:08.4866|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 16:19:03.9551|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 16:19:12.7594|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 16:30:01.3491|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 16:30:29.9253|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 16:33:58.3953|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 16:34:12.1106|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 16:37:58.2607|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération d'ajout de l 'Enseignant Zouhair  Saida 
+2023-10-20 16:38:48.5142|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification de l 'Enseignant Zouhair  Saida 
+2023-10-20 16:50:41.6031|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 16:50:53.8854|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 16:59:51.2837|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 16:59:59.1560|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 17:05:00.3395|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 17:05:10.0665|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 17:07:29.9913|Projet.Areas.Responsable.Controllers.VacatairesController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération d'ajout du Vacataire Nassi  Laila 
+2023-10-20 17:07:46.6431|Projet.Areas.Responsable.Controllers.VacatairesController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification du Vacataire Nassi  Laila 
+2023-10-20 17:13:57.0430|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 17:14:45.4086|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 17:16:25.1753|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 17:17:32.0083|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 17:21:54.4971|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 17:22:50.3164|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-20 17:25:45.3180|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur JRAIFI  Abdelilah a effectué une opération de Modification d'Emploi Examen N°  Pour Inconnu 
+2023-10-20 17:25:56.3921|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-20 17:25:56.4083|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 17:26:12.7082|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-20 17:27:26.2090|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur test  test a effectué une opération d'ajout de seance 3 du  Lundi dans l'emploi du temps de GIIA-1. 
+2023-10-20 17:30:36.2557|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 17:30:56.7250|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-20 17:32:08.3439|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 17:32:37.6528|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-20 17:34:31.6783|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 17:34:41.3304|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-20 17:35:07.2029|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-20 17:39:52.9551|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 17:40:03.5847|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-20 17:42:26.4598|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 17:42:34.8334|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-20 17:52:03.4553|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 17:52:26.3003|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-20 17:52:55.2789|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur test  test a effectué une opération de Modification  de seance 3 du Lundi  dans l 'emploi de temps de GIIA-1 
+2023-10-20 17:53:34.6034|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur test  test a effectué une opération d'ajout de seance 5 du  Mardi dans l'emploi du temps de GIIA-1. 
+2023-10-20 17:56:23.5664|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 17:56:30.3478|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-20 17:58:57.5962|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 18:01:47.4403|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 18:02:09.6931|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-20 18:04:25.7705|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 18:04:34.0015|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-20 18:08:20.2358|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur test  test a effectué une opération d'ajout de seance 1 du  Mercredi dans l'emploi du temps de GIIA-1. 
+2023-10-20 18:08:52.0479|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur test  test a effectué une opération d'ajout de seance 3 du  Mardi dans l'emploi du temps de GIIA-1. 
+2023-10-20 18:09:37.6716|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur test  test a effectué une opération d'ajout de seance 4 du  Mardi dans l'emploi du temps de GIIA-1. 
+2023-10-20 18:12:41.4080|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 18:13:06.4411|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-20 18:13:45.0697|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur test  test a effectué une opération de suppression  de seance 4 du  Mardi dans l 'emploi de temps de GIIA-1 
+2023-10-20 18:13:49.8032|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur test  test a effectué une opération de suppression  de seance 3 du  Mardi dans l 'emploi de temps de GIIA-1 
+2023-10-20 18:13:55.0499|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur test  test a effectué une opération de suppression  de seance 5 du  Mardi dans l 'emploi de temps de GIIA-1 
+2023-10-20 18:14:57.3874|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur test  test a effectué une opération d'ajout de seance 3 du  Mardi dans l'emploi du temps de GIIA-1. 
+2023-10-20 18:16:48.0612|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur test  test a effectué une opération de Modification de l 'Enseignant EL MESLOUHI  Othmane 
+2023-10-20 18:23:40.3171|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 18:24:02.7964|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-20 18:24:29.6042|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur test  test a effectué une opération de Modification de l 'Enseignant EL MESLOUHI  Othmane 
+2023-10-20 18:28:26.8466|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 18:32:27.0692|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 18:32:41.4090|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-20 18:33:03.4030|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur test  test a effectué une opération de Modification de l 'Enseignant EL MESLOUHI  Othmane 
+2023-10-20 18:36:41.6704|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur test  test a effectué une opération de Modification de l 'Enseignant JRAIFI  Abdelilah 
+2023-10-20 18:38:31.6723|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-20 18:38:48.3152|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-20 18:39:06.1222|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur test  test a effectué une opération de Modification de l 'Enseignant EL MESLOUHI  Othmane 
+2023-10-20 18:39:22.7976|Projet.Areas.Responsable.Controllers.VacatairesController|INFO|L'utilisateur test  test a effectué une opération de Modification du Vacataire CHAMSI   SAFAA 

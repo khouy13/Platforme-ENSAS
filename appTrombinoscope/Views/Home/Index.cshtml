@@ -1,0 +1,42 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Niveau
+<style>
+    #home a{
+        color:dodgerblue !important;
+    }
+</style>
+<div class="d-flex justify-content-center align-items-center mt-5">
+
+    @if (@ViewBag.NiveauList.Count>0)
+    {
+     <form method="post" asp-action="CreatePdf" style="border:solid 2px whitesmoke" class="p-3">
+        
+            <select asp-for="Name" style="color:gray;border:solid 2px gray !important;border-radius:5px" class="p-1" required>
+            @foreach (var niveau in @ViewBag.NiveauList)
+            {
+                    if (niveau == "choisi le niveau")
+                    {
+                        <option value="">@niveau</option>
+                    }
+                    else
+                    {
+                        <option value="@niveau">@niveau</option>
+                    }
+            }
+        </select><br/>
+            <button type="submit" class="btnstyle btn text-white mt-3" style="background-color:goldenrod">Telecharger le trombinoscope</button>
+
+        </form>
+    }
+    else
+    {
+        <div class="alert alert-info">
+             <p>
+                les infomations des etudiants n'ont pas encore ajouter ,pour plus d'informations contacter les administrateurs 
+             </p>
+        </div>
+    }
+
+</div>

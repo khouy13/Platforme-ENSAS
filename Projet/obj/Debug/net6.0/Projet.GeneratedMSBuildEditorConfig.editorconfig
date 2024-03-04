@@ -1,0 +1,607 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Projet
+build_property.RootNamespace = Projet
+build_property.ProjectDir = C:\Users\lenovo\source\repos\Platforme-ENSAS\Projet\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\lenovo\source\repos\Platforme-ENSAS\Projet
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Acount/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QWNvdW50XFJlZ2lzdGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Chef/Views/Chef/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2hlZlxWaWV3c1xDaGVmXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Chef/Views/Shared/_chefFiliereNiveauExam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2hlZlxWaWV3c1xTaGFyZWRcX2NoZWZGaWxpZXJlTml2ZWF1RXhhbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Chef/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2hlZlxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/Coordonnateur/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xDb29yZG9ubmF0ZXVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/EmploiExams/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xFbXBsb2lFeGFtc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/EmploiExams/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xFbXBsb2lFeGFtc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/EmploiExams/EmploiExam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xFbXBsb2lFeGFtc1xFbXBsb2lFeGFtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/EmploiExams/GeneratePdf.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xFbXBsb2lFeGFtc1xHZW5lcmF0ZVBkZi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/Emploi/AddSeance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xFbXBsb2lcQWRkU2VhbmNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/Emploi/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xFbXBsb2lcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/Emploi/GeneratePdf.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xFbXBsb2lcR2VuZXJhdGVQZGYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/Emploi/TempsEmploi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xFbXBsb2lcVGVtcHNFbXBsb2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/Examen/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xFeGFtZW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/Examen/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xFeGFtZW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/Examen/DsExam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xFeGFtZW5cRHNFeGFtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/Examen/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xFeGFtZW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/Profil/Profilfirst.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xQcm9maWxcUHJvZmlsZmlyc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Directeur/Views/ChargeHoraire/CalculChargeHoraire.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGlyZWN0ZXVyXFZpZXdzXENoYXJnZUhvcmFpcmVcQ2FsY3VsQ2hhcmdlSG9yYWlyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Directeur/Views/Directeur/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGlyZWN0ZXVyXFZpZXdzXERpcmVjdGV1clxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Directeur/Views/Shared/_DirecteurFiliereNiveauExam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGlyZWN0ZXVyXFZpZXdzXFNoYXJlZFxfRGlyZWN0ZXVyRmlsaWVyZU5pdmVhdUV4YW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Directeur/Views/Surveillant/CalculChargeSurveillant.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGlyZWN0ZXVyXFZpZXdzXFN1cnZlaWxsYW50XENhbGN1bENoYXJnZVN1cnZlaWxsYW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Directeur/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGlyZWN0ZXVyXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Directeur/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGlyZWN0ZXVyXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/ConfirmEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/ConfirmEmailChange.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxDb25maXJtRW1haWxDaGFuZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/ForgotPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxGb3Jnb3RQYXNzd29yZENvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/Lockout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2Nrb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/LoginWith2fa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGgyZmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/LoginWithRecoveryCode.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbldpdGhSZWNvdmVyeUNvZGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/Manage/SetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcU2V0UGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1N0YXR1c01lc3NhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/ResendEmailConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNlbmRFbWFpbENvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/ResetPasswordConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkQ29uZmlybWF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Professeur/Views/Prof/EmploiProfesseur.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZmVzc2V1clxWaWV3c1xQcm9mXEVtcGxvaVByb2Zlc3NldXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Professeur/Views/Prof/EmploiSurveillance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZmVzc2V1clxWaWV3c1xQcm9mXEVtcGxvaVN1cnZlaWxsYW5jZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Professeur/Views/Prof/GeneratePdf1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZmVzc2V1clxWaWV3c1xQcm9mXEdlbmVyYXRlUGRmMS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Professeur/Views/Prof/GeneratePdfAsync.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZmVzc2V1clxWaWV3c1xQcm9mXEdlbmVyYXRlUGRmQXN5bmMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Professeur/Views/Prof/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZmVzc2V1clxWaWV3c1xQcm9mXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Professeur/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZmVzc2V1clxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/ApplicationUsers/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcQXBwbGljYXRpb25Vc2Vyc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/ApplicationUsers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcQXBwbGljYXRpb25Vc2Vyc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/ApplicationUsers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcQXBwbGljYXRpb25Vc2Vyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/AppRoles/CreateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcQXBwUm9sZXNcQ3JlYXRlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/AppRoles/IndexRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcQXBwUm9sZXNcSW5kZXhSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Departements/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcRGVwYXJ0ZW1lbnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Departements/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcRGVwYXJ0ZW1lbnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Departements/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcRGVwYXJ0ZW1lbnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Departements/First.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcRGVwYXJ0ZW1lbnRzXEZpcnN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Enseignants/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcRW5zZWlnbmFudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Enseignants/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcRW5zZWlnbmFudHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Enseignants/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcRW5zZWlnbmFudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Enseignants/EmploiEnseignant.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcRW5zZWlnbmFudHNcRW1wbG9pRW5zZWlnbmFudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Enseignants/First.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcRW5zZWlnbmFudHNcRmlyc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Enseignants/GeneratePdf.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcRW5zZWlnbmFudHNcR2VuZXJhdGVQZGYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Filieres/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcRmlsaWVyZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Filieres/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcRmlsaWVyZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Filieres/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcRmlsaWVyZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Filieres/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcRmlsaWVyZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Grades/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcR3JhZGVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Grades/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcR3JhZGVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Grades/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcR3JhZGVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Grades/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcR3JhZGVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Groupes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcR3JvdXBlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Groupes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcR3JvdXBlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Groupes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcR3JvdXBlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Groupes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcR3JvdXBlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Locals/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTG9jYWxzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Locals/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTG9jYWxzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Locals/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTG9jYWxzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Locals/EmploiLocal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTG9jYWxzXEVtcGxvaUxvY2FsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Locals/ExamEmploiLocal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTG9jYWxzXEV4YW1FbXBsb2lMb2NhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Locals/First.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTG9jYWxzXEZpcnN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Locals/GeneratePdf.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTG9jYWxzXEdlbmVyYXRlUGRmLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Locals/GeneratePdfLocalExam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTG9jYWxzXEdlbmVyYXRlUGRmTG9jYWxFeGFtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Matieres/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTWF0aWVyZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Matieres/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTWF0aWVyZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Matieres/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTWF0aWVyZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Matieres/EmploiMatiere.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTWF0aWVyZXNcRW1wbG9pTWF0aWVyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Matieres/First.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTWF0aWVyZXNcRmlyc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Niveaux/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTml2ZWF1eFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Niveaux/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTml2ZWF1eFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Niveaux/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTml2ZWF1eFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Niveaux/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTml2ZWF1eFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Responsable/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcUmVzcG9uc2FibGVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Semestres/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcU2VtZXN0cmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Semestres/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcU2VtZXN0cmVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Semestres/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcU2VtZXN0cmVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Semestres/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcU2VtZXN0cmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Semestres/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcU2VtZXN0cmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/TypeLocals/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcVHlwZUxvY2Fsc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/TypeLocals/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcVHlwZUxvY2Fsc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/TypeLocals/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcVHlwZUxvY2Fsc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/TypeLocals/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcVHlwZUxvY2Fsc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Vacataires/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcVmFjYXRhaXJlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Vacataires/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcVmFjYXRhaXJlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Vacataires/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcVmFjYXRhaXJlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Vacataires/EmploiVacataire.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcVmFjYXRhaXJlc1xFbXBsb2lWYWNhdGFpcmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Vacataires/First.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcVmFjYXRhaXJlc1xGaXJzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Vacataires/GeneratePdf.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcVmFjYXRhaXJlc1xHZW5lcmF0ZVBkZi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Secritaire/Views/Secritaires/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2Vjcml0YWlyZVxWaWV3c1xTZWNyaXRhaXJlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Secritaire/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2Vjcml0YWlyZVxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Chef/Views/Shared/_Chef.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2hlZlxWaWV3c1xTaGFyZWRcX0NoZWYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-t68wau6oen
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Chef/Views/Shared/_ChefFiliereNiveau.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ2hlZlxWaWV3c1xTaGFyZWRcX0NoZWZGaWxpZXJlTml2ZWF1LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-9l8mes1e3q
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/Shared/_CordDashbord.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xTaGFyZWRcX0NvcmREYXNoYm9yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-ayzl1ktk99
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/Shared/_Enseignant.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xTaGFyZWRcX0Vuc2VpZ25hbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ntjlsqxfjs
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/Shared/_FiliereNiveau.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xTaGFyZWRcX0ZpbGllcmVOaXZlYXUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gnjti3nptv
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/Shared/_FiliereNiveauExam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xTaGFyZWRcX0ZpbGllcmVOaXZlYXVFeGFtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-hc0remfwjd
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/Shared/_SemestrechargeHoraire.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xTaGFyZWRcX1NlbWVzdHJlY2hhcmdlSG9yYWlyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-x8yucl56lq
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Coordonnateur/Views/Shared/_SemestreSurveillant.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQ29vcmRvbm5hdGV1clxWaWV3c1xTaGFyZWRcX1NlbWVzdHJlU3VydmVpbGxhbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-6egpn38p28
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Directeur/Views/Shared/_Directeur.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGlyZWN0ZXVyXFZpZXdzXFNoYXJlZFxfRGlyZWN0ZXVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-c7o9yiziyt
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Directeur/Views/Shared/_DirecteurFiliereNiveau.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGlyZWN0ZXVyXFZpZXdzXFNoYXJlZFxfRGlyZWN0ZXVyRmlsaWVyZU5pdmVhdS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-y2x9ragzt9
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Directeur/Views/Shared/_SemestrechargeHoraire.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGlyZWN0ZXVyXFZpZXdzXFNoYXJlZFxfU2VtZXN0cmVjaGFyZ2VIb3JhaXJlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-mgqdkwoh9c
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Directeur/Views/Shared/_SemestreSurveillant.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcRGlyZWN0ZXVyXFZpZXdzXFNoYXJlZFxfU2VtZXN0cmVTdXJ2ZWlsbGFudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-m965aowub2
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Professeur/Views/Shared/_Prof.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZmVzc2V1clxWaWV3c1xTaGFyZWRcX1Byb2YuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-2h4c6lqky1
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Professeur/Views/Shared/_ProfEmploi.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZmVzc2V1clxWaWV3c1xTaGFyZWRcX1Byb2ZFbXBsb2kuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-oe9rsbqlps
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Professeur/Views/Shared/_ProfSurveillance.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUHJvZmVzc2V1clxWaWV3c1xTaGFyZWRcX1Byb2ZTdXJ2ZWlsbGFuY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bh9rmnuzg9
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Responsable/Views/Shared/_Admin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcU2hhcmVkXF9BZG1pbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-7ti4n3e0qz
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Areas/Secritaire/Views/Shared/_Secritaire.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcU2Vjcml0YWlyZVxWaWV3c1xTaGFyZWRcX1NlY3JpdGFpcmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-38417p8bkn
+
+[C:/Users/lenovo/source/repos/Platforme-ENSAS/Projet/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-d59qn25hk5

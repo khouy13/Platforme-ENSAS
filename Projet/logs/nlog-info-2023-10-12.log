@@ -1,0 +1,22 @@
+2023-10-12 21:12:56.1330|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-12 21:15:58.8330|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-12 21:16:34.0034|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-12 21:16:34.0264|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-12 21:16:41.7675|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-10-12 21:16:51.5380|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-12 21:16:51.5636|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-12 21:16:55.5474|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-10-12 21:17:00.4073|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-12 21:17:00.4389|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-12 21:17:11.6574|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-12 21:19:46.6992|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-12 21:20:23.0014|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-12 21:22:41.5484|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-12 21:22:41.5812|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-12 21:22:54.2272|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-12 21:24:42.4681|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-12 21:25:33.8956|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-12 21:30:13.9290|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-12 21:30:13.9426|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-12 21:30:22.0640|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-12 21:32:33.7466|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 

@@ -1,0 +1,43 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@model IEnumerable<IdentityRole>
+@addTagHelper *,AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+
+<div class="container">
+    <div class="row justify-content-center mt-5">
+        <div class="col-lg-6">
+            <div class="card shadow p-3 mb-5 bg-white rounded">
+                <div class="card-body">
+                    <h2 class="titre text-center mb-4">Rôles de l'application</h2>
+                    <hr />
+                    <table class="table">
+                        <thead class="">
+                            <tr>
+                                <th>@Html.DisplayNameFor(model=>model.Id)</th>
+                                <th>@Html.DisplayNameFor(model=>model.Name)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{var i = 1;}
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@i</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                                </tr>
+                                i++;
+                                  <!-- Incrémentation de i à chaque itération -->
+                            }
+                        </tbody>
+
+                    </table>
+                   
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

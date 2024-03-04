@@ -1,0 +1,113 @@
+﻿@model IEnumerable<Projet.Areas.Responsable.Models.Niveau>
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Projet.Areas.Responsable.Models;
+
+
+@{
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+    Pager pager = new Pager();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+
+<style>
+    .clear-search {
+        cursor: pointer;
+        display: none;
+        padding: 6px 10px;
+        border-radius: 0 4px 4px 0;
+        background-color: #ccc;
+        border: 1px solid #ccc;
+        border-left: none;
+    }
+</style>
+
+<div class="container">
+    <div class="row mb-1">
+        <div class="col-md-9"></div>
+    <div class="col-md-3 text-end">
+        <form asp-controller="Niveaux" asp-action="Index" asp-area="Responsable" class="form-inline">
+            <div class="input-group">
+                <input id="searchInput" class="form-control" type="text" name="SearchText" placeholder="Recherche..." value="@ViewBag.SearchText" />
+                <span id="clearSearch" class="input-group-addon clear-search">&times;</span>
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
+                    <a asp-action="Create" asp-controller="Niveaux" asp-area="Responsable" class="btn btn-primary ml-1"><i class="bi bi-plus"></i></a>
+                </div>
+            </div>
+        </form>
+    </div>
+     </div>
+
+    <div class="table-responsive card shadow bg-white rounded">
+        <table class="table col-10 mx-auto">
+            <thead>
+                <tr>
+                    
+                    <th>Niveau</th>
+                    <th>Filière</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.NomNiveau)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.filiere.NomFiliere)
+                        </td>
+                       
+                        <td>
+                            <a asp-action="Edit" asp-controller="Niveaux" asp-area="Responsable" asp-route-id="@item.IdNiveau" class="btn btn-success btn-sm">
+                                <i class="bi bi-pencil" style="font-size: 15px;"></i>
+                            </a>
+                            <a asp-action="Delete" asp-controller="Niveaux" asp-area="Responsable" class="btn btn-danger btn-sm " asp-route-id="@item.IdNiveau">
+                                <i class="bi bi-trash-fill" style="font-size: 15px;"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+<div class=" d-flex justify-content-end mt-1">
+    @if (pager.TotalPages > 0)
+    {
+        <ul class="pagination justify-content-end">
+            @if (pager.CurrentPage > 1)
+            {
+                <li class="page-item">
+                        <a class="page-link text-primary" asp-controller="Niveaux" asp-action="Index" asp-area="Responsable" asp-route-pg="1">First</a>
+                </li>
+                <li class="page-item">
+                        <a class="page-link text-primary" asp-controller="Niveaux" asp-action="Index" asp-area="Responsable" asp-route-pg="@(pager.CurrentPage - 1)">Previous</a>
+                </li>
+            }
+            @for (var pge = pager.StartPage; pge <= pager.EndPage; pge++)
+            {
+                <li class="page-item @(pge == pager.CurrentPage ? "active text-white" : "text-primary")">
+                        <a class="page-link" asp-controller="Niveaux" asp-action="Index" asp-area="Responsable" asp-route-pg="@pge">@pge</a>
+                </li>
+            }
+            @if (pager.CurrentPage < pager.TotalPages)
+            {
+                <li class="page-item">
+                        <a class="page-link text-primary" asp-controller="Niveaux" asp-action="Index" asp-area="Responsable" asp-route-pg="@(pager.CurrentPage + 1)">Next</a>
+                </li>
+                <li class="page-item">
+                        <a class="page-link text-primary" asp-controller="Niveaux" asp-action="Index" asp-area="Responsable" asp-route-pg="@(pager.TotalPages)">Last</a>
+                </li>
+            }
+        </ul>
+    }
+</div>
+</div>

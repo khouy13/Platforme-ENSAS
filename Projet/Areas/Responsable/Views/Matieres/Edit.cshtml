@@ -1,0 +1,60 @@
+﻿@model Projet.Areas.Responsable.Models.Matiere
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+
+
+
+<div class="row mb-5">
+    <!-- Utilisation de la classe "mx-auto" pour centrer la colonne horizontalement -->
+    <div class="card shadow p-3 mb-5 bg-white rounded mt-3 custom-card mx-auto" style="max-width: 600px; overflow-y: auto;">
+        <div class="card-body">
+            <!-- Utilisation de la classe "card-body" pour réduire la hauteur du formulaire -->
+            <form asp-action="Edit" Method ="post">
+                <h2 class="title text-center">Changer L'Enseignant</h2>
+                <hr />
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                 <input type="hidden" asp-for="IdMatiere" />
+                <div class="form-group">
+                    <label asp-for="NomMatiere" class="control-label"></label>
+                    <input asp-for="NomMatiere" class="form-control" value="@Model.NomMatiere"/>
+                    <span asp-validation-for="NomMatiere" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label>Sélectionner les niveaux</label>
+                    <select class="form-select" asp-for="MatiereNiveaus" multiple ctrl style="background-color:#fff;">
+                        @foreach (var niveau in ViewBag.Niveau)
+                        {
+                            <option value="@niveau.IdNiveau" selected="@Model.MatiereNiveaus.Any(mn => mn.Niveau.IdNiveau == niveau.IdNiveau)">@niveau.NomNiveau</option>
+                        }
+                    </select>
+                    <span asp-validation-for="MatiereNiveaus" class="text-danger"></span>
+                </div>
+                <div class="d-flex">
+                    <div class="form-group flex-fill me-2">
+                        <select asp-for="IdEnseignant" class="form-select form-select-sm" asp-items="ViewBag.enseignats">
+                            <option value="">Enseignant</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group flex-fill">
+                        <select asp-for="IdVacataire" class="form-select form-select-sm" asp-items="ViewBag.vacataires">
+                            <option value="">Vacataires</option>
+                        </select>
+                    </div>
+                </div>
+
+                
+                <div class="form-group">
+                    <input type="submit" value="Enregistrer" class="btn btn-primary" />
+                    <a class="btn btn-secondary" href="@Url.Action("First", "Matieres", new { area = "Responsable" })">Annuler</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>

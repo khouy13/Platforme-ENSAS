@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Admin Page";
+}
+@model Niveau
+
+<style>
+    #admin a {
+        color: dodgerblue !important;
+    }
+
+    input[type="file"]::file-selector-button{
+        background-color:whitesmoke;
+        cursor: pointer;
+        border:1px solid rgba(0,0,0,0.05);
+    }
+
+    input[type="file"]::file-selector-button:hover {
+        background-color: ghostwhite;
+        
+        border: 1px solid rgba(0,0,0,0.05);
+        
+    }
+
+
+</style>
+
+<div>
+
+
+    <form class="mt-4 p-3" method="post" asp-action="UploadDoussierImages" enctype="multipart/form-data" style="border:solid 2px whitesmoke;border-radius:8px;">
+        
+        <label for="">Les images des etudiants:</label><br/>
+        
+        <input type="file" class="mt-2 text-info" name="imageFolder" multiple webkitdirectory directory required /></br>
+        
+        <input type="submit" value="enregister" class="btnstyle btn mt-3 text-white" style="background-color:goldenrod" />
+    </form>
+
+    <form class="mt-3 p-3" method="post" asp-action="UploadFechierExcel" enctype="multipart/form-data" style="border:solid 2px whitesmoke;border-radius:8px;">
+        
+        <label for="">Le fechier excel :</label></br>
+        
+        <input type="file" name="excelFile" class="mt-2 text-info"  required /><br/>
+        
+        <input type="submit" value="enregister" class="btnstyle btn mt-3 text-white" style="background-color:goldenrod" />
+    </form>
+
+    <div style="border:solid 2px whitesmoke;border-radius:8px;" class="mt-3 p-3">
+        <p class=" ">supprimer les informations des etudiants:</p>
+        <p>le fechier excel:
+            <a asp-action="DeleteFechierExcel" asp-controller="Admin" style="background-color:goldenrod" class="btn btn-sm text-white">X</a>
+        </p>
+        <p>les images des etudiants:
+
+            <a asp-action="DeleteImageEtudiants" asp-controller="Admin" style="background-color:goldenrod" class="btn btn-sm text-white">X</a>
+        </p> 
+    </div>
+
+</div>

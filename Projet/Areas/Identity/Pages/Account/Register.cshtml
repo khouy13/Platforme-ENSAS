@@ -1,0 +1,156 @@
+﻿@page
+@model RegisterModel
+
+@{
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+
+<style>
+    .circle-upload {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px dashed #ccc;
+        cursor: pointer;
+        margin: 0 auto;
+        overflow: hidden; /* Cacher les coins débordants */
+    }
+
+        .circle-upload input[type="file"] {
+            display: none; /* Cacher l'élément input */
+        }
+
+        .circle-upload img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%; /* Ajoutez ceci pour rendre l'image circulaire */
+        }
+
+    .form-control-sm {
+        height: 30px; /* Réduire la hauteur des champs */
+        margin-bottom: 10px; /* Réduire l'espacement entre les champs */
+    }
+</style>
+
+<div class="card shadow p-3 mb-5 bg-white rounded mt-3" style="max-width: 500px; margin: 0 auto;">
+    <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl"  method="post" enctype="multipart/form-data">
+      
+        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+
+        <div class="mb-3 text-center">
+            <label class="circle-upload" style="position: relative;">
+                <input type="file" asp-for="Input.UserFile" aria-required="true" style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; cursor: pointer;" />
+                <img id="previewImg" src="/asset/images/profilNexistePas.jpg" style="max-width: 100%; max-height: 100%; border-radius: 50%;" />
+                <i class="bi bi-camera" style="font-size: 24px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i>
+            </label>
+            <span asp-validation-for="Input.ImagePath" class="text-danger"></span>
+        </div>
+
+        <div class="row mt-2 mb-3">
+            
+            <div class="col">
+                <select asp-for="Input.IdEnseignant" asp-items="@Model.Input.EnseignantList" class="form-select form-select-sm" aria-required="true" id="selectEnseignant">
+                    <option disabled selected>Enseignant</option>
+                </select>
+                <span asp-validation-for="Input.IdEnseignant" class="text-danger"></span>
+            </div>
+            <div class="col-auto d-flex align-items-center">
+                <span class="mx-1">ou</span>
+            </div>
+            <div class="col">
+                <select asp-for="Input.IdVacataire" asp-items="@Model.Input.VacataireList" class="form-select form-select-sm" aria-required="true" id="selectVacataire">
+                    <option disabled selected>Vacataire</option>
+                </select>
+                <span asp-validation-for="Input.VacataireList" class="text-danger"></span>
+            </div>
+            
+
+        </div>
+        <div class="my-3">
+            <input type="hidden" asp-for="Input.VacataireOrEnseignant" value="@Model.Input.VacataireOrEnseignant" id="VacataireOrEnseignant" />
+        </div>
+        
+        <div class="row mt-2 mb-2">
+            <span class="mx-1">Autres</span>
+        </div>
+
+        <div class="row mt-2 mb-2">
+        
+            
+                <div class="col">
+                <input asp-for="Input.LastName" class="form-control custom-input" aria-required="true" value="@(Model.Input.LastName!=null?@Model.Input.LastName:"")" placeholder="LastName" />
+                    <span asp-validation-for="Input.LastName" class="text-danger"></span>
+                </div>
+            
+
+            <div class="col">
+                <input asp-for="Input.FirstName" class="form-control custom-input" value="@(Model.Input.FirstName!=null?@Model.Input.FirstName:"")" aria-required="true" placeholder="FirstName" />
+                <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-check mb-3">
+            <div class="row">
+                <div class="col">
+                    <input asp-for="Input.Email" class="form-control" autocomplete="username" value="@(Model.Input.Email!=null?@Model.Input.Email:"")" aria-required="true" placeholder="name@example.com" />
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+            </div>
+           
+        </div>
+
+
+
+        <div class="form-check mb-3">
+            <select asp-for="Input.Role" asp-items="@Model.Input.RolesList" class="form-select form-select-sm" aria-required="true">
+                <option disabled selected>Select Role</option>
+            </select>
+            <span asp-validation-for="Input.Role" class="text-danger"></span>
+        </div>
+
+        <div class="d-flex mt-2">
+            <div>
+                <button id="registerSubmit" type="submit" class="btn btn-primary mr-2">Enregistrer</button>
+            </div>
+            <div>
+                <a class="btn btn-secondary ml-2" href="@Url.Action("Index", "ApplicationUsers", new { area = "Responsable" })">Annuler</a>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.querySelector('.circle-upload').addEventListener('click', function () {
+            document.querySelector('input[type="file"]').click();
+        });
+
+        document.querySelector('input[type="file"]').addEventListener('change', function (e) {
+            var reader = new FileReader();
+            reader.onload = function () {
+                document.getElementById('previewImg').src = reader.result;
+            }
+            reader.readAsDataURL(e.target.files[0]);
+        });
+    </script>
+
+    <script>
+            document.getElementById('selectEnseignant').addEventListener('change', function () {
+                document.getElementById('VacataireOrEnseignant').value = 1;
+                document.getElementById('registerForm').submit();
+            });
+
+            document.getElementById('selectVacataire').addEventListener('change', function () {
+            document.getElementById('VacataireOrEnseignant').value = 0;
+            document.getElementById('registerForm').submit();
+           });
+        
+    </script>
+}
+

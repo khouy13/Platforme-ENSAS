@@ -1,0 +1,43 @@
+﻿@model Projet.Areas.Admin.Models.Departement
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Coordonnateur/Views/Shared/_CordDashbord.cshtml";
+}
+
+<div class="row">
+    <!-- Utilisation de la classe "mx-auto" pour centrer la colonne horizontalement -->
+    <div class="card shadow p-3 mb-5 bg-white rounded mt-3 custom-card mx-auto" style="max-width: 600px; overflow-y: auto;">
+        <div class="card-body">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                    <label asp-for="NomDepartementt" class="control-label">Departement</label>
+                <input asp-for="NomDepartementt" class="form-control" />
+                <span asp-validation-for="NomDepartementt" class="text-danger"></span>
+            </div>
+                <div class="form-group">
+                    <select asp-for="ApplicationUserId" class="form-select form-select-sm" aria-required="true">
+                        <option disabled selected value="">Chef</option>
+                        @foreach (var dep in ViewBag.Chef)
+                        {
+
+                            <option value="@dep.Id">@dep.FirstName  @dep.LastName</option>
+                        }
+
+                    </select>
+                    <span asp-validation-for="ApplicationUserId" class="text-danger"></span>
+                </div>
+            <div class="form-group">
+                <input type="submit" value="Ajouter" class="btn btn-primary" />
+                    <a class="btn btn-secondary ml-2" href="@Url.Action("First", "Departements", new { area = "Responsable" })">Annuler</a>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+   
+
+

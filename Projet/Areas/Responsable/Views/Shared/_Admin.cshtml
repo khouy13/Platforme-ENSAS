@@ -1,0 +1,377 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using Projet.Data
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@{
+   
+    DateTime currentDate = DateTime.Now;
+    string formattedDate = currentDate.ToString("MMM dd");
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ENSA SAFI</title>
+    
+
+    <!-- Include Bootstrap JS -->
+
+    <link rel="stylesheet" href="~/asset/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/asset/vendors/typicons/typicons.css">
+    <link rel="stylesheet" href="~/asset/vendors/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="~/asset/css/">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="~/asset/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/asset/cssNet/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/ProjetStage.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/asset/css/vertical-layout-light/style.css">
+   
+    <link rel="shortcut icon" href="~/asset/images/safilogo.png" />
+</head>
+<body>
+    <div class="container-scroller">
+        <!-- partial:partials/_navbar.html -->
+        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row bg-primary">
+            <div class="navbar-brand-wrapper d-flex justify-content-center ">
+                <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
+                    <a class="navbar-brand brand-logo">
+                        <img src="~/asset/images/safilogo.png" alt="profile" style="border-radius: 50%; width:100px; height:75px;" />
+                    </a>
+                    <a class="navbar-brand brand-logo-mini" href="index.html"><img src="~/asset/images/logo-mini.svg" alt="logo" /></a>
+                    <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                        <span class="typcn typcn-th-menu"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+                <ul class="navbar-nav mr-lg-2">
+                    <li class="nav-item nav-profile dropdown">
+                        <a class="nav-link" href="#" data-toggle="dropdown" id="profileDropdown">
+                            @if (SignInManager.IsSignedIn(User))
+                            {     @if (!string.IsNullOrEmpty(UserManager.GetUserAsync(User).Result.ImagePath))
+                                {
+                                    <img src="/@UserManager.GetUserAsync(User).Result.ImagePath" alt="profile" style="border-radius: 50%; width: 50px; height: 50px;" />
+                                }
+                                else
+                                {
+                                    <img src="/asset/images/profilNexistePas.jpg" alt="profile" />
+                                }
+                            }
+
+
+                            @Html.Partial("/Views/Shared/_LoginPartial.cshtml")
+                        </a>
+                </ul>
+
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item nav-date dropdown">
+                        <a class="nav-link d-flex justify-content-center align-items-center" href="javascript:;">
+                            <h6 class="date mb-0">Aujourd'hui: @formattedDate</h6>
+                            <i class="typcn typcn-calendar"></i>
+                        </a>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                    <span class="typcn typcn-th-menu"></span>
+                </button>
+            </div>
+        </nav>
+
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_settings-panel.html -->
+            <div class="theme-setting-wrapper">
+                <div id="settings-trigger"><i class="typcn typcn-cog-outline"></i></div>
+                <div id="theme-settings" class="settings-panel">
+                    <i class="settings-close typcn typcn-times"></i>
+                    <p class="settings-heading">SIDEBAR SKINS</p>
+                    <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
+                    <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+                    <p class="settings-heading mt-2">HEADER SKINS</p>
+                    <div class="color-tiles mx-0 px-4">
+                        <div class="tiles success"></div>
+                        <div class="tiles warning"></div>
+                        <div class="tiles danger"></div>
+                        <div class="tiles info"></div>
+                        <div class="tiles dark"></div>
+                        <div class="tiles default"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="right-sidebar" class="settings-panel">
+                <i class="settings-close typcn typcn-times"></i>
+                <ul class="nav nav-tabs" id="setting-panel" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="todo-tab" data-toggle="tab" href="#todo-section" role="tab" aria-controls="todo-section" aria-expanded="true">TO DO LIST</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="chats-tab" data-toggle="tab" href="#chats-section" role="tab" aria-controls="chats-section">CHATS</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="setting-content">
+                    <div class="tab-pane fade show active scroll-wrapper" id="todo-section" role="tabpanel" aria-labelledby="todo-section">
+                        <div class="add-items d-flex px-3 mb-0">
+                            <form class="form w-100">
+                                <div class="form-group d-flex">
+                                    <input type="text" class="form-control todo-list-input" placeholder="Add To-do">
+                                    <button type="submit" class="add btn btn-primary todo-list-add-btn" id="add-task">Add</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="list-wrapper px-3">
+                            <ul class="d-flex flex-column-reverse todo-list">
+                                <li>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="checkbox" type="checkbox">
+                                            Team review meeting at 3.00 PM
+                                        </label>
+                                    </div>
+                                    <i class="remove typcn typcn-delete-outline"></i>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="checkbox" type="checkbox">
+                                            Prepare for Buttons
+                                        </label>
+                                    </div>
+                                    <i class="remove typcn typcn-delete-outline"></i>
+                                </li>
+                                <li>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="checkbox" type="checkbox">
+                                            Resolve all the low priority tickets due today
+                                        </label>
+                                    </div>
+                                    <i class="remove typcn typcn-delete-outline"></i>
+                                </li>
+                                <li class="completed">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="checkbox" type="checkbox" checked>
+                                            Schedule meeting for next week
+                                        </label>
+                                    </div>
+                                    <i class="remove typcn typcn-delete-outline"></i>
+                                </li>
+                                <li class="completed">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input class="checkbox" type="checkbox" checked>
+                                            Project review
+                                        </label>
+                                    </div>
+                                    <i class="remove typcn typcn-delete-outline"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="events py-4 border-bottom px-3">
+                            <div class="wrapper d-flex mb-2">
+                                <i class="typcn typcn-media-record-outline text-primary mr-2"></i>
+                                <span>Feb 11 2018</span>
+                            </div>
+                            <p class="mb-0 font-weight-thin text-gray">Creating component page</p>
+                            <p class="text-gray mb-0">build a js based app</p>
+                        </div>
+                        <div class="events pt-4 px-3">
+                            <div class="wrapper d-flex mb-2">
+                                <i class="typcn typcn-media-record-outline text-primary mr-2"></i>
+                                <span>Feb 7 2018</span>
+                            </div>
+                            <p class="mb-0 font-weight-thin text-gray">Meeting with Alisa</p>
+                            <p class="text-gray mb-0 ">Call Sarah Graves</p>
+                        </div>
+                    </div>
+                    <!-- To do section tab ends -->
+                    <div class="tab-pane fade" id="chats-section" role="tabpanel" aria-labelledby="chats-section">
+                        <div class="d-flex align-items-center justify-content-between border-bottom">
+                            <p class="settings-heading border-top-0 mb-3 pl-3 pt-0 border-bottom-0 pb-0">Friends</p>
+                            <small class="settings-heading border-top-0 mb-3 pt-0 border-bottom-0 pb-0 pr-3 font-weight-normal">See All</small>
+                        </div>
+                        <ul class="chat-list">
+                            <li class="list active">
+                                <div class="profile"><img src="images/faces/face1.jpg" alt="image"><span class="online"></span></div>
+                                <div class="info">
+                                    <p>Thomas Douglas</p>
+                                    <p>Available</p>
+                                </div>
+                                <small class="text-muted my-auto">19 min</small>
+                            </li>
+                            <li class="list">
+                                <div class="profile"><img src="~/asset/images/faces/face2.jpg" alt="image"><span class="offline"></span></div>
+                                <div class="info">
+                                    <div class="wrapper d-flex">
+                                        <p>Catherine</p>
+                                    </div>
+                                    <p>Away</p>
+                                </div>
+                                <div class="badge badge-success badge-pill my-auto mx-2">4</div>
+                                <small class="text-muted my-auto">23 min</small>
+                            </li>
+                            <li class="list">
+                                <div class="profile"><img src="images/faces/face3.jpg" alt="image"><span class="online"></span></div>
+                                <div class="info">
+                                    <p>Daniel Russell</p>
+                                    <p>Available</p>
+                                </div>
+                                <small class="text-muted my-auto">14 min</small>
+                            </li>
+                            <li class="list">
+                                <div class="profile"><img src="~/asset/images/faces/face4.jpg" alt="image"><span class="offline"></span></div>
+                                <div class="info">
+                                    <p>James Richardson</p>
+                                    <p>Away</p>
+                                </div>
+                                <small class="text-muted my-auto">2 min</small>
+                            </li>
+                            <li class="list">
+                                <div class="profile"><img src="~/asset/images/faces/face5.jpg" alt="image"><span class="online"></span></div>
+                                <div class="info">
+                                    <p>Madeline Kennedy</p>
+                                    <p>Available</p>
+                                </div>
+                                <small class="text-muted my-auto">5 min</small>
+                            </li>
+                            <li class="list">
+                                <div class="profile"><img src="~/asset/images/faces/face6.jpg" alt="image"><span class="online"></span></div>
+                                <div class="info">
+                                    <p>Sarah Graves</p>
+                                    <p>Available</p>
+                                </div>
+                                <small class="text-muted my-auto">47 min</small>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <nav class="sidebar sidebar-offcanvas " pl-3 pr-3" id="sidebar" style="width:auto">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index", "Responsable", new { area = "Responsable" })">
+                            <i class="bi bi-speedometer2 menu-icon"></i>
+                            <span class="menu-title">Tableau de bord</span>
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                            <i class="typcn typcn-archive menu-icon"></i>
+                            <span class="menu-title">Gestion des Ressources</span>
+                          
+                        </a>
+                        <div class="collapse" id="ui-basic">
+                           
+                            <ul class="nav flex-column sub-menu">
+
+                                <li class="nav-item"> <a class="nav-link" href="@Url.Action("First", "Enseignants", new { area = "Responsable" })">Gestion Des Enseignants</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="@Url.Action("First", "Vacataires", new { area = "Responsable" })">Gestion Des Vacataires</a></li>
+
+                                <li class="nav-item"> <a class="nav-link"  href="@Url.Action("First", "Matieres", new { area = "Responsable" })">Gestion Des Matières</a></li>
+                                <li class="nav-item"><a class="nav-link"  href="@Url.Action("Index", "Filieres", new { area = "Responsable" })">Gestion Des Filières</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Niveaux", new { area = "Responsable" })">Gestion Des Niveaux</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Groupes", new { area = "Responsable" })">Gestion Des Groupes</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "ApplicationUsers", new { area = "Responsable" })">Gestion Des Utilisateurs</a></li>
+
+                                <li class="nav-item"> <a class="nav-link" href="@Url.Action("First", "Locals", new { area = "Responsable" })">Gestion Des Locaux</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="@Url.Action("Index", "TypeLocals", new { area = "Responsable" })">Gestion Des Types De locaux</a></li>
+
+                                    <li class="nav-item"> <a class="nav-link" href="@Url.Action("Index", "Semestres", new { area = "Responsable" })">Gestion Des Semestres</a></li>
+                                <li class="nav-item"><a class="nav-link" href="@Url.Action("First","Departements", new { area = "Responsable" })">Gestion Des Départements</a></li>
+                                <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Grades", new { area = "Responsable" })">Grades</a></li>
+                                <li class="nav-item"><a class="nav-link" href="@Url.Action("IndexRole", "AppRoles", new { area = "Responsable" })">Rôles</a></li>
+
+                             
+
+                            </ul>
+                        </div>
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="DsExam" asp-controller="Examen" asp-area="coordonnateur">
+                            <span class="bi bi-check-circle"></span>
+                            <span class="menu-title  ml-2">Plan Des Examens</span>
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-action="Profilfirst" asp-controller="Profil" asp-area="coordonnateur">
+
+                            <i class="bi bi-gear"></i>
+                            <span class="menu-title  ml-2">Modifier profil</span>
+
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+
+            <div class="container">
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                    <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">&copy; Copyright <strong><span>2023-2024</span></strong>. All Rights Reserved</span>
+                    <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center text-muted">Developped by Khouy Rajae & Boufardi Ezouhra</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    </div>
+
+    </div>
+
+    </div>
+
+    @RenderSection("scripts", required: false)
+    <script src="~/asset/vendors/js/vendor.bundle.base.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="~/asset/vendors/chart.js/Chart.min.js"></script>
+    <script src="~/asset/vendors/jquery-file-upload/jquery.uploadfile.min.js"></script>
+    <script src="~/asset/vendors/jquery.avgrund/jquery.avgrund.min.js"></script>
+    <script src="~/asset/js/off-canvas.js"></script>
+    <script src="~/asset/js/hoverable-collapse.js"></script>
+    <script src="~/asset/js/template.js"></script>
+    <script src="~/asset/js/settings.js"></script>
+    <script src="~/asset/js/todolist.js"></script>
+    <script src="~/asset/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/asset/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/asset/asset2/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="~/asset/asset2/vendor/aos/aos.js"></script>
+    <script src="~/asset/asset2/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/asset/asset2/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="~/asset/asset2/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/asset/asset2/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="~/asset/asset2/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/asset/asset2/js/main.js"></script>
+
+    @* <script src="~/asset/js/dashboard.js"></script>*@
+
+</body>
+
+</html>
+

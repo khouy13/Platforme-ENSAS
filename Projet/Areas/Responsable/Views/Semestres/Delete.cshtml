@@ -1,0 +1,59 @@
+﻿@model Projet.Areas.Coordonnateur.Models.Semestre
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow p-3 mb-5 bg-white rounded mt-3">
+            <div class="card-body">
+                <h3 class="card-subtitle text-center text-danger">Êtes-vous sûr de vouloir supprimer ceci ?</h3>
+                <div class="card-text">
+                    <hr />
+                    <dl class="row">
+        <dt class = "col-sm-3">
+           Semestre:
+        </dt>
+        <dd class = "col-sm-9">
+            @Html.DisplayFor(model => model.NomSemestre)
+        </dd>
+                        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.SemaineDebut)
+        </dt>
+         <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.SemaineDebut)
+        </dd>
+                        <dt class="col-sm-3">
+                            @Html.DisplayNameFor(model => model.SemaineFin)
+                        </dt>
+                        <dd class="col-sm-9">
+                            @Html.DisplayFor(model => model.SemaineFin)
+                        </dd>
+         <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.DateDebut)
+        </dt>
+       
+         <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.DateDebut)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.DateFin)
+        </dt>
+         <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.DateFin)
+        </dd>
+         
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdSemestre" />
+        <input type="submit" value="Supprimer" class="btn btn-danger" />
+          <a class="btn btn-secondary ml-2" href="@Url.Action("Index", "Semestres", new { area = "Responsable" })">Annuler</a>
+     </form>
+</div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,113 @@
+2023-10-24 10:43:34.3772|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 10:44:38.4723|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-24 10:46:46.3662|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur test  test a effectué une opération d'ajout de l 'Enseignant Elfidki  Soukaina 
+2023-10-24 10:49:31.1033|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur test  test a effectué une opération d'ajout de l 'Enseignant ss  ss 
+2023-10-24 10:51:05.5048|Projet.Areas.Responsable.Controllers.VacatairesController|INFO|L'utilisateur test  test a effectué une opération d'ajout du Vacataire dd  dd 
+2023-10-24 10:51:36.6925|Projet.Areas.Responsable.Controllers.VacatairesController|INFO|L'utilisateur test  test a effectué une opération de Modification du Vacataire dd  dd 
+2023-10-24 10:52:51.0498|Projet.Areas.Responsable.Controllers.VacatairesController|INFO|L'utilisateur test  test a effectué une opération d'ajout du Vacataire nn  nn 
+2023-10-24 10:58:05.8388|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 10:58:25.2526|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-24 11:11:06.9309|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 11:11:45.6919|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-24 11:16:33.6098|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 11:16:47.3023|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-24 11:17:19.7846|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-24 11:17:19.8464|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 11:17:57.1745|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-24 11:22:44.9242|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-24 11:22:44.9424|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 11:22:57.7477|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-24 11:24:41.9319|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur test  test a effectué une opération d'ajout de l 'Enseignant cc  cc 
+2023-10-24 11:27:26.2499|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 11:31:17.6924|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 11:32:13.3306|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 11:33:45.5840|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-24 11:34:45.1031|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur test  test a effectué une opération d'ajout de l 'Enseignant fff  ffff 
+2023-10-24 11:36:51.5787|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 11:38:11.0901|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-24 11:44:48.0512|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur test  test a effectué une opération de Modification de l 'Enseignant EL MESLOUHI  Othmane 
+2023-10-24 11:47:42.1836|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 11:48:05.0218|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-24 11:48:24.3572|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur test  test a effectué une opération de Modification de l 'Enseignant JRAIFI  Abdelilah 
+2023-10-24 11:48:33.8646|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-24 11:48:33.8792|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 11:48:41.5113|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-24 11:52:20.5412|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 11:53:17.4266|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-24 11:58:19.1929|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 11:58:37.0957|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-24 12:00:08.2412|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-24 12:00:08.2694|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 12:00:20.1637|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-24 12:01:01.9469|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur test  test a effectué une opération de Modification de l 'Enseignant JRAIFI  Abdelilah 
+2023-10-24 12:01:19.8361|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur test  test a effectué une opération de Modification de l 'Enseignant fff  ffff 
+2023-10-24 12:02:07.9081|Projet.Areas.Responsable.Controllers.VacatairesController|INFO|L'utilisateur test  test a effectué une opération de Modification du Vacataire CHAMSI   SAFAA 
+2023-10-24 12:03:17.6427|Projet.Areas.Responsable.Controllers.VacatairesController|INFO|L'utilisateur test  test a effectué une opération d'ajout du Vacataire rajae  rajae 
+2023-10-24 12:03:58.5366|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-24 12:03:58.5854|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 12:04:14.0036|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-24 12:07:40.6709|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 12:08:30.9566|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-24 12:09:21.4331|Projet.Areas.Responsable.Controllers.VacatairesController|INFO|L'utilisateur test  test a effectué une opération d'ajout du Vacataire dd  nnnnnn 
+2023-10-24 12:09:55.7381|Projet.Areas.Responsable.Controllers.VacatairesController|INFO|L'utilisateur test  test a effectué une opération de Suppression du Vacataire dd  nnnnnn 
+2023-10-24 12:15:08.0310|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-24 12:15:08.0353|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 12:15:13.3184|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-24 12:18:01.3937|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-24 12:18:01.4084|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 12:18:14.2608|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-10-24 12:19:02.2835|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-24 12:19:02.3176|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 12:19:15.3011|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 12:19:38.2054|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-24 12:31:46.8753|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 12:41:28.2475|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-10-24 12:54:13.7952|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 12:54:21.0333|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-10-24 12:54:26.3847|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-24 12:54:26.3930|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 12:54:36.5076|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-24 12:57:31.0362|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 12:59:32.5803|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-24 13:04:19.6172|Projet.Areas.Coordonnateur.Controllers.EmploiExamsController|INFO|L'utilisateur test  test a effectué une opération d'ajout d un Examen   java Pour GIIA-IDIA-2. 
+2023-10-24 13:06:04.1937|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-24 13:06:04.2045|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 13:06:22.3167|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-24 13:10:03.6684|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur ZYANE   Abdellah a effectué une opération d'ajout de l 'Enseignant zzzzz  zzzzzz 
+2023-10-24 13:11:51.0867|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur ZYANE   Abdellah a effectué une opération de Modification de l 'Enseignant zzzzz  jjjjjjj 
+2023-10-24 13:12:20.1663|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur ZYANE   Abdellah a effectué une opération de Suppression de l 'Enseignant zzzzz  jjjjjjj 
+2023-10-24 13:13:05.7207|Projet.Areas.Responsable.Controllers.VacatairesController|INFO|L'utilisateur ZYANE   Abdellah a effectué une opération de Modification du Vacataire dd  dd 
+2023-10-24 13:13:14.4796|Projet.Areas.Responsable.Controllers.VacatairesController|INFO|L'utilisateur ZYANE   Abdellah a effectué une opération de Suppression du Vacataire nn  nn 
+2023-10-24 13:22:37.5061|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 13:23:12.5516|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-24 13:26:24.6629|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur ZYANE   Abdellah a effectué une opération d'ajout d un examens  
+2023-10-24 13:32:52.1617|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 13:33:13.9401|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-24 13:37:37.7101|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 13:37:44.5918|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-24 13:41:02.8628|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur ZYANE   Abdellah a effectué une opération de modifacation d un examens  
+2023-10-24 13:41:14.7875|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur ZYANE   Abdellah a effectué une opération de suppression d un examens  
+2023-10-24 13:42:00.6901|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur ZYANE   Abdellah a supprimé l 'emploi de temps du Semestre 1de GIIA-INFO-2 
+2023-10-24 13:48:16.8180|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 13:48:27.1745|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-24 13:51:26.3091|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-24 13:51:26.3091|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 13:51:35.6218|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-24 14:01:34.3180|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 14:01:41.9872|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-24 14:07:54.9365|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-24 14:07:55.0211|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 14:08:10.3781|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-24 14:10:32.0832|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 14:10:42.7564|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-24 14:19:19.5298|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 14:19:33.2599|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 
+2023-10-24 14:21:53.7952|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-24 14:21:53.8164|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 14:22:02.3659|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-10-24 14:31:11.6535|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-24 14:31:19.7146|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-10-24 14:33:49.9957|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur admin  admin a effectué une opération de Modification de l 'Enseignant ELAMRANI ABOUELASSAD  Zouhair 
+2023-10-24 14:34:11.6447|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur admin  admin a effectué une opération de Modification de l 'Enseignant EL MESLOUHI  Othmane 
+2023-10-24 14:34:48.4624|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur admin  admin a effectué une opération de Modification de l 'Enseignant cc  cc 
+2023-10-24 14:35:02.3800|Projet.Areas.Admin.Controllers.EnseignantsController|INFO|L'utilisateur admin  admin a effectué une opération de Suppression de l 'Enseignant cc  cc 

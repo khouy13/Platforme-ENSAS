@@ -1,0 +1,109 @@
+﻿@model IEnumerable<Projet.Areas.Coordonnateur.Models.EmploiTemps>
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Projet.Areas.Coordonnateur.Models;
+
+            @if (User.IsInRole("Admin"))
+            {
+                Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+            }
+            else if (User.IsInRole("Directeur"))
+            {
+                Layout = "~/Areas/Directeur/Views/Shared/_Directeur.cshtml";
+            }
+@{
+    ViewData["Title"] = "EmploiLocal";
+    
+}
+<style>
+    .table-bordered th {
+        border: none;
+    }
+
+</style>
+<div class="container">
+    <div class="card bg-white shadow">
+        <div class="card-body border-white">
+            <div class="table-responsive">
+
+                <div>
+                    <h4 class="font-weight-bold text-center" style="color:#0a73f7">
+                        @ViewBag.Matiere.NomMatiere
+
+
+                    </h4>
+                    <hr class="my-4" style="width: 70%; margin: 0 auto; border-top: 2px solid #0a73f7;">
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="text-center "></th>
+                            @foreach (var s in ViewBag.Seances)
+                            {
+                                <th class="text-center" style="background-color:#00BFFF; height:30px; white-space: pre-wrap;">@s.dateDebut.ToString(@"hh\:mm")-@s.dateFin.ToString(@"hh\:mm")</th>
+
+                            }
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var j in ViewBag.Jours)
+                        {
+                            <tr>
+                                <td style=" vertical-align: middle;background-color:#00BFFF ;width:40px;" class="table-cell">@j.NomJour</td>
+                                @foreach (var s in ViewBag.Seances)
+                                {
+                                    var matchingTempsList = Model.Where(temps => temps.IdSeance == s.IdSeance && temps.IdJour == j.IdJour).ToList();
+                                    <td class="border border-3 text-center" style="position: relative;">
+                                        <div style="position: absolute; top: 0; right: 0;" class="mt-1">
+                                        </div>
+
+                                        @foreach (var matchingTemp in matchingTempsList)
+                                        {
+
+
+                                            <div class="text-center">
+                                                @if (matchingTemp.Enseignant != null)
+                                                {
+                                                    <span class=" ">  @matchingTemp.Enseignant.NomComplet </span>
+
+                                                    <br />
+                                                }
+
+                                                @if (matchingTemp.TypeEnseignement != null)
+                                                {
+                                                    <span class=" ">  @matchingTemp.TypeEnseignement.NomEn </span>
+
+                                                    <br />
+                                                }
+                                               
+                                                @if (matchingTemp.Niveau != null)
+                                                {
+                                                    <span class="">  @matchingTemp.Niveau.NomNiveau </span><br />
+                                                }
+
+                                                @if (matchingTemp.Groupe != null)
+                                                {
+                                                    <span class=" "> : @matchingTemp.Groupe.NomGroup </span><br/>
+                                                }
+                                                @if (matchingTemp.Local != null)
+                                                {
+                                                     <span  class=" ">  @matchingTemp.Local.NomLocal </span><br/>
+                                                }
+                                                <p class="font-weight-bold " style="color:#0a73f7">  s-@matchingTemp.SemaineDebut s-@matchingTemp.SemaineFin </p>
+                                            </div>
+
+
+                                        }
+                                    </td>
+                                }
+                            </tr>
+                        }
+
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,124 @@
+﻿@model EmploiExamViewModel
+@using Projet.Areas.Coordonnateur.Models;
+@{
+    Layout = null;
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/asset/css/rotativa.css" asp-append-version="true" />
+    <title>@ViewData["Title"] - Projet</title>
+</head>
+<body>
+    <div class="container">
+        <table class="table-title-report">
+            <tr>
+
+                <td class="td-iconReport">
+                    <img src="~/asset/images/ensa.png" class="center-block img-iconReport" />
+                </td>
+                <td style=" text-align: center;">
+                    <h2>EMPLOI DU TEMPS :@Model.NomLocal</h2>
+
+
+                    <h2> (@Model.Semestre.NomSemestre) @Model.nomAnneeScolaire</h2>
+                  
+                    <h2> @Model.Examen.NumeroExamen Session @Model.Type</h2>
+                   
+                    <h3>A Partir de @Model.Examen.DateExamen.ToString("dd/MM/yyyy")</h3>
+
+      
+                </td>
+                <td class="td-iconReport">
+                    <img src="~/asset/images/uca.png" class="center-block" width="170px;" height="" />
+                </td>
+            </tr>
+
+        </table>
+
+        <br />
+
+        <table class="custom-bordered-table">
+            <thead>
+                <tr>
+                    <th class="table-header no-border-top-left" style=" vertical-align: middle ;width:40px;border: 2px solid #FFF;"></th>
+
+
+                    @foreach (var s in Model.Seances)
+                    {
+                        <th style="background-color:#00BFFF; height:30px; white-space: nowrap;" class="table-header">
+                            <span style="display: inline-block;">@s.dateDebut.ToString(@"hh\:mm")</span> - <span style="display: inline-block;">@s.dateFin.ToString(@"hh\:mm")</span>
+                        </th>
+
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var j in Model.Jours)
+                {
+                    <tr>
+                        <td style=" vertical-align: middle;background-color:#00BFFF ;width:40px;border: 0.5px solid #000000;" class="table-cell">@j.NomJour</td>
+                        @foreach (var s in Model.Seances)
+                        {
+                            var matchingTempsList = Model.Emplois.Where(temps => temps.IdSeance == s.IdSeance && temps.IdJour == j.IdJour).ToList();
+                            <td style="border: 0.5px solid #000000;">
+
+                                @foreach (var matchingTemp in matchingTempsList)
+                                {
+
+
+                                    <div class="text-center">
+                                        @if (matchingTemp.matiere != null)
+                                        {
+                                            <span class="">  @matchingTemp.matiere.NomMatiere </span>
+                                        } <br />
+                                        @if (matchingTemp.niveau != null)
+                                        {
+                                            <span class="">  @matchingTemp.niveau.NomNiveau </span>
+                                        }
+                                        <br />
+                                        @if (matchingTemp.EmploiExamEnseignants != null)
+                                        {
+
+                                            @foreach (var en in matchingTemp.EmploiExamEnseignants)
+                                            {
+                                                <span style="font-size: 12px;">
+                                                    @en.Enseignant.NomComplet
+                                                </span>
+                                                <br />
+
+                                            }
+
+                                        }
+                                        @if (matchingTemp.EmploiExamVacataires != null)
+                                        {
+
+                                            @foreach (var en in matchingTemp.EmploiExamVacataires)
+                                            {
+
+
+                                                <span style="font-size: 12px;">
+                                                    @en.Vacataire.NomComplet
+                                                </span> <br />
+
+
+                                            }
+
+                                        }
+                                    </div>
+                                   
+                                }
+
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

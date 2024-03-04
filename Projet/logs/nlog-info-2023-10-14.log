@@ -1,0 +1,19 @@
+2023-10-14 00:20:14.1772|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-14 00:29:11.6622|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-14 00:29:22.0522|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-14 00:32:34.8606|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-14 00:32:47.7676|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-14 00:49:09.5282|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-14 00:49:09.5465|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-14 00:49:15.4038|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-10-14 00:49:26.7612|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-14 00:49:26.7612|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-14 00:49:37.8053|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-10-14 01:03:02.2259|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-14 01:03:18.0211|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-10-14 01:08:03.6148|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-14 01:08:16.5654|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-10-14 01:14:47.6110|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-14 01:14:56.6636|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-10-14 01:19:36.6574|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-14 01:19:45.3600|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 

@@ -1,0 +1,62 @@
+﻿@model Projet.Areas.Coordonnateur.Models.Examen
+
+@if (User.IsInRole("Admin"))
+{
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+else if (User.IsInRole("Directeur"))
+{
+    Layout = "~/Areas/Directeur/Views/Shared/_Directeur.cshtml";
+}
+else if (User.IsInRole("Coordonnateur"))
+{
+    Layout = "~/Areas/Coordonnateur/Views/Shared/_CordDashbord.cshtml";
+}
+else if (User.IsInRole("Chef"))
+{
+
+    Layout = "~/Areas/Chef/Views/Shared/_Chef.cshtml";
+
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow p-3 mb-5 bg-white rounded mt-3">
+            <div class="card-body">
+                <h3 class="card-subtitle text-center text-danger">Êtes-vous sûr de vouloir supprimer ceci ?</h3>
+                <div class="card-text">
+                    <hr />
+   
+    
+    <dl class="row">
+        <dt class = "col-sm-3">
+            Date d 'Examen
+        </dt>
+        <dd class = "col-sm-9">
+                            @Html.DisplayFor(model => model.DateExamen)
+        </dd>
+        <dt class="col-sm-3">
+          Examen
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.NumeroExamen)
+        </dd>
+        <dt class="col-sm-3">
+            @Html.DisplayNameFor(model => model.semestre)
+        </dt>
+        <dd class="col-sm-9">
+            @Html.DisplayFor(model => model.semestre.NomSemestre)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdExamen" />
+        <input type="submit" value="Supprimer" class="btn btn-danger" />
+                        <a class="btn btn-secondary ml-2" href="@Url.Action("DsExam", "Examen", new { area = "Coordonnateur" })">Annuler</a>
+
+    </form>
+</div>
+            </div>
+        </div>
+    </div>
+</div>

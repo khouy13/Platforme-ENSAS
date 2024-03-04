@@ -1,0 +1,93 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container {
+    margin-top: -5%;
+}
+
+.table-title-report {
+    width: 100%;
+    /*background-color: #A3CFEC;*/
+}
+
+.td-iconReport {
+    width: 20%;
+    padding: 1%;
+}
+
+.img-iconReport {
+    width:100px;
+    height:100px;
+}
+
+/*body {
+    font-family: 'Segoe UI', Arial;
+}*/
+
+
+
+
+.header-title {
+    text-align: center;
+}
+
+
+
+.no-border-top-left {
+    border-top: none;
+    border-left: none;
+}
+
+
+
+
+.custom-bordered-table {
+    border-collapse: separate; /* Gérer les bordures séparément pour chaque cellule */
+    width: 100%;
+    border: 0.5px solid #000000;
+}
+
+    .custom-bordered-table th,
+    .custom-bordered-table td {
+        text-align: center; /* Centrer le contenu */
+    }
+
+/* Styles pour le contenu de la table */
+.table-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.custom-bordered-table {
+    border-collapse: collapse;
+}
+
+    .custom-bordered-table th {
+        border: none;
+    }
+
+
+.table-cell {
+    border: 1px solid #ddd;
+    border-width: 1px; /* Épaisseur de la bordure */
+    padding: 8px;
+    text-align: center; /* Centrer le contenu */
+}
+
+/* Styles pour les en-têtes de tableau */
+.table-header {
+    border: 1px solid #ddd;
+    border-width: 1px; /* Épaisseur de la bordure */
+    padding: 8px;
+    text-align: center;
+   
+}

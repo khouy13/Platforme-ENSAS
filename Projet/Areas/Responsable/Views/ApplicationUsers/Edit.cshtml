@@ -1,0 +1,143 @@
+﻿
+@using Projet.Areas.Responsable.Models
+@model ApplicationUserViewModel
+
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+     // Assurez-vous que ViewBag.AllRoles est bien une liste de rôles
+}
+
+<style>
+    .circle-upload {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px dashed #ccc;
+        cursor: pointer;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+        .circle-upload input[type="file"] {
+            display: none;
+        }
+
+        .circle-upload img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+    .form-control-sm {
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+
+</style>
+
+<div class="card shadow p-3 mb-5 bg-white rounded mt-3" style="max-width: 500px; margin: 0 auto;">
+    <form asp-action="Edit" method="post" asp-controller="ApplicationUsers" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Id" />
+
+        <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+
+        <div class="mb-3 text-center">
+            <label class="circle-upload" style="position: relative;">
+                <input type="file" asp-for="UserFile" aria-required="true" style="opacity: 0; position: absolute; top: 0; left: 0; width: 100%; height: 100%; cursor: pointer;" />
+                <img id="previewImg" src="/@Model.ImagePath" alt="Preview" style="max-width: 100%; max-height: 100%; border-radius: 50%;" />
+                <i class="bi bi-camera" style="font-size: 24px; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);"></i>
+            </label>
+            <span asp-validation-for="ImagePath" class="text-danger"></span>
+        </div>
+
+
+        <div class="row mt-2 mb-2">
+         
+            <div class="col">
+                <select asp-for="IdEnseignant"  class="form-select form-select-sm" aria-required="true">
+                    <option disabled selected>Enseignant</option>
+                    @if (ViewBag.utilisateur.Enseignant!=null)
+                    {
+                        <option value="@Model.IdEnseignant">@ViewBag.utilisateur.Enseignant.</option>
+                    }
+                    @foreach (var e in ViewBag.EnseignatList)
+                    {
+                        <option value="@e.IdEnseignant">@e.NomComplet</option>
+                    }
+                </select>
+                <span asp-validation-for="IdEnseignant" class="text-danger"></span>
+            </div>
+            <div class="col-auto d-flex align-items-center">
+                <span class="mx-1">ou</span>
+            </div>
+            <div class="col">
+                <select asp-for="IdVacataire"  class="form-select form-select-sm" aria-required="true">
+                    <option disabled selected>Vacataire</option>
+                    @if (ViewBag.utilisateur.Vacataire != null)
+                    {
+                        <option value="@Model.IdVacataire">@ViewBag.utilisateur.Vacataire.NomComplet</option>
+                    }
+                    @foreach (var v in ViewBag.vacataire)
+                    {
+                        <option value="@v.IdVacataire">@v.NomComplet</option>
+                    }
+                </select>
+                <span asp-validation-for="IdVacataire" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="form-floating mb-1">
+           
+            <input asp-for="UserName" class="form-control form-control-sm"  />
+            <label asp-for="UserName">Email</label>
+            <span asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+        <div class="form-floating mb-1">
+            <input asp-for="Password" type="password" class="form-control form-control-sm" autocomplete="new-password"  />
+            <label asp-for="Password">New Password</label>
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div class="form-floating mb-1">
+           
+            <select asp-for="Roles" class="form-select form-select-sm" aria-required="true" asp-items="ViewBag.AllRoles">
+               
+            </select>
+            <span asp-validation-for="Roles" class="text-danger"></span>
+        </div>
+
+        <div class="d-flex">
+            <div>
+                <button type="submit" class="btn btn-primary mr-2">Enregistrer</button>
+            </div>
+            <div>
+                <a class="btn btn-secondary ml-2" href="@Url.Action("Index", "ApplicationUsers", new { area = "Responsable" })">Annuler</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script>
+        document.querySelector('.circle-upload').addEventListener('click', function () {
+            document.querySelector('input[type="file"]').click();
+        });
+
+        document.querySelector('input[type="file"]').addEventListener('change', function (e) {
+            var reader = new FileReader();
+            reader.onload = function () {
+                document.getElementById('previewImg').src = reader.result;
+            };
+            reader.readAsDataURL(e.target.files[0]);
+        });
+    </script>
+}

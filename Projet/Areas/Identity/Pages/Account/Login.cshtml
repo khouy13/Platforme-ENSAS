@@ -1,0 +1,62 @@
+﻿@page
+@model LoginModel
+
+@{
+    ViewData["Title"] = "Connexion";
+}
+
+<style>
+    .login-card {
+        margin-top: 50px;
+    }
+</style>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-4 align-items-center">
+            <div class="card shadow p-3 mb-5 bg-white rounded login-card">
+                <div class="card-body">
+                    <h2 class="title text-center mb-4">Connexion</h2>
+                    <hr />
+                    <form id="account" method="post">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="name@example.com" />
+                            <label asp-for="Input.Email">Email</label>
+                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="password" />
+                            <label asp-for="Input.Password">Password</label>
+                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" asp-for="Input.RememberMe" />
+                            <label class="form-check-label" asp-for="Input.RememberMe">Remember Me</label>
+                        </div>
+                       
+                        <div class="d-flex ">
+                            <div class="mr-2">
+                                <button id="registerSubmit" type="submit" class="btn btn-primary">Se Connecter</button>
+                            </div>
+                            <div>
+                                <a class="btn btn-secondary " asp-area="" asp-action="Index" asp-controller="Home" style="margin-left:10px">Annuler</a>
+
+                            </div>
+                        </div>
+                    </form>
+                    <hr />
+                    <div class="text-center">
+                        <p class="mb-0">
+                            <a asp-page="./ForgotPassword" style="text-decoration: none;">Mot de passe oublié?</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

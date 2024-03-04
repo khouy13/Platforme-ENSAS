@@ -1,0 +1,78 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Areas\Responsable\Views\TypeLocals\Create.cshtml~RF29f5410c.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\asset\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\css\bootstrap-grid.rtl.css.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\css\bootstrap-grid.rtl.min.css.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\css\bootstrap-reboot.rtl.css.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\css\bootstrap-reboot.rtl.min.css.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\css\bootstrap-utilities.css.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\css\bootstrap-utilities.min.css.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\css\bootstrap-utilities.rtl.css.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\css\bootstrap.rtl.css.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\css\bootstrap.rtl.min.css.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\js\bootstrap.esm.js" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\js\bootstrap.esm.js.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\js\bootstrap.esm.min.js" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\js\bootstrap.esm.min.js.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\asset\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="bootstrap" Version="5.3.1" />
+    <PackageReference Include="EPPlus" Version="6.2.7" />
+    <PackageReference Include="ExcelDataReader" Version="3.6.0" />
+    <PackageReference Include="ExcelDataReader.DataSet" Version="3.6.0" />
+    <PackageReference Include="Fingers10.ExcelExport" Version="3.0.1" />
+    <PackageReference Include="MailKit" Version="4.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.20" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.20" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.TagHelpers" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.16" />
+    <PackageReference Include="NLog" Version="5.2.3" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="5.3.3" />
+    <PackageReference Include="Rotativa.AspNetCore" Version="1.2.0" />
+  </ItemGroup>
+	<ItemGroup>
+		<Content Update="nlog.config" CopyToOutputDirectory="PreserveNewest" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Areas\Secritaire\Models\" />
+	</ItemGroup>
+
+</Project>

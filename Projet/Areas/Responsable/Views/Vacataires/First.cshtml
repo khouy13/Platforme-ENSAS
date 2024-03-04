@@ -1,0 +1,208 @@
+﻿@model IEnumerable<Projet.Areas.Responsable.Models.Vacataire>
+
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Projet.Areas.Responsable.Models;
+@if (User.IsInRole("Admin"))
+{
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+else if (User.IsInRole("Directeur"))
+{
+    Layout = "~/Areas/Directeur/Views/Shared/_Directeur.cshtml";
+}
+else if (User.IsInRole("Coordonnateur"))
+{
+    Layout = "~/Areas/Coordonnateur/Views/Shared/_CordDashbord.cshtml";
+}
+else if (User.IsInRole("Chef"))
+{
+
+    Layout = "~/Areas/Chef/Views/Shared/_Chef.cshtml";
+
+}
+
+@{
+    
+    Pager pager = new Pager();
+    int pageNo = 0;
+    if (ViewBag.Pager != null)
+    {
+        pager = ViewBag.Pager;
+        pageNo = pager.CurrentPage;
+    }
+}
+
+<style>
+    .clear-search {
+        cursor: pointer;
+        display: none;
+        padding: 6px 10px;
+        border-radius: 0 4px 4px 0;
+        background-color: #ccc;
+        border: 1px solid #ccc;
+        border-left: none;
+    }
+</style>
+
+<div class="container">
+    <div class="row mb-2">
+      
+        <div class="col-md-4">
+            @if (User.IsInRole("Admin") || User.IsInRole("Directeur"))
+            {
+                <form method="get" asp-controller="Vacataires" asp-action="First" asp-area="Responsable" class="form-inline w-100">
+                    <div class="input-group w-100">
+                    <select name="DId" class="form-control" asp-items="ViewBag.Departements">
+                        <option value="">Departement</option>
+                    </select>
+
+
+                    <span id="clearSearch" class="input-group-addon clear-search">&times;</span>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit">filter</button>
+                    </div>
+                </div>
+            </form>
+            }
+        </div>
+        <div class="col-md-4">
+
+            <form method="get" asp-controller="Vacataires" asp-action="First" asp-area="Responsable" class="form-inline w-100">
+                <div class="input-group w-100">
+                    <select name="GId" class="form-control" asp-items="ViewBag.Grades ">
+                        <option value="">Grade</option>
+                    </select>
+
+                    @if (User.IsInRole("Coordonnateur") || User.IsInRole("Chef"))
+                    {
+                        <input name="DId" type="hidden" value="@ViewBag.Dept" />
+                    }
+                    <span id="clearSearch" class="input-group-addon clear-search">&times;</span>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit">filter</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+        <div class="col-md-4">
+            <form method="get" asp-controller="Vacataires" asp-action="First" asp-area="Responsable" class="form-inline">
+                    <div class="input-group w-100">
+                    <select name="VId" class="form-control" asp-items="ViewBag.vacataires2">
+                            <option value="">Vacataire</option>
+                        </select>
+                    @if (User.IsInRole("Coordonnateur") || User.IsInRole("Chef"))
+                    {
+                        <input name="DId" type="hidden" value="@ViewBag.Dept" />
+                    }
+                        <span id="clearSearch" class="input-group-addon clear-search">&times;</span>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
+
+                        <a asp-action="Create" asp-controller="Vacataires" asp-area="Responsable" class="btn btn-primary ml-1" asp-route-DId="@ViewBag.Dept"><i class="bi bi-plus"></i></a>
+
+                    </div>
+                    </div>
+                </form>
+            </div>
+       
+      
+      
+    </div>
+    <div class="table-responsive card shadow bg-white rounded">
+        <table class="table col-10 mx-auto">
+    <thead>
+        <tr>
+            <th>Nom Complet</th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.specialité)
+            </th>
+            <th>Département</th>
+            <th>Grade</th>
+            <th>Emploi</th>
+                   
+                        <th>Action</th>
+                    
+                </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+               @item.NomComplet
+            </td>
+            
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.specialité)
+            </td>
+                        <td>
+                            @if (item.departement != null)
+                        {
+                                @item.departement.NomDepartementt
+                            }
+                           
+                        </td>
+                        <td>
+                            @if (item.gradeEnseigant != null)
+                            {
+                                @item.gradeEnseigant.GradeName
+                            }
+                           
+                            </td>
+                        <td>
+                            <a asp-controller="Vacataires" asp-area="Responsable" asp-action="EmploiVacataire" asp-route-IdVac="@item.IdVacataire" class="btn  btn-light btn-sm" asp-route-DId="@ViewBag.Dept"> <i class="bi bi-calendar" style="font-size: 15px;color:cornflowerblue"></i></a>
+                        </td>
+                          <td>
+                            <a asp-action="Edit" asp-controller="Vacataires" asp-area="Responsable" asp-route-id="@item.IdVacataire" class="btn btn-success btn-sm" asp-route-DId="@ViewBag.Dept">
+                                <i class="bi bi-pencil" style="font-size: 15px;"></i>
+                            </a>
+                            <a asp-action="Delete" asp-controller="Vacataires" asp-area="Responsable" class="btn btn-danger btn-sm " asp-route-id="@item.IdVacataire">
+                                <i class="bi bi-trash-fill" style="font-size: 15px;"></i>
+                            </a>
+                        </td>
+                       
+        </tr>
+}
+    </tbody>
+    </table>
+    </div>
+
+    <div class=" d-flex justify-content-end mt-1">
+        @if (pager.TotalPages > 0)
+        {
+            <ul class="pagination justify-content-end">
+                @if (pager.CurrentPage > 1)
+                {
+                    <li class="page-item">
+                        <a class="page-link text-primary" asp-controller="Vacataires" asp-action="First" asp-area="Responsable" asp-route-pg="1" asp-route-DId="@ViewBag.Dept" asp-route-GId="@ViewBag.GId">First</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link text-primary" asp-controller="Vacataires" asp-action="First" asp-area="Responsable" asp-route-pg="@(pager.CurrentPage - 1)" asp-route-DId="@ViewBag.Dept" asp-route-GId="@ViewBag.GId">Previous</a>
+                    </li>
+                }
+                @for (var pge = pager.StartPage; pge <= pager.EndPage; pge++)
+                {
+                    <li class="page-item @(pge == pager.CurrentPage ? "active text-white" : "text-primary")">
+                        <a class="page-link" asp-controller="Vacataires" asp-action="First" asp-area="Responsable" asp-route-pg="@pge" asp-route-DId="@ViewBag.Dept" asp-route-GId="@ViewBag.GId">@pge</a>
+                    </li>
+                }
+                @if (pager.CurrentPage < pager.TotalPages)
+                {
+                    <li class="page-item">
+                        <a class="page-link text-primary" asp-controller="Vacataires" asp-action="First" asp-area="Responsable" asp-route-pg="@(pager.CurrentPage + 1)" asp-route-DId="@ViewBag.Dept" asp-route-GId="@ViewBag.GId">Next</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link text-primary" asp-controller="Vacataires" asp-action="First" asp-area="Responsable" asp-route-pg="@(pager.TotalPages)" asp-route-DId="@ViewBag.Dept" asp-route-GId="@ViewBag.GId">Last</a>
+                    </li>
+                }
+            </ul>
+        }
+    </div>
+</div>

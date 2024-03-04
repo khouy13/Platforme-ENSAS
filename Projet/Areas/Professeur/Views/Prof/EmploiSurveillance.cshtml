@@ -1,0 +1,157 @@
+﻿@model IEnumerable<Projet.Areas.Coordonnateur.Models.EmploiExam>
+
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Projet.Areas.Coordonnateur.Models;
+@if (User.IsInRole("Coordonnateur"))
+{
+    Layout = "~/Areas/Coordonnateur/Views/Shared/_CordDashbord.cshtml";
+}
+else if (User.IsInRole("Directeur"))
+{
+    Layout = "~/Areas/Directeur/Views/Shared/_Directeur.cshtml";
+}
+else if (User.IsInRole("Enseignant"))
+{
+    Layout = "~/Areas/Professeur/Views/Shared/_Prof.cshtml";
+}
+else if (User.IsInRole("Chef"))
+{
+
+    Layout = "~/Areas/Chef/Views/Shared/_Chef.cshtml";
+
+}
+<style>
+    .table-bordered th {
+        border: none;
+    }
+</style>
+
+<div class="card bg-white shadow">
+    <div class="card-body border-white">
+        <div class="table-responsive">
+            <div class="row align-items-center">
+                <div class="col-12 d-flex ">
+                    <form method="get" asp-action="EmploiSurveillance" asp-controller="Prof" class="d-flex align-items-center">
+                        <div class="form-group">
+                            <select name="IdS" class="form-control" asp-items="ViewBag.Semestres"></select>
+                        </div>
+                        @if (ViewBag.Enseignant != null)
+                        {
+                            <input type="hidden" name="IdEns" value="@ViewBag.Enseignant.IdEnseignant" />
+                        }
+                        else if (ViewBag.Vacataire != null)
+                        {
+                            <input type="hidden" name="IdVac" value="@ViewBag.Vacataire.IdVacataire" />
+                        }
+                        <div class="form-group">
+                            <select name="IdEx" class="form-control" asp-items="@ViewBag.Examens"></select>
+                        </div>
+                        <div class="form-group ml-4">
+                            <button type="submit" class="btn btn-primary"><i class="bi bi-search"></i></button>
+                        </div>
+                    </form>
+
+                    @if (ViewBag.remplie)
+                    {
+                        <form method="get" asp-action="GeneratePdfByIds" asp-controller="Prof" class="d-flex align-items-center ml-2 mb-4">
+                            <input type="hidden" name="IdS" value="@ViewBag.selectedSemester" />
+                            <input type="hidden" name="IdEx" value="@ViewBag.idExam" />
+
+                            @if (ViewBag.IdEns != null)
+                            {
+                                <input type="hidden" name="IdEns" value="@ViewBag.IdEns" />
+                            }
+                            @if (ViewBag.IdVac != null)
+                            {
+                                <input type="hidden" name="IdVac" value="@ViewBag.IdVac" />
+                            }
+                            <button type="submit" class="btn btn-primary ">
+                                <i class="typcn typcn-download mx-0"></i>
+                            </button>
+                        </form>
+                    }
+                </div>
+
+
+               
+
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th></th>
+                        @foreach (var s in ViewBag.Seances)
+                        {
+                            <th style="background-color:#00BFFF; height:15px; white-space: nowrap;" class="table-header text-center">
+                                <span style="display: inline-block;">@s.dateDebut.ToString(@"hh\:mm")</span> - <span style="display: inline-block;">@s.dateFin.ToString(@"hh\:mm")</span>
+                            </th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var j in ViewBag.Jours)
+                    {
+                        <tr>
+                            <td class="border border-3 text-center font-weight-bold" style=" vertical-align: middle;background-color:#00BFFF ;width:40px;">@j.NomJour</td>
+                            @foreach (var s in ViewBag.Seances)
+                            {
+                                var matchingTempsList = Model.Where(temps => temps.IdSeance == s.IdSeance && temps.IdJour == j.IdJour && temps.IdExamen==@ViewBag.exammm).ToList();
+                                <td class="border border-3 text-center" style="position: relative;">
+                                    @foreach (var matchingTemp in matchingTempsList)
+                                    {
+                                        <div class="d-flex flex-column align-items-center">
+                                            <div class="text-center">
+                                                @if (matchingTemp.matiere != null)
+                                                {
+                                                    <span style="font-size: 12px;"> @matchingTemp.matiere.NomMatiere</span>
+                                                    <br />
+                                                }
+                                               
+
+                                                @if (matchingTemp.EmploiExamEnseignants != null)
+                                                {
+                                                    @foreach (var en in matchingTemp.EmploiExamEnseignants)
+                                                    {
+                                                        <span style="font-size: 12px;">
+                                                            @en.Enseignant.NomComplet
+                                                        </span>
+                                                        <br />
+                                                    }
+                                                }
+                                                
+                                                @if (matchingTemp.EmploiExamVacataires != null)
+                                                {
+                                                    @foreach (var en in matchingTemp.EmploiExamVacataires)
+                                                    {
+                                                        <span style="font-size: 12px;">
+                                                            @en.Vacataire.NomComplet
+                                                        </span> <br />
+                                                    }
+                                                }
+                                                
+                                                @if (matchingTemp.EmploiExamLocals != null)
+                                                {
+                                                    @foreach (var en in matchingTemp.EmploiExamLocals)
+                                                    {
+                                                        <span style="font-size: 12px;" class="text-primary">
+                                                            @en.Local.NomLocal
+                                                        </span> <br />
+                                                    }
+                                                }
+                                                @if (matchingTemp.niveau != null)
+                                                {
+                                                    <span style="font-size: 12px;"> @matchingTemp.niveau.NomNiveau</span>
+                                                    <br />
+                                                }
+                                            </div>
+                                        </div>
+                                    }
+                                </td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

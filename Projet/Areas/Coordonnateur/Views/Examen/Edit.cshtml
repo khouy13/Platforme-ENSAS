@@ -1,0 +1,54 @@
+﻿@model Projet.Areas.Coordonnateur.Models.Examen
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@if (User.IsInRole("Admin"))
+{
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+else if (User.IsInRole("Directeur"))
+{
+    Layout = "~/Areas/Directeur/Views/Shared/_Directeur.cshtml";
+}
+else if (User.IsInRole("Coordonnateur"))
+{
+    Layout = "~/Areas/Coordonnateur/Views/Shared/_CordDashbord.cshtml";
+}
+else if (User.IsInRole("Chef"))
+{
+
+    Layout = "~/Areas/Chef/Views/Shared/_Chef.cshtml";
+
+}
+
+<div class="row mb-5">
+    <!-- Utilisation de la classe "mx-auto" pour centrer la colonne horizontalement -->
+    <div class="card shadow p-3 mb-5 bg-white rounded mt-3 custom-card mx-auto" style="max-width: 600px; overflow-y: auto;">
+        <div class="card-body">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="IdExamen" />
+            <div class="form-group">
+                    <label asp-for="IdSemestre" class="control-label"> Date D'Examen</label>
+                <input asp-for="DateExamen" class="form-control" />
+                <span asp-validation-for="DateExamen" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                    <label asp-for="NumeroExamen" class="control-label"> Numéro D'Examen</label>
+                <input asp-for="NumeroExamen" class="form-control"  />
+                <span asp-validation-for="NumeroExamen" class="text-danger" ></span>
+            </div>
+            <div class="form-group">
+                    <label asp-for="IdSemestre" class="control-label"> Semestre</label>
+                <select asp-for="IdSemestre" class="form-control" asp-items="ViewBag.IdSemestre"></select>
+                <span asp-validation-for="IdSemestre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Enregistrer" class="btn btn-primary" />
+                    <a class="btn btn-secondary ml-2" href="@Url.Action("DsExam", "Examen", new { area = "Coordonnateur" })">Annuler</a>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+</div>

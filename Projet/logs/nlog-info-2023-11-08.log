@@ -1,0 +1,16 @@
+2023-11-08 10:43:37.7278|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-11-08 10:44:07.4242|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-11-08 10:44:11.6899|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-11-08 10:44:11.7062|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-11-08 10:56:01.0369|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-11-08 10:59:21.5650|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-11-08 10:59:29.1152|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-11-08 10:59:33.8325|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-11-08 10:59:33.8470|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-11-08 10:59:44.9275|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-11-08 11:01:25.0202|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-11-08 11:01:25.0649|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-11-08 11:01:48.0182|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:ZYANE   Abdellah Adresse e-mail : 0, Rôles : 1 
+2023-11-08 11:01:53.1430|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-11-08 11:01:53.1610|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-11-08 11:03:35.1040|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 

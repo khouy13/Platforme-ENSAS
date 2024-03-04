@@ -1,0 +1,52 @@
+﻿                        @model Projet.Areas.Responsable.Models.Filiere
+                        @addTagHelper *, AuthoringTagHelpers
+                        @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+                        @{
+                            ViewData["Title"] = "Delete";
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+                        }
+
+                        <div class="row justify-content-center">
+                            <div class="col-md-8">
+                                <div class="card shadow p-3 mb-5 bg-white rounded mt-3">
+                                    <div class="card-body">
+                                        <h3 class="card-subtitle text-center text-danger">Êtes-vous sûr de vouloir supprimer ceci ?</h3>
+                                        <div class="card-text">
+                            <hr />
+                            <dl class="row">
+                                <dt class = "col-sm-3">
+                            Filiere:
+                                </dt>
+                                <dd class = "col-sm-9">
+                                    @Html.DisplayFor(model => model.NomFiliere)
+                                </dd>
+                                <dt class = "col-sm-3">
+                                   Departement:
+                                </dt>
+                                <dd class = "col-sm-9">
+                                    @Html.DisplayFor(model => model.Departement.NomDepartementt)
+                                </dd>
+                                <dt class = "col-sm-3">
+                                Coordonnateur:
+                                </dt>
+                                <dd class = "col-sm-9">
+                                    @Html.DisplayFor(model => model.ApplicationUser.FirstName)
+                                    @Html.DisplayFor(model => model.ApplicationUser.LastName)
+                                </dd>
+                            </dl>
+    
+    
+                        </div>
+                        <form asp-action="Delete">
+                            <input type="hidden" asp-for="IdFiliere" />
+                            <input type="submit" value="Supprimer" class="btn btn-danger" /> 
+                            <a class="btn btn-secondary ml-2" href="@Url.Action("Index", "Filieres", new { area = "Responsable" })">Annuler</a>
+                        </form>
+   
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>

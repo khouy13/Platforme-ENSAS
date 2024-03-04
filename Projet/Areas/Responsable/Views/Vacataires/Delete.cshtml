@@ -1,0 +1,69 @@
+﻿@model Projet.Areas.Responsable.Models.Vacataire
+
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@if (User.IsInRole("Admin"))
+{
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+else if (User.IsInRole("Directeur"))
+{
+    Layout = "~/Areas/Directeur/Views/Shared/_Directeur.cshtml";
+}
+else if (User.IsInRole("Coordonnateur"))
+{
+    Layout = "~/Areas/Coordonnateur/Views/Shared/_CordDashbord.cshtml";
+}
+else if (User.IsInRole("Chef"))
+{
+
+    Layout = "~/Areas/Chef/Views/Shared/_Chef.cshtml";
+
+}
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card shadow p-3 mb-5 bg-white rounded mt-3">
+            <div class="card-body">
+                <h3 class="card-subtitle text-center text-danger">Êtes-vous sûr de vouloir supprimer ceci ?</h3>
+                <div class="card-text">
+                    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nom)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nom)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Prenom)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Prenom)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.specialité)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.specialité)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="IdVacataire" />
+        <input type="submit" value="Supprimer" class="btn btn-danger" />
+                        <a class="btn btn-secondary ml-2" href="@Url.Action("First", "Vacataires", new { area = "Responsable" ,DId = ViewBag.Dept})">Annuler</a>
+
+    </form>
+</div>
+            </div>
+        </div>
+    </div>
+</div>

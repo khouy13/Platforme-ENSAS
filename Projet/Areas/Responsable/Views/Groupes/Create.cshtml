@@ -1,0 +1,34 @@
+﻿@model Projet.Areas.Responsable.Models.Groupe
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+
+
+<div class="row">
+    <!-- Utilisation de la classe "mx-auto" pour centrer la colonne horizontalement -->
+    <div class="card shadow p-3 mb-5 bg-white rounded mt-3 custom-card mx-auto" style="max-width: 600px; overflow-y: auto;">
+        <div class="card-body">
+            <form method="post" asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NomGroup" class="control-label">Groupe</label>
+                <input asp-for="NomGroup" class="form-control" />
+                <span asp-validation-for="NomGroup" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="IdNiveau" class="control-label">Niveau</label>
+                <select asp-for="IdNiveau" class ="form-control" asp-items="ViewBag.IdNiveau"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Ajouter" class="btn btn-primary" />
+                    <a class="btn btn-secondary ml-2" href="@Url.Action("Index", "Groupes", new { area = "Responsable" })">Annuler</a>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+

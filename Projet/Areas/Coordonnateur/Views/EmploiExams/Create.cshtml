@@ -1,0 +1,97 @@
+﻿@model Projet.Areas.Coordonnateur.Models.EmploiExam
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@if (User.IsInRole("Coordonnateur"))
+{
+    Layout = "_CordDashbord";
+}
+else if (User.IsInRole("Directeur"))
+{
+    Layout = "~/Areas/Directeur/Views/Shared/_Directeur.cshtml";
+}
+else if (User.IsInRole("Chef"))
+{
+
+    Layout = "~/Areas/Chef/Views/Shared/_Chef.cshtml";
+
+}
+<div class="container">
+    @if (!string.IsNullOrEmpty(TempData["ExamMessage"] as string))
+    {
+        <div class="container mx-auto d-flex justify-content-center">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                @TempData["ExamMessage"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        </div>
+    }
+
+   
+
+
+
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header text-center">Séance de @ViewBag.NomJour.NomJour de @ViewBag.Nomseance.dateDebut.ToString(@"hh\:mm") à @ViewBag.Nomseance.dateFin.ToString(@"hh\:mm")</div>
+            <div class="card-body">
+                <form asp-action="Create"  method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label>Sélectionner Matière</label>
+                            <select asp-for="IdMatiere" class="form-control" asp-items="ViewBag.IdMatiere"></select>
+                    </div>
+                    <input type="hidden" asp-for="IdExamen" class="form-control mt-2" value="@ViewBag.IdExamen" />
+                    <input type="hidden" asp-for="IdNiveau" class="form-control mt-2" value="@ViewBag.idNeveau" />
+                    <input type="hidden" asp-for="IdJour" class="form-control mt-2" value="@ViewBag.Jours" />
+                    <input type="hidden" asp-for="IdSeance" class="form-control mt-2" value="@ViewBag.Seances" />
+                    <input type="hidden" asp-for="IdSemestre" class="form-control mt-2" value="@ViewBag.IdSemestre" />
+                    <input type="hidden" asp-for="typeEmploi" class="form-control mt-2" value="@ViewBag.Type" />
+                       
+
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Sélectionner Enseignants</label>
+                                    <select asp-for="EmploiExamEnseignants" class="form-control" multiple ctrl>
+                                    @foreach (var enseignant in ViewBag.Enseignants)
+                                    {
+                                        <option value="@enseignant.IdEnseignant">@enseignant.NomComplet</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Sélectionner Vacataires</label>
+                                    <select asp-for="EmploiExamVacataires" class="form-control" multiple ctrl>
+                                    @foreach (var vacataire in ViewBag.Vacataires)
+                                    {
+                                        <option value="@vacataire.IdVacataire">@vacataire.NomComplet</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group mt-3 mb-3">
+                        <label>Sélectionner Locaux</label>
+                            <select asp-for="EmploiExamLocals" class="form-control" multiple ctrl>
+                            @foreach (var local in ViewBag.Locals)
+                            {
+                                <option value="@local.IdLocal">@local.NomLocal</option>
+                            }
+                        </select>
+                    </div>
+
+                    <div class="form-group mt-2">
+                        <input type="submit" value="Ajouter" class="btn btn-primary" />
+                            <a class="btn btn-secondary" asp-controller="EmploiExams" asp-area="coordonnateur" asp-action="EmploiExam" asp-route-IdN="@ViewBag.idNeveau" asp-route-IdS="@ViewBag.IdSemestre" asp-route-IdEx="@ViewBag.IdExamen" asp-route-Type="@ViewBag.Type">Annuler</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

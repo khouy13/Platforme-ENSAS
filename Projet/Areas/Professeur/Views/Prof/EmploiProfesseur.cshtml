@@ -1,0 +1,127 @@
+﻿@model IEnumerable<Projet.Areas.Coordonnateur.Models.EmploiTemps>
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Projet.Areas.Coordonnateur.Models;
+            @if (User.IsInRole("Coordonnateur"))
+            {
+               
+                Layout = "~/Areas/coordonnateur/Views/Shared/_CordDashbord.cshtml";
+            }
+            else if (User.IsInRole("Enseignant"))
+            {
+                Layout = "~/Areas/Professeur/Views/Shared/_Prof.cshtml";
+            }
+            else if (User.IsInRole("Directeur"))
+            {
+                Layout = "~/Areas/Directeur/Views/Shared/_Directeur.cshtml";
+            }
+else if (User.IsInRole("Chef"))
+{
+
+    Layout = "~/Areas/Chef/Views/Shared/_Chef.cshtml";
+
+}
+
+<style>
+    .table-bordered th {
+        border: none;
+    }
+
+</style>
+<div class="container">
+    <div class="card bg-white shadow">
+        <div class="card-body border-white">
+            <div class="table-responsive">
+                <div class="d-flex align-items-center">
+                    
+                    <form method="get" asp-action="EmploiProfesseur" asp-controller="Prof" class="mb-3 ml-5">
+                        @if (ViewBag.Enseignant != null)
+                        {
+                            <input type="hidden" name="IdEns" value="@ViewBag.Enseignant.IdEnseignant" />
+                        }
+                        else if (ViewBag.Vacataire != null)
+                        {
+                            <input type="hidden" name="IdVac" value="@ViewBag.Vacataire.IdVacataire" />
+                        }
+
+                        @foreach (var semestre in ViewBag.Semestres)
+                        {
+                            <button type="submit" name="IdS" value="@semestre.IdSemestre" class="btn btn-outline-primary @(ViewBag.selectedSemester == semestre.IdSemestre ? "active" : "")">@semestre.NomSemestre</button>
+                        }
+                    </form>
+                    @if (ViewBag.remplie)
+                    {
+                        <form method="get" asp-action="GeneratePdfByParams" asp-controller="Prof" class="ml-2 mb-3">
+                            @if (ViewBag.IdEns != null)
+                            {
+                                <input type="hidden" name="IdEns" value="@ViewBag.IdEns" />
+                            }
+                            else if (ViewBag.IdVac != null)
+                            {
+                                <input type="hidden" name="IdVac" value="@ViewBag.IdVac" />
+                            }
+
+                            <input type="hidden" name="IdS" value="@ViewBag.selectedSemester" />
+                            <button type="submit" class="btn btn-primary">
+                                <i class="typcn typcn-download mx-0"></i>
+                            </button>
+                        </form>
+                    }
+
+
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="text-center"></th>
+                            @foreach (var s in ViewBag.Seances)
+                            {
+                                <th style="background-color:#00BFFF; height:15px; white-space: nowrap;" class="table-header text-center">
+                                    <span style="display: inline-block;">@s.dateDebut.ToString(@"hh\:mm")</span> - <span style="display: inline-block;">@s.dateFin.ToString(@"hh\:mm")</span>
+                                </th>
+                            }
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var j in ViewBag.Jours)
+                        {
+                            <tr>
+                                <td style=" vertical-align: middle;background-color:#00BFFF ;width:40px;" class="table-cell">@j.NomJour</td>
+                                @foreach (var s in ViewBag.Seances)
+                                {
+                                    var matchingTempsList = Model.Where(temps => temps.IdSeance == s.IdSeance && temps.IdJour == j.IdJour && temps.IdSemestre == ViewBag.selectedSemester && (temps.IdEnseignant == @ViewBag.Enseignant?.IdEnseignant || temps.IdVacataire == @ViewBag.Vacataire?.IdVacataire)).ToList();
+                                    <td class="border border-3 text-center" style="position: relative;">
+                                        <div style="position: absolute; top: 0; right: 0;" class="mt-1">
+                                        </div>
+
+                                        @foreach (var matchingTemp in matchingTempsList)
+                                        {
+                                             @if (matchingTemp != null)
+                                            {
+                                            <div class="text-center">
+                                                @if (matchingTemp.Matiere != null)
+                                                {
+                                                    <p class=" ">@matchingTemp.Matiere.NomMatiere</p>
+                                                }
+                                                @if (matchingTemp.Niveau != null)
+                                                {
+                                                    <span class="">@matchingTemp.Niveau.NomNiveau</span>
+                                                }
+                                                @if (matchingTemp.Groupe != null)
+                                                {
+                                                    <span class=" ">:@matchingTemp.Groupe.NomGroup</span>
+                                                }
+                                                <p class="font-weight-bold" style="color:#0a73f7">s-@matchingTemp.SemaineDebut s-@matchingTemp.SemaineFin</p>
+                                            </div>
+                                                }
+                                            }
+                                    </td>
+                                }
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

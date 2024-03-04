@@ -1,0 +1,17 @@
+2023-09-04 20:25:42.2772|Program|DEBUG|init main 
+2023-09-04 20:26:00.0766|Projet.Controllers.HomeController|DEBUG|NLog injected into HomeController 
+2023-09-04 20:26:00.1096|Projet.Controllers.HomeController|INFO|Hello, this is the index! 
+2023-09-04 20:26:11.3105|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|User logged in. 
+2023-09-04 20:35:13.9832|Program|DEBUG|init main 
+2023-09-04 20:35:29.1999|Projet.Controllers.HomeController|DEBUG|NLog injected into HomeController 
+2023-09-04 20:35:29.2362|Projet.Controllers.HomeController|INFO|Ceci est un message d'information. 
+2023-09-04 20:35:29.2362|Projet.Controllers.HomeController|WARN|Ceci est un avertissement. 
+2023-09-04 20:35:29.2362|Projet.Controllers.HomeController|ERROR|Ceci est une erreur. 
+2023-09-04 20:35:29.2362|Projet.Controllers.HomeController|INFO|Hello, this is the index! 
+2023-09-04 20:39:46.2263|Program|DEBUG|init main 
+2023-09-04 20:40:08.7021|Projet.Controllers.HomeController|DEBUG|NLog injected into HomeController 
+2023-09-04 20:40:08.7492|Projet.Controllers.HomeController|INFO|Ceci est un message d'information. 
+2023-09-04 20:40:08.7492|Projet.Controllers.HomeController|WARN|Ceci est un avertissement. 
+2023-09-04 20:40:08.7492|Projet.Controllers.HomeController|ERROR|Ceci est une erreur. 
+2023-09-04 20:40:08.7492|Projet.Controllers.HomeController|INFO|Hello, this is the index! 
+2023-09-04 20:46:07.9081|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|User logged in. 

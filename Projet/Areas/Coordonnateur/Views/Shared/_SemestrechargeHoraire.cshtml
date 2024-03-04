@@ -1,0 +1,50 @@
+﻿@using Microsoft.AspNetCore.Mvc.ViewFeatures
+@using Microsoft.EntityFrameworkCore
+@using System.Linq
+@using System.Security.Claims
+@using Projet.Data 
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@inject Projet.Data.AppDbContext _context
+@{
+    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+    int? idEnseignant = null;
+    int? DId = 0;
+    if (!string.IsNullOrEmpty(userId))
+    {
+        var user = _context.Users.FirstOrDefault(u => u.Id == userId);
+        if (user != null && user.IdEnseignant.HasValue)
+        {
+            idEnseignant = user.IdEnseignant.Value;
+            var  enseignant = _context.Enseignants.FirstOrDefault(e => e.IdEnseignant == idEnseignant);
+            if (enseignant != null)
+            {
+                DId = enseignant.IdDepartement;
+            }
+
+        }
+    }
+
+
+    var semestres = _context.semestres.ToList();
+
+
+    ViewBag.semestre = semestres;
+
+}
+
+
+
+
+      
+    <li class="nav-item">
+                
+    <a asp-action="CalculChargeHoraire" asp-controller="ChargeHoraire" asp-area="Directeur" asp-route-DId="@DId" class="nav-link">
+    <i class="bi bi-clock "></i>
+    <span class="menu-title  ml-2">Charges Horaires</span>
+    </a>
+                </li>
+
+      
+   
+

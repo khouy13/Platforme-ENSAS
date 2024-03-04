@@ -1,0 +1,51 @@
+﻿@using Microsoft.AspNetCore.Mvc.ViewFeatures
+@using Microsoft.EntityFrameworkCore
+@using System.Linq
+@using System.Security.Claims
+@using Projet.Data 
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@inject Projet.Data.AppDbContext _context
+@{
+    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+    int? idEnseignant = null;
+    int? DId = 0;
+    if (!string.IsNullOrEmpty(userId))
+    {
+        var user = _context.Users.FirstOrDefault(u => u.Id == userId);
+        if (user != null && user.IdEnseignant.HasValue)
+        {
+            idEnseignant = user.IdEnseignant.Value;
+            var  enseignant = _context.Enseignants.FirstOrDefault(e => e.IdEnseignant == idEnseignant);
+            if (enseignant != null)
+            {
+                DId = enseignant.IdDepartement;
+            }
+
+        }
+    }
+
+
+  
+
+}
+
+
+<li class="nav-item">
+    <a class="nav-link" data-toggle="collapse" href="#form-charge" aria-expanded="false" aria-controls="form-charge">
+        <i class="bi bi-people"></i>
+        <span class="menu-title  ml-2">Enseignants</span>
+        
+    </a>
+    <div class="collapse" id="form-charge">
+        <ul class="nav flex-column sub-menu">
+           
+      
+            <li class="nav-item"><a asp-action="First" asp-controller="Enseignants" asp-area="Responsable" asp-route-DId="@DId" class="nav-link">Enseignants</a></li>
+            <li class="nav-item"><a asp-action="First" asp-controller="Vacataires" asp-area="Responsable" asp-route-DId="@DId" class="nav-link">Vacataires</a></li>
+
+        </ul>
+    </div>
+
+</li>
+

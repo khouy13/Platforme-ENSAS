@@ -1,0 +1,21 @@
+2023-10-19 21:25:00.0491|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-19 21:25:11.3767|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-19 22:20:38.0957|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-19 22:20:54.4235|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-19 22:22:48.9033|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur test  test a effectué une opération de suppression  de seance 1 du  Lundi dans l 'emploi de temps de GIIA-INFO-2 
+2023-10-19 22:54:49.7280|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-19 22:56:01.8948|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-19 22:57:37.9918|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur test  test a effectué une opération d'ajout de seance 4 du  Lundi dans l'emploi du temps de GIIA-1. 
+2023-10-19 23:01:12.3880|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur test  test a effectué une opération d'ajout de seance 1 du  Lundi dans l'emploi du temps de GIIA-INFO-2. 
+2023-10-19 23:01:48.5855|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur test  test a effectué une opération de suppression  de seance 1 du  Lundi dans l 'emploi de temps de GIIA-INFO-2 
+2023-10-19 23:03:16.2321|Projet.Areas.Coordenateur.Controllers.EmploiController|INFO|L'utilisateur test  test a effectué une opération d'ajout de seance 1 du  Lundi dans l'emploi du temps de GIIA-INFO-2. 
+2023-10-19 23:20:38.5872|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-19 23:21:24.3482|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-19 23:27:54.7428|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-19 23:28:04.7098|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:test  test Adresse e-mail : 0, Rôles : 1 
+2023-10-19 23:29:21.4097|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-19 23:29:21.4263|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-19 23:29:29.6118|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:admin  admin Adresse e-mail : 0, Rôles : 1 
+2023-10-19 23:32:55.5503|Projet.Areas.Identity.Pages.Account.LogoutModel|INFO|User logged out. 
+2023-10-19 23:32:55.5897|Projet.Controllers.HomeController|INFO|Ceci est un message d'information 
+2023-10-19 23:33:21.7688|Projet.Areas.Identity.Pages.Account.LoginModel|INFO|Utilisateur connecté:JRAIFI  Abdelilah Adresse e-mail : 0, Rôles : 1 

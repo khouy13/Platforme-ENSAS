@@ -1,0 +1,28 @@
+﻿@model Dictionary<string, List<string[]>>
+@{
+    Layout = "_Layout2";
+}
+
+<div style="">
+    
+      <img src="~/imageEnsa.jpg" width="200px" height="100px" />
+      <img src="~/cadi3YAD.jpeg" width="200px" height="100px" style="float:right"/>
+</div>
+
+<div>
+    <h1 class="text-center p-4">@Model.Keys.First()</h1>
+</div>
+
+<div style="display:-webkit-flex;display:-webkit-box;display:flex;-webkit-flex-wrap:wrap;">
+  
+            @foreach (var item in Model.Values){
+            
+                @foreach(var ligne in @item)
+                {
+                        <div style="border:solid 2px whitesmoke;display:inline-block;" class="p-2">
+                <img src="~/imageFolder/@(ligne[0]).png" width="200px" height="200px" />
+                            <p class="text-center py-3">@ligne[1] @ligne[2]</p>
+                        </div>
+                }
+            }
+</div>

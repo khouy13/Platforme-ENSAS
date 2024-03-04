@@ -1,0 +1,45 @@
+﻿@using Microsoft.AspNetCore.Mvc.ViewFeatures
+@using Microsoft.EntityFrameworkCore
+@using System.Linq
+@using System.Security.Claims
+@using Projet.Data 
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@inject Projet.Data.AppDbContext _context
+
+@{
+    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+    if (!string.IsNullOrEmpty(userId))
+    {
+        var filiere = _context.Filieres
+            .Include(f => f.Niveaus)
+            .Where(f => f.ApplicationUserId == userId);
+        ViewBag.filiere = filiere;
+    }
+}
+
+@if (ViewBag.filiere != null)
+{
+    @foreach (var f in ViewBag.filiere)
+    {
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#form-@f.IdFiliere" aria-expanded="false" aria-controls="form-@f.IdFiliere">
+                <i class="bi bi-book"></i>
+
+                <span class="menu-title  ml-2">Gestion Des Examens @f.Abreviation </span>
+
+            </a>
+            <div class="collapse" id="form-@f.IdFiliere">
+
+
+                <ul class="nav flex-column sub-menu">
+                    @foreach (var n in f.Niveaus)
+                    {
+                        <li class="nav-item"><a asp-action="EmploiExam" asp-controller="EmploiExams" asp-area="coordonnateur" asp-route-IdN="@n.IdNiveau" class="nav-link">@n.NomNiveau</a></li>
+                    }
+                </ul>
+            </div>
+
+        </li>
+    }       }

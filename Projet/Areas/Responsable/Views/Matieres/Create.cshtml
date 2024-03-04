@@ -1,0 +1,73 @@
+﻿@model Projet.Areas.Responsable.Models.Matiere
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+
+
+
+<div class="row">
+    <!-- Utilisation de la classe "mx-auto" pour centrer la colonne horizontalement -->
+    <div class="card shadow p-3 mb-5 bg-white rounded mt-3 custom-card mx-auto" style="max-width: 600px; overflow-y: auto;">
+        <div class="card-body">
+            <form method="post" asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                
+                <div class="form-group">
+                    <label asp-for="NomMatiere" class="control-label">Matiere</label>
+                    <input asp-for="NomMatiere" class="form-control" required />
+                    <span asp-validation-for="NomMatiere" class="text-danger"></span>
+                </div>
+             
+                <div class="form-group">
+                    <select class="form-select" asp-for="MatiereNiveaus" multiple ctrl>
+                        <option value="" selected>Tous les niveaux</option>
+                        @foreach (var N in ViewBag.Niveau)
+                        {
+                            <option value="@N.IdNiveau" s>@N.NomNiveau</option>
+                        }
+                    </select>
+                    <span asp-validation-for="MatiereNiveaus" class="text-danger"></span>
+                </div>
+                <div class="form-group" style="display: flex;">
+                    <div style="flex: 1; margin-right: 10px;">
+                        <label for="IdEnseignant">Enseignant</label>
+                        <select class="form-select" asp-for="IdEnseignant" >
+                            <option value="" selected>Enseignant</option>
+                            @foreach (var N in ViewBag.enseignats)
+                            {
+                                <option value="@N.IdEnseignant">@N.NomComplet</option>
+                            }
+                        </select>
+                        <span asp-validation-for="IdEnseignant" class="text-danger"></span>
+                    </div>
+
+                    <div style="flex: 1;">
+                        <label for="IdVacataire">Vacataires</label>
+                        <select class="form-select" asp-for="IdVacataire">
+                            <option value="" selected>Vacataires</option>
+                            @foreach (var N in ViewBag.vacataires)
+                            {
+                                <option value="@N.IdVacataire">@N.NomComplet</option>
+                            }
+                        </select>
+                        <span asp-validation-for="IdVacataire" class="text-danger"></span>
+                    </div>
+                </div>
+
+
+                
+                <div class="form-group mt-1">
+                    <!-- Utilisation de la classe "text-center" pour centrer le bouton   -->
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                    <a class="btn btn-secondary" href="@Url.Action("First", "Matieres", new { area = "Responsable" })">Annuler</a>
+                </div>
+            </form>
+          
+        </div>
+    </div>
+
+</div>
