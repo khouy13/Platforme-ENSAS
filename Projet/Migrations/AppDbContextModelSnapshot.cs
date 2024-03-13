@@ -672,6 +672,29 @@ namespace Projet.Migrations
                     b.ToTable("Matieres");
                 });
 
+            modelBuilder.Entity("Projet.Areas.Responsable.Models.MatiereCommun", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("MainMatiereId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RelatedMatiereId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MainMatiereId");
+
+                    b.HasIndex("RelatedMatiereId");
+
+                    b.ToTable("MatiereCommuns");
+                });
+
             modelBuilder.Entity("Projet.Areas.Responsable.Models.MatiereNiveau", b =>
                 {
                     b.Property<int>("Id")
@@ -1168,6 +1191,25 @@ namespace Projet.Migrations
                     b.Navigation("Vacataire");
                 });
 
+            modelBuilder.Entity("Projet.Areas.Responsable.Models.MatiereCommun", b =>
+                {
+                    b.HasOne("Projet.Areas.Responsable.Models.Matiere", "MainMatiere")
+                        .WithMany("RelatedMatieres")
+                        .HasForeignKey("MainMatiereId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.HasOne("Projet.Areas.Responsable.Models.Matiere", "RelatedMatiere")
+                        .WithMany()
+                        .HasForeignKey("RelatedMatiereId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("MainMatiere");
+
+                    b.Navigation("RelatedMatiere");
+                });
+
             modelBuilder.Entity("Projet.Areas.Responsable.Models.MatiereNiveau", b =>
                 {
                     b.HasOne("Projet.Areas.Responsable.Models.Matiere", "Matiere")
@@ -1320,6 +1362,8 @@ namespace Projet.Migrations
                     b.Navigation("EmploisMatiere");
 
                     b.Navigation("MatiereNiveaus");
+
+                    b.Navigation("RelatedMatieres");
                 });
 
             modelBuilder.Entity("Projet.Areas.Responsable.Models.Niveau", b =>

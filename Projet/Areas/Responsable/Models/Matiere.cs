@@ -16,6 +16,7 @@ public partial class Matiere
 
     [InverseProperty(nameof(EmploiTemps.Matiere))]
     public virtual ICollection<EmploiTemps>? EmploisMatiere { get; set; }
+
     [InverseProperty(nameof(EmploiExam.matiere))]
     public virtual ICollection<EmploiExam>? EmploiMatiereExam { get; set; }
 
@@ -31,8 +32,6 @@ public partial class Matiere
     [ForeignKey(nameof(IdVacataire))]
     [InverseProperty("MatiereVacataire")]
     public virtual Vacataire? Vacataire { get; set; }
-  
-
 }
 
 

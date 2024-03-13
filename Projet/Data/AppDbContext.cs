@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Projet.Areas.Admin.Models;
 using Projet.Areas.Coordonnateur.Models;
@@ -30,6 +29,7 @@ namespace Projet.Data
         public DbSet<EmploiExam> EmploiExams { get; set; }
 
         public DbSet<TypeEnseignement> TypeEnseignements { get; set; }
+
         public  DbSet<Enseignant> Enseignants { get; set; }
 
         public  DbSet<Filiere> Filieres { get; set; }
@@ -42,8 +42,9 @@ namespace Projet.Data
 
         public  DbSet<Matiere> Matieres { get; set; }
 
+        public  DbSet<MatiereCommun> MatiereCommuns { get; set; }
+
         public  DbSet<Niveau> Niveaus { get; set; }
-        
 
         public  DbSet<Seance> Seances { get; set; }
         public DbSet<RegisterViewModel> Accounts { get; set; }
@@ -51,16 +52,9 @@ namespace Projet.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-           
-
-       
-
-
-
+        }
     }
+       
 }
-       
-    }
 
    
