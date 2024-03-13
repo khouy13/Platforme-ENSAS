@@ -38,8 +38,8 @@ else if (User.IsInRole("Chef"))
     <div class="card bg-white shadow">
         <div class="card-body border-white">
             <div class="table-responsive">
-            <div class="row align-items-center">
-               
+                <div class="row align-items-center">
+
                     <div class="col-md-6">
                         <!-- Premier formulaire -->
                         <form method="get" asp-action="EmploiExam" asp-controller="EmploiExams" class="d-flex flex-row align-items-center">
@@ -58,15 +58,16 @@ else if (User.IsInRole("Chef"))
                                     }
                                     <option value="">Session</option>
                                     <option value="Rattrapage">Rattrapage</option>
-                                    <option  name ="d" value="Normale">Normale</option>
+                                    <option name="d" value="Normale">Normale</option>
                                 </select>
                             </div>
-                          
+
 
                             <div class="form-group ml-4">
                                 <button type="submit" class="btn btn-primary">Save</button>
                             </div>
                         </form>
+
                         @if (User.IsInRole("Coordonnateur") || User.IsInRole("Directeur") || User.IsInRole("Chef"))
                         {
                             @if (ViewBag.selectedSemester == 0)
@@ -79,26 +80,38 @@ else if (User.IsInRole("Chef"))
 
                     @if (ViewBag.remplie)
                     {
-                        <div class="col-md-4 mb-3" style="margin-left: -10px;">
+                        <div class="col-md-4 mb-3 d-flex" style="margin-left: -10px;">
                             <!-- Deuxième formulaire -->
+                            <form method="get" asp-action="GeneratePdf" asp-controller="EmploiExams" class="d-flex flex-row align-items-center me-2">
+                                <input type="hidden" name="IdN" value="@ViewBag.idNeveau" />
+                                <input type="hidden" name="IdS" value="@ViewBag.selectedSemester" />
+                                <input type="hidden" name="IdEx" value="@ViewBag.idExam" />
+                                <input type="hidden" name="Type" value="@ViewBag.Type" />
+                                <input type="hidden" name="module" value="2" />
+                                <button type="submit" class="btn btn-primary btn-sm">
+                                    <i class="typcn typcn-download mx-0"></i> 2
+                                </button>
+                            </form>
                             <form method="get" asp-action="GeneratePdf" asp-controller="EmploiExams" class="d-flex flex-row align-items-center">
                                 <input type="hidden" name="IdN" value="@ViewBag.idNeveau" />
                                 <input type="hidden" name="IdS" value="@ViewBag.selectedSemester" />
                                 <input type="hidden" name="IdEx" value="@ViewBag.idExam" />
                                 <input type="hidden" name="Type" value="@ViewBag.Type" />
                                 <button type="submit" class="btn btn-primary btn-sm">
-                                    <i class="typcn typcn-download mx-0"></i>
+                                    <i class="typcn typcn-download mx-0"></i> 1
                                 </button>
+
                                 <div class="">
                                     @if (User.IsInRole("Coordonnateur") || User.IsInRole("Directeur") || User.IsInRole("Chef"))
                                     {
                                         <button type="button" class="btn btn-danger btn-sm ml-2" data-bs-toggle="modal" data-bs-target="#confirmDeleteAllModal"
-                                        data-idn="@ViewBag.idNeveau" data-ids="@ViewBag.selectedSemester" data-idEx="@ViewBag.idExam" data-Type="@ViewBag.Type">
-                                        <i class="bi bi-trash3-fill"></i>
-                                    </button>}
+                                                data-idn="@ViewBag.idNeveau" data-ids="@ViewBag.selectedSemester" data-idEx="@ViewBag.idExam" data-Type="@ViewBag.Type">
+                                            <i class="bi bi-trash3-fill"></i>
+                                        </button>
+                                    }
                                 </div>
                             </form>
-                          
+
                         </div>
                     }
                 </div>
@@ -126,7 +139,7 @@ else if (User.IsInRole("Chef"))
                                 <td class="border border-3 text-center font-weight-bold" style=" vertical-align: middle;background-color:#00BFFF ;width:40px;">@j.NomJour</td>
                                 @foreach (var s in ViewBag.Seances)
                                 {
-                                var matchingTempsList = Model.Where(temps => temps.IdSeance == s.IdSeance && temps.IdJour == j.IdJour && temps.IdExamen == ViewBag.idExam && temps.IdSemestre == ViewBag.selectedSemester).ToList();
+                                    var matchingTempsList = Model.Where(temps => temps.IdSeance == s.IdSeance && temps.IdJour == j.IdJour && temps.IdExamen == ViewBag.idExam && temps.IdSemestre == ViewBag.selectedSemester).ToList();
                                     <td class="border border-3 text-center" style="position: relative;">
                                         <div style="position: absolute; top: 0; right: 0;" class="mt-1">
                                             @if (ViewBag.selectedSemester != null)
@@ -134,9 +147,9 @@ else if (User.IsInRole("Chef"))
                                                 @if (User.IsInRole("Coordonnateur") || User.IsInRole("Directeur") || User.IsInRole("Chef"))
                                                 {
                                                     <a id="addSeanceButton" asp-action="Create" asp-controller="EmploiExams"
-                                                    asp-route-IdN="@ViewBag.idNeveau" asp-route-IdJour="@j.IdJour"
+                                                       asp-route-IdN="@ViewBag.idNeveau" asp-route-IdJour="@j.IdJour"
                                                        asp-route-IdSeance="@s.IdSeance" asp-route-IdS="@ViewBag.selectedSemester" asp-route-IdEx="@ViewBag.idExam" asp-route-Type="@ViewBag.Type" asp-route-d="@ViewBag.date"
-                                                    class="level-link">
+                                                       class="level-link">
                                                         <i class="bi bi-plus-lg"></i>
                                                     </a>
                                                 }
@@ -151,25 +164,26 @@ else if (User.IsInRole("Chef"))
                                                 <div class="text-end mb-1">
                                                     @if (User.IsInRole("Coordonnateur") || User.IsInRole("Directeur") || User.IsInRole("Chef"))
                                                     {
-                                                        <a href="#" class="level-link" data-bs-toggle="modal" data-bs-target="#deleteModal" data-empoi-id="@matchingTemp.IdEmploiExam" data-jour="@matchingTemp.Jour.NomJour" data-datedebut="@matchingTemp.Seance.dateDebut" data-datefin="@matchingTemp.Seance.dateFin"  data-empoi-IdS="@matchingTemp.IdSemestre" data-empoi-IdN="@matchingTemp.IdNiveau">
+                                                        <a href="#" class="level-link" data-bs-toggle="modal" data-bs-target="#deleteModal" data-empoi-id="@matchingTemp.IdEmploiExam" data-jour="@matchingTemp.Jour.NomJour" data-datedebut="@matchingTemp.Seance.dateDebut" data-datefin="@matchingTemp.Seance.dateFin" data-empoi-IdS="@matchingTemp.IdSemestre" data-empoi-IdN="@matchingTemp.IdNiveau">
                                                             <i class="bi bi-trash-fill" style="color: #ff5733;"></i>
                                                         </a>
-                                                        <a asp-action="Edit" asp-controller="EmploiExams" asp-area="Coordonnateur" asp-route-id="@matchingTemp.IdEmploiExam"  class="level-link ms-2">
+                                                        <a asp-action="Edit" asp-controller="EmploiExams" asp-area="Coordonnateur" asp-route-id="@matchingTemp.IdEmploiExam" class="level-link ms-2">
                                                             <i class="bi bi-pencil" style="color: #33ff57;"></i>
-                                                    </a>}
+                                                        </a>
+                                                    }
                                                 </div>
                                                 <div class="text-center">
                                                     @if (matchingTemp.matiere != null)
                                                     {
                                                         <span style="font-size: 12px;"> @matchingTemp.matiere.NomMatiere</span>
                                                         <br />
-                                                        
-                                                       
+
+
                                                     }
                                                     @if (matchingTemp.matiere.Enseignant != null)
                                                     {
                                                         <span style="font-size: 12px;">Respnsable: @matchingTemp.matiere.Enseignant.NomComplet</span>
-                                                        <br/>
+                                                        <br />
                                                     }
                                                     else if (matchingTemp.matiere.Vacataire != null)
                                                     {
@@ -185,22 +199,22 @@ else if (User.IsInRole("Chef"))
                                                             @if (en.IdVacataire != matchingTemp.matiere.IdVacataire)
                                                             {
                                                                 <span style="font-size: 12px;">
-                                                                   @en.Vacataire.NomComplet
+                                                                    @en.Vacataire.NomComplet
                                                                 </span> <br />
                                                             }
-                                                           
+
 
                                                         }
 
                                                     }
-      
+
 
                                                     @if (matchingTemp.EmploiExamEnseignants != null)
                                                     {
 
                                                         @foreach (var en in matchingTemp.EmploiExamEnseignants)
                                                         {
-                                                            @if (en.IdEnseignant!=matchingTemp.matiere.IdEnseignant)
+                                                            @if (en.IdEnseignant != matchingTemp.matiere.IdEnseignant)
                                                             {
                                                                 <span style="font-size: 12px;">
                                                                     @en.Enseignant.NomComplet
@@ -213,20 +227,23 @@ else if (User.IsInRole("Chef"))
                                                         }
 
                                                     }
-                                                  
-                                             
 
 
-                                                @if (matchingTemp.EmploiExamLocals!=null){
-                                                    
-                                                     @foreach(var en in matchingTemp.EmploiExamLocals){
 
-                                                        
-                                                    <span style="font-size: 12px;" class="text-primary">@en.Local.NomLocal
-                                                        </span> <br />
+
+                                                    @if (matchingTemp.EmploiExamLocals != null)
+                                                    {
+
+                                                        @foreach (var en in matchingTemp.EmploiExamLocals)
+                                                        {
+
+
+                                                            <span style="font-size: 12px;" class="text-primary">
+                                                                @en.Local.NomLocal
+                                                            </span> <br />
+                                                        }
+
                                                     }
-
-                                                }
 
                                                     <span style="font-size: 12px;" class="text-primary">
                                                         @((matchingTemp.DateEmploiExam.HasValue) ? matchingTemp.DateEmploiExam.Value.ToString("yyyy-MM-dd") : "")
@@ -250,114 +267,109 @@ else if (User.IsInRole("Chef"))
     </div>
 </div>
 
-    <!-- Modal de suppression -->
-    <div class="modal fade" id="deleteModal" tabEmploiExam.="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="deleteModalLabel">Confirmer la suppression</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Êtes-vous sûr de vouloir supprimer :
-                    <span id="deleteItemInfo"></span>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Annuler</button>
-                    <button type="button" class="btn btn-danger" id="confirmDeleteButton">Supprimer</button>
-                </div>
+<!-- Modal de suppression -->
+<div class="modal fade" id="deleteModal" tabEmploiExam.="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="deleteModalLabel">Confirmer la suppression</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Êtes-vous sûr de vouloir supprimer :
+                <span id="deleteItemInfo"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteButton">Supprimer</button>
             </div>
         </div>
     </div>
-    <!-- Modal de confirmation de suppression de tous les emplois -->
-    <div class="modal fade" id="confirmDeleteAllModal" tabEmploiExam.="-1" aria-labelledby="confirmDeleteAllModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="confirmDeleteAllModalLabel">Confirmer la suppression de tous les emplois</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    Êtes-vous sûr de vouloir supprimer tous les emplois de ce semestre ?
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Annuler</button>
-                    <button type="button" class="btn btn-danger" id="confirmDeleteAllButtonModal" data-IdEx="1">Supprimer</button>
-                </div>
+</div>
+<!-- Modal de confirmation de suppression de tous les emplois -->
+<div class="modal fade" id="confirmDeleteAllModal" tabEmploiExam.="-1" aria-labelledby="confirmDeleteAllModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmDeleteAllModalLabel">Confirmer la suppression de tous les emplois</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Êtes-vous sûr de vouloir supprimer tous les emplois de ce semestre ?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Annuler</button>
+                <button type="button" class="btn btn-danger" id="confirmDeleteAllButtonModal" data-IdEx="1">Supprimer</button>
             </div>
         </div>
     </div>
+</div>
 
 
-    @section Scripts{
+@section Scripts {
 
 
 
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const confirmDeleteButton = document.getElementById("confirmDeleteButton");
-                const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const confirmDeleteButton = document.getElementById("confirmDeleteButton");
+            const deleteModal = new bootstrap.Modal(document.getElementById("deleteModal"));
 
-                confirmDeleteButton.addEventListener("click", function () {
-                    const emploiId = deleteModal._element.getAttribute("data-empoi-id");
-                   
+            confirmDeleteButton.addEventListener("click", function () {
+                const emploiId = deleteModal._element.getAttribute("data-empoi-id");
 
-                    // Redirigez vers la page de suppression avec l'ID d'emploi
-                    const area = "@ViewContext.RouteData.Values["area"]";
-                    const deleteUrl = area === "" ? "/EmploiExams/Delete" : `/${area}/EmploiExams/Delete`;
-                    window.location.href = `${deleteUrl}?IdE=${emploiId}`;
-                });
 
-                const openDeleteModalButtons = document.querySelectorAll("[data-bs-toggle='modal'][data-empoi-id]");
-                openDeleteModalButtons.forEach(button => {
-                    button.addEventListener("click", function () {
-                        const emploiId = button.getAttribute("data-empoi-id");
-                        const jour = button.getAttribute("data-jour");
-                        const datedebut = button.getAttribute("data-datedebut");
-                        const datefin = button.getAttribute("data-datefin");
-                        const Matiere = button.getAttribute("data-Matiere");
-                        document.getElementById("deleteItemInfo").textContent = `Seance de ${Matiere} de ${jour} de ${datedebut} à ${datefin}`;
-                        deleteModal._element.setAttribute("data-empoi-id", emploiId);
-                    });
+                // Redirigez vers la page de suppression avec l'ID d'emploi
+                const area = "@ViewContext.RouteData.Values["area"]";
+                const deleteUrl = area === "" ? "/EmploiExams/Delete" : /${area}/EmploiExams / Delete;
+                window.location.href = ${ deleteUrl }?IdE = ${ emploiId };
+            });
+
+            const openDeleteModalButtons = document.querySelectorAll("[data-bs-toggle='modal'][data-empoi-id]");
+            openDeleteModalButtons.forEach(button => {
+                button.addEventListener("click", function () {
+                    const emploiId = button.getAttribute("data-empoi-id");
+                    const jour = button.getAttribute("data-jour");
+                    const datedebut = button.getAttribute("data-datedebut");
+                    const datefin = button.getAttribute("data-datefin");
+                    const Matiere = button.getAttribute("data-Matiere");
+                    document.getElementById("deleteItemInfo").textContent = Seance de ${ Matiere } de ${ jour } de ${ datedebut } à ${ datefin };
+                    deleteModal._element.setAttribute("data-empoi-id", emploiId);
                 });
             });
-        </script>
+        });
+    </script>
 
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                const confirmDeleteAllButton = document.querySelector("[data-bs-target='#confirmDeleteAllModal']");
-                const confirmDeleteAllModal = new bootstrap.Modal(document.getElementById("confirmDeleteAllModal"));
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const confirmDeleteAllButton = document.querySelector("[data-bs-target='#confirmDeleteAllModal']");
+            const confirmDeleteAllModal = new bootstrap.Modal(document.getElementById("confirmDeleteAllModal"));
 
-                confirmDeleteAllButton.addEventListener("click", function () {
-                    const idNiveau = confirmDeleteAllButton.getAttribute("data-idn");
-                    const idSemestre = confirmDeleteAllButton.getAttribute("data-ids");
-                    const idExam = confirmDeleteAllButton.getAttribute("data-idEx");
-                    const Type = confirmDeleteAllButton.getAttribute("data-Type");
-                    // Afficher le modal de confirmation pour la suppression globale
-                    confirmDeleteAllModal.show();
-                });
-
-                const confirmDeleteAllButtonModal = document.getElementById("confirmDeleteAllButtonModal");
-
-                confirmDeleteAllButtonModal.addEventListener("click", function () {
-                    const idNiveau = confirmDeleteAllButton.getAttribute("data-idn");
-                    const idSemestre = confirmDeleteAllButton.getAttribute("data-ids");
-                    const idExam = confirmDeleteAllButton.getAttribute("data-idEx");
-                    const Type = confirmDeleteAllButton.getAttribute("data-Type");
-                    // Rediriger vers l'action de suppression avec les paramètres appropriés
-                    const deleteAllUrl = `/Coordonnateur/EmploiExams/DeleteAllEmplois?idN=${idNiveau}&idS=${idSemestre}&idEx=${idExam}&Type=${Type}`;
-                    window.location.href = deleteAllUrl;
-                });
+            confirmDeleteAllButton.addEventListener("click", function () {
+                const idNiveau = confirmDeleteAllButton.getAttribute("data-idn");
+                const idSemestre = confirmDeleteAllButton.getAttribute("data-ids");
+                const idExam = confirmDeleteAllButton.getAttribute("data-idEx");
+                const Type = confirmDeleteAllButton.getAttribute("data-Type");
+                // Afficher le modal de confirmation pour la suppression globale
+                confirmDeleteAllModal.show();
             });
-        </script>
+
+            const confirmDeleteAllButtonModal = document.getElementById("confirmDeleteAllButtonModal");
+
+            confirmDeleteAllButtonModal.addEventListener("click", function () {
+                const idNiveau = confirmDeleteAllButton.getAttribute("data-idn");
+                const idSemestre = confirmDeleteAllButton.getAttribute("data-ids");
+                const idExam = confirmDeleteAllButton.getAttribute("data-idEx");
+                const Type = confirmDeleteAllButton.getAttribute("data-Type");
+                // Rediriger vers l'action de suppression avec les paramètres appropriés
+                const deleteAllUrl = /Coordonnateur/EmploiExams / DeleteAllEmplois ? idN = ${ idNiveau }& idS=${ idSemestre }& idEx=${ idExam }& Type=${ Type };
+                window.location.href = deleteAllUrl;
+            });
+        });
+    </script>
 
 
 
 
-    }
-
-
-
-
-
+}

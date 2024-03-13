@@ -36,6 +36,7 @@ namespace Projet.Areas.Coordenateur.Controllers
 
 
         }
+        
         [Authorize(Roles = "Directeur, Coordonnateur,Chef")]
         [HttpGet]
         public IActionResult TempsEmploi(int? IdN, int? IdS)
@@ -146,7 +147,7 @@ namespace Projet.Areas.Coordenateur.Controllers
         }
 
         [NonAction]
-        bool CommunOrEqualMatiere(int? IdMatiere1, int? IdMatiere2)
+        bool IsMatiereCommun(int? IdMatiere1, int? IdMatiere2)
         {
             if (IdMatiere1 != null && IdMatiere2 != null && IdMatiere1 == IdMatiere2)
             {
@@ -170,33 +171,17 @@ namespace Projet.Areas.Coordenateur.Controllers
 
             //Check if Related in Table Matiere Commun
             bool isCommun = _context.MatiereCommuns.Any(e => (e.MainMatiereId == IdMatiere1 && e.RelatedMatiereId == IdMatiere2)
-            || (e.MainMatiereId == IdMatiere2 && e.RelatedMatiereId == IdMatiere1));
+                            || (e.MainMatiereId == IdMatiere2 && e.RelatedMatiereId == IdMatiere1));
 
             return isCommun;
-        }
 
-        [NonAction]
-        bool IsMatiereCommun(int? IdMatiere1, int? IdMatiere2)
-        {
-            return CommunOrEqualMatiere(IdMatiere1, IdMatiere2);
-            //if (!CommunOrEqualMatiere(IdMatiere1,IdMatiere2))
-            //{
-            //    return true;
-            //}
-            //////cas ou matiere est lie a une autre matiere (car sa nomination est la meme pour ces matiere reliees)
-            //var RelatedMatieres = _context.Matieres.AsEnumerable()
+            ////cas ou matiere est lie a une autre matiere (car sa nomination est la meme pour ces matiere reliees)
+            //var isRelated = _context.Matieres.AsEnumerable()
             //    .Where( e => CommunOrEqualMatiere(e.IdMatiere,IdMatiere1) && e.IdMatiere!=IdMatiere1)
-            //    .Select(e=>Regex.Replace(e.NomMatiere, @"\s+",""));
+            //    .Select( e => Regex.Replace(e.NomMatiere, @"\s+",""))
+            //    .Contains(matier2Nom);
 
-            //foreach (var NomMatiere in RelatedMatieres)
-            //{
-            //    if (matier2Nom.Equals(NomMatiere))
-            //    {
-            //        return true;
-            //    }
-            //}
-
-            //return false;
+            //return isRelated;
         }
 
         [NonAction]
@@ -218,7 +203,7 @@ namespace Projet.Areas.Coordenateur.Controllers
                     (e.IdNiveau != emploi.IdNiveau || e.IdGroupe != emploi.IdGroupe);
             return var;
         }
-
+            
         [Authorize(Roles = "Directeur, Coordonnateur,Chef")]
         [HttpPost]
         public IActionResult AddSeance(EmploiTemps emploi)

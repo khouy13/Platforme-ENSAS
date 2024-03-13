@@ -71,10 +71,10 @@ else if (User.IsInRole("Chef"))
 
                         <select asp-for="IdMatiere" class="form-control mt-2">
                             <option value="">Matiere</option>
-                            @if (Model.Matiere != null)
+                            @* @if (Model.Matiere != null)
                             {
                                 <option value="@Model.IdMatiere">@Model.Matiere.NomMatiere</option>
-                            }
+                            } *@
                             @foreach (var M in ViewBag.matieres)
                             {
                                 <option value="@M.IdMatiere">@M.NomMatiere</option>

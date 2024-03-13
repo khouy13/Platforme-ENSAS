@@ -20,7 +20,7 @@ using Rotativa.AspNetCore;
 namespace Projet.Areas.Coordonnateur.Controllers
 {
     [Area("Coordonnateur")]
-   
+
     public class EmploiExamsController : Controller
     {
         private readonly AppDbContext _context;
@@ -35,34 +35,34 @@ namespace Projet.Areas.Coordonnateur.Controllers
         }
         [Authorize(Roles = "Directeur, Coordonnateur,Chef")]
         [HttpGet]
-        public async Task<IActionResult> EmploiExam(int? IdN, int? IdS, int? IdEx,string? Type)
+        public async Task<IActionResult> EmploiExam(int? IdN, int? IdS, int? IdEx, string? Type)
         {
             var smestre = IdS;
             ViewBag.semesre = IdS;
             //IdEx:c est IdExam
             if (!IdS.HasValue)
             {
-                    var dernierSemestre = _context.EmploiExams.Where(e => e.IdNiveau == IdN).OrderByDescending(s => s.IdSemestre).FirstOrDefault();
-                
-                    var dernierSemestre2 = await _context.semestres
-                                    .Where(s => s.EmploisExamSemestre.Any(e => e.IdNiveau == IdN))
-                                    .OrderByDescending(s => s.IdSemestre)
-                                    .FirstOrDefaultAsync();
-                
+                var dernierSemestre = _context.EmploiExams.Where(e => e.IdNiveau == IdN).OrderByDescending(s => s.IdSemestre).FirstOrDefault();
+
+                var dernierSemestre2 = await _context.semestres
+                                .Where(s => s.EmploisExamSemestre.Any(e => e.IdNiveau == IdN))
+                                .OrderByDescending(s => s.IdSemestre)
+                                .FirstOrDefaultAsync();
+
 
                 if (dernierSemestre != null)
                 {
                     IdS = dernierSemestre?.IdSemestre;
-                   
-                    
+
+
                 }
                 else
                 {
                     IdS = dernierSemestre2?.IdSemestre;
-                    
-                   
+
+
                 }
-                    
+
 
             }
             if (!IdEx.HasValue)
@@ -72,9 +72,9 @@ namespace Projet.Areas.Coordonnateur.Controllers
                     .Where(e => e.IdSemestre == IdS && e.EmploiExamen.Any(emploi => emploi.IdNiveau == IdN))
                     .OrderByDescending(e => e.IdExamen)
                     .FirstOrDefaultAsync();
-                
-              // Récupérer l'IdExamen de l'examen trouvé (ou null si aucun n'est trouvé)
-              IdEx = examen?.IdExamen;
+
+                // Récupérer l'IdExamen de l'examen trouvé (ou null si aucun n'est trouvé)
+                IdEx = examen?.IdExamen;
             }
             if (string.IsNullOrEmpty(Type))
             {
@@ -90,8 +90,8 @@ namespace Projet.Areas.Coordonnateur.Controllers
 
             var emplois = await _context.EmploiExams
                .Include(e => e.matiere)
-               .ThenInclude(e=>e.Enseignant)
-                .Include(m=>m.matiere).ThenInclude(v=>v.Vacataire)
+               .ThenInclude(e => e.Enseignant)
+                .Include(m => m.matiere).ThenInclude(v => v.Vacataire)
                .Include(ex => ex.examen)
                .Include(e => e.EmploiExamLocals)
                    .ThenInclude(el => el.Local)
@@ -99,11 +99,11 @@ namespace Projet.Areas.Coordonnateur.Controllers
                    .ThenInclude(ee => ee.Enseignant)
                .Include(e => e.EmploiExamVacataires)
                    .ThenInclude(ev => ev.Vacataire)
-                .Where(e => e.IdNiveau == IdN && e.IdSemestre == IdS &&  e.IdExamen == IdEx && e.typeEmploi==Type)
+                .Where(e => e.IdNiveau == IdN && e.IdSemestre == IdS && e.IdExamen == IdEx && e.typeEmploi == Type)
                 .ToListAsync();
 
-           
-            var matieres=_context.Matieres.Include(e=>e.MatiereNiveaus).ThenInclude(e=>e.Niveau).ThenInclude(e=>e.NiveauMatieres).Where(e=>e.MatiereNiveaus.Any(e=>e.IdNiveau== IdN)).ToList();
+
+            var matieres = _context.Matieres.Include(e => e.MatiereNiveaus).ThenInclude(e => e.Niveau).ThenInclude(e => e.NiveauMatieres).Where(e => e.MatiereNiveaus.Any(e => e.IdNiveau == IdN)).ToList();
             ViewBag.matieres = matieres;
 
             var exam = await _context.Examens.Include(e => e.semestre).ToListAsync();
@@ -115,26 +115,26 @@ namespace Projet.Areas.Coordonnateur.Controllers
 
             bool emploiremplie = emplois.Count != 0;
             ViewBag.remplie = emploiremplie;
-           
-           
+
+
 
             var niveau = await _context.Niveaus.FirstOrDefaultAsync(e => e.IdNiveau == IdN);
             ViewBag.niveau = niveau;
             ViewBag.selectedSemestre = await _context.semestres.FirstOrDefaultAsync(e => e.IdSemestre == IdS);
-           
-            
+
+
 
             ViewBag.Seances = seances;
             ViewBag.Jours = jours;
             ViewBag.idNeveau = IdN;
             ViewBag.idExam = IdEx;
-           
+
             return View(emplois);
         }
 
         [Authorize(Roles = "Directeur, Coordonnateur,Chef")]
         [HttpGet]
-        public IActionResult Create(int? IdN, int? IdSeance, int? IdJour, int IdS, int IdEx,string Type)
+        public IActionResult Create(int? IdN, int? IdSeance, int? IdJour, int IdS, int IdEx, string Type)
         {
 
             var enseignat = _context.Enseignants.ToList();
@@ -142,7 +142,7 @@ namespace Projet.Areas.Coordonnateur.Controllers
             var Vacataires = _context.vacataires.ToList();
             ViewBag.Vacataires = Vacataires;
             var locals = _context.Locals.ToList();
-          
+
             ViewBag.Locals = locals;
 
             var jour = _context.Jours.Where(e => e.IdJour == IdJour).FirstOrDefault();
@@ -175,15 +175,15 @@ namespace Projet.Areas.Coordonnateur.Controllers
             if (userId != null)
             {
                 user = _userManager.Users
-                   
+
                    .FirstOrDefault(u => u.Id == userId);
             }
             var IdS = emploiExam.IdSemestre;
             var IdJour = emploiExam.IdJour;
-           
+
             var IdSeance = emploiExam.IdSeance;
             var IdEx = emploiExam.IdExamen;
-            var IdN=emploiExam.IdNiveau;
+            var IdN = emploiExam.IdNiveau;
             var Type = emploiExam.typeEmploi;
             var niveauNom = _context.Niveaus
                .Where(n => n.IdNiveau == IdN)
@@ -200,17 +200,17 @@ namespace Projet.Areas.Coordonnateur.Controllers
                 .FirstOrDefault();
             bool teacherOccupied = _context.EmploiExams.Any(e =>
               e.EmploiExamEnseignants.Any(enseignant => EmploiExamEnseignants.Contains(enseignant.IdEnseignant)) &&
-       
+
               e.IdSeance == IdSeance &&
               e.typeEmploi == Type &&
-              
+
               e.IdJour == emploiExam.IdJour &&
               e.IdExamen == emploiExam.IdExamen &&
               e.IdSemestre == emploiExam.IdSemestre
 
   );
 
-            var teacherOccupiedEN = _context.EmploiExams.Include(e=>e.EmploiExamEnseignants).ThenInclude(e=>e.Enseignant).Include(n=>n.niveau).Include(m=>m.matiere).FirstOrDefault(e =>
+            var teacherOccupiedEN = _context.EmploiExams.Include(e => e.EmploiExamEnseignants).ThenInclude(e => e.Enseignant).Include(n => n.niveau).Include(m => m.matiere).FirstOrDefault(e =>
                 e.EmploiExamEnseignants.Any(enseignant => EmploiExamEnseignants.Contains(enseignant.IdEnseignant)) &&
                 e.IdSeance == IdSeance &&
                 e.typeEmploi == Type &&
@@ -223,38 +223,38 @@ namespace Projet.Areas.Coordonnateur.Controllers
 
 
 
-           var vacataireOccupied = _context.EmploiExams.Include(e =>e.EmploiExamVacataires).ThenInclude(e => e.Vacataire).Include(n => n.niveau).Include(m => m.matiere).FirstOrDefault(e =>
-                e.EmploiExamVacataires.Any(vacataire => EmploiExamVacataires.Contains(vacataire.IdVacataire)) &&
-                e.IdSeance == IdSeance &&
-                 e.typeEmploi == Type &&
-                e.IdJour == emploiExam.IdJour &&
-                 e.IdExamen == emploiExam.IdExamen &&
-                e.IdSemestre == emploiExam.IdSemestre 
-                );
+            var vacataireOccupied = _context.EmploiExams.Include(e => e.EmploiExamVacataires).ThenInclude(e => e.Vacataire).Include(n => n.niveau).Include(m => m.matiere).FirstOrDefault(e =>
+                 e.EmploiExamVacataires.Any(vacataire => EmploiExamVacataires.Contains(vacataire.IdVacataire)) &&
+                 e.IdSeance == IdSeance &&
+                  e.typeEmploi == Type &&
+                 e.IdJour == emploiExam.IdJour &&
+                  e.IdExamen == emploiExam.IdExamen &&
+                 e.IdSemestre == emploiExam.IdSemestre
+                 );
 
-           var existingSession = _context.EmploiExams.Include(e=>e.matiere).Include(n=>n.niveau).Include(e=>e.Jour).Include(s=>s.Seance).FirstOrDefault(e =>
-                           e.typeEmploi == Type &&
-                            e.IdSemestre == emploiExam.IdSemestre &&
-                            e.IdExamen == emploiExam.IdExamen &&
-                             e.IdNiveau == emploiExam.IdNiveau &&
+            var existingSession = _context.EmploiExams.Include(e => e.matiere).Include(n => n.niveau).Include(e => e.Jour).Include(s => s.Seance).FirstOrDefault(e =>
+                            e.typeEmploi == Type &&
                              e.IdSemestre == emploiExam.IdSemestre &&
-                             e.IdMatiere== emploiExam.IdMatiere
-                            );
+                             e.IdExamen == emploiExam.IdExamen &&
+                              e.IdNiveau == emploiExam.IdNiveau &&
+                              e.IdSemestre == emploiExam.IdSemestre &&
+                              e.IdMatiere == emploiExam.IdMatiere
+                             );
 
 
 
 
-            var localOccupied = _context.EmploiExams.Include(e => e.EmploiExamLocals).ThenInclude(e=>e.Local).Include(e => e.matiere).Include(n=>n.niveau).FirstOrDefault(e =>
+            var localOccupied = _context.EmploiExams.Include(e => e.EmploiExamLocals).ThenInclude(e => e.Local).Include(e => e.matiere).Include(n => n.niveau).FirstOrDefault(e =>
                 e.EmploiExamLocals.Any(local => EmploiExamLocals.Contains(local.IdLocal)) &&
                 e.IdSeance == IdSeance &&
                 e.IdJour == emploiExam.IdJour &&
                  e.typeEmploi == Type &&
                 e.IdSemestre == emploiExam.IdSemestre &&
-                e.IdExamen == emploiExam.IdExamen 
+                e.IdExamen == emploiExam.IdExamen
                 );
-            
 
-          
+
+
 
             var emploiExams = _context.EmploiExams
                 .Include(e => e.matiere)
@@ -268,7 +268,7 @@ namespace Projet.Areas.Coordonnateur.Controllers
                     e.IdSeance == emploiExam.IdSeance &&
                     e.IdSemestre == emploiExam.IdSemestre &&
                      e.typeEmploi == Type &&
-                     e.IdMatiere==emploiExam.IdMatiere &&
+                     e.IdMatiere == emploiExam.IdMatiere &&
 
                     e.IdExamen == emploiExam.IdExamen &&
                     e.IdJour == emploiExam.IdJour &&
@@ -279,12 +279,12 @@ namespace Projet.Areas.Coordonnateur.Controllers
                     e.EmploiExamLocals.Any(local => EmploiExamLocals.Contains(local.IdLocal))
                 );
 
-            if (existingSession!=null)
+            if (existingSession != null)
             {
-                TempData["ExamMessage"] = $"La matière {(existingSession.matiere!=null? existingSession.matiere.NomMatiere:"")} pour le niveau {(existingSession.niveau != null ? existingSession.niveau.NomNiveau : "")}" +
+                TempData["ExamMessage"] = $"La matière {(existingSession.matiere != null ? existingSession.matiere.NomMatiere : "")} pour le niveau {(existingSession.niveau != null ? existingSession.niveau.NomNiveau : "")}" +
                     $" est déjà programmée le {(existingSession.Jour != null ? existingSession.Jour.NomJour : "")} de {existingSession.Seance.dateDebut} à {existingSession.Seance.dateFin}.";
                 //existingSession
-                return RedirectToAction("Create", new { IdN, IdSeance, IdJour, IdS, IdEx, Type }); 
+                return RedirectToAction("Create", new { IdN, IdSeance, IdJour, IdS, IdEx, Type });
             }
 
             if (commonExam)
@@ -319,18 +319,18 @@ namespace Projet.Areas.Coordonnateur.Controllers
 
                 }
                 await _context.SaveChangesAsync();
-               
-                return RedirectToAction("EmploiExam", new { IdN, IdS, IdEx , Type });
+
+                return RedirectToAction("EmploiExam", new { IdN, IdS, IdEx, Type });
 
             }
 
 
 
 
-           
 
 
-          if ( vacataireOccupied !=null)
+
+            if (vacataireOccupied != null)
             {
 
                 string enseignantsMessage = "";
@@ -368,13 +368,13 @@ namespace Projet.Areas.Coordonnateur.Controllers
 
                 TempData["ExamMessage"] = $"{enseignantsMessage.TrimEnd(',', ' ')} est déjà occupés en surveillance d'examen. Il surveille l'examen de {matiereMessage} avec {niveauMessage} pendant cette séance .";
 
-                return RedirectToAction("Create", new { IdN, IdSeance, IdJour, IdS, IdEx , Type });
+                return RedirectToAction("Create", new { IdN, IdSeance, IdJour, IdS, IdEx, Type });
             }
 
 
 
 
-            if ( localOccupied!=null )
+            if (localOccupied != null)
 
             {
                 string localMessage = "";
@@ -388,8 +388,8 @@ namespace Projet.Areas.Coordonnateur.Controllers
                     {
                         if (EmploiExamLocals.Contains(local.IdLocal))
                         {
-                            localMessage += local.Local!= null
-                                ? local.Local.NomLocal+ ", "
+                            localMessage += local.Local != null
+                                ? local.Local.NomLocal + ", "
                                 : "";
                         }
                     }
@@ -414,59 +414,46 @@ namespace Projet.Areas.Coordonnateur.Controllers
                 TempData["ExamMessage"] = $"{localMessage.TrimEnd(',', ' ')} est déjà occupé. Il est réservé pour l'examen de {matiereMessage} pour {niveauMessage} pendant cette séance.";
 
 
-                return RedirectToAction("Create", new { IdN, IdSeance, IdJour, IdS, IdEx , Type });
+                return RedirectToAction("Create", new { IdN, IdSeance, IdJour, IdS, IdEx, Type });
             }
-           if (teacherOccupied)
+            if (teacherOccupied)
             {
-                    string enseignantsMessage = "";
-                    string matiereMessage = "";
-                    string niveauMessage = " ";
-                  
+                string enseignantsMessage = "";
+                string matiereMessage = "";
+                string niveauMessage = " ";
+
 
                 if (teacherOccupiedEN.EmploiExamEnseignants != null)
+                {
+                    foreach (var enseignant in teacherOccupiedEN.EmploiExamEnseignants)
                     {
-                        foreach (var enseignant in teacherOccupiedEN.EmploiExamEnseignants)
+                        if (EmploiExamEnseignants.Contains(enseignant.IdEnseignant))
                         {
-                            if (EmploiExamEnseignants.Contains(enseignant.IdEnseignant))
-                            {
-                                enseignantsMessage += enseignant.Enseignant != null
-                                    ? enseignant.Enseignant.NomComplet + ", "
-                                    : "inconnu, ";
-                            }
+                            enseignantsMessage += enseignant.Enseignant != null
+                                ? enseignant.Enseignant.NomComplet + ", "
+                                : "inconnu, ";
                         }
+                    }
 
-                        if (teacherOccupiedEN.matiere != null)
-                        {
-                            matiereMessage += teacherOccupiedEN.matiere.NomMatiere != null
-                                ? teacherOccupiedEN.matiere.NomMatiere
-                                : "une matière inconnue";
-                        }
+                    if (teacherOccupiedEN.matiere != null)
+                    {
+                        matiereMessage += teacherOccupiedEN.matiere.NomMatiere != null
+                            ? teacherOccupiedEN.matiere.NomMatiere
+                            : "une matière inconnue";
+                    }
 
-                        if (teacherOccupiedEN.niveau != null)
-                        {
-                            niveauMessage += teacherOccupiedEN.niveau.NomNiveau != null
-                                ? teacherOccupiedEN.niveau.NomNiveau
-                                : "un niveau inconnu";
-                        }
-                   
+                    if (teacherOccupiedEN.niveau != null)
+                    {
+                        niveauMessage += teacherOccupiedEN.niveau.NomNiveau != null
+                            ? teacherOccupiedEN.niveau.NomNiveau
+                            : "un niveau inconnu";
+                    }
+
                 }
-                  
-
-                    TempData["ExamMessage"] = $"{enseignantsMessage.TrimEnd(',', ' ')} est déjà occupé. Il surveille l'examen de {matiereMessage} avec {niveauMessage} pendant cette séance .";
-                 return RedirectToAction("Create", new { IdN, IdSeance, IdJour, IdS, IdEx, Type });
 
 
-
-
-
-
-
-
-
-
-
-
-
+                TempData["ExamMessage"] = $"{enseignantsMessage.TrimEnd(',', ' ')} est déjà occupé. Il surveille l'examen de {matiereMessage} avec {niveauMessage} pendant cette séance .";
+                return RedirectToAction("Create", new { IdN, IdSeance, IdJour, IdS, IdEx, Type });
             }
 
             emploiExam.EmploiExamEnseignants = new List<EmploiExamEnseignant>();
@@ -495,8 +482,8 @@ namespace Projet.Areas.Coordonnateur.Controllers
 
             }
             await _context.SaveChangesAsync();
-            
-            return RedirectToAction("EmploiExam", new { IdN, IdS, IdEx , Type });
+
+            return RedirectToAction("EmploiExam", new { IdN, IdS, IdEx, Type });
         }
 
         [Authorize(Roles = "Directeur, Coordonnateur,Chef")]
@@ -520,7 +507,7 @@ namespace Projet.Areas.Coordonnateur.Controllers
                 return NotFound();
             }
             var IdJour = emploiExam.IdJour;
-            var IdSeance=emploiExam.IdSeance;
+            var IdSeance = emploiExam.IdSeance;
             var IdNiveau = emploiExam.IdNiveau;
             var IdSemestre = emploiExam.IdSemestre;
             var type = emploiExam.typeEmploi;
@@ -534,21 +521,21 @@ namespace Projet.Areas.Coordonnateur.Controllers
 
 
             ViewData["IdMatiere"] = new SelectList(matieres, "IdMatiere", "NomMatiere", emploiExam.IdMatiere);
-            var jours= await _context.Jours.ToListAsync();
+            var jours = await _context.Jours.ToListAsync();
             var seances = await _context.Seances.ToListAsync();
             ViewData["IdJour"] = new SelectList(jours, "IdJour", "NomJour", emploiExam.IdJour);
             ViewData["IdSeance"] = new SelectList(seances, "IdSeance", "NomSeance", emploiExam.IdSeance);
 
-             ViewBag.IdSemestre = IdSemestre;
-             ViewBag.Seances = IdSeance;
-             ViewBag.Jours = IdJour;
-             ViewBag.idNeveau = IdNiveau;
-             ViewBag.IdExamen = IdExam;
-             ViewBag.Enseignants = enseignants;
-             ViewBag.Vacataires = vacataires;
-             ViewBag.Type = type;
-             ViewBag.Locals = locals;
-           
+            ViewBag.IdSemestre = IdSemestre;
+            ViewBag.Seances = IdSeance;
+            ViewBag.Jours = IdJour;
+            ViewBag.idNeveau = IdNiveau;
+            ViewBag.IdExamen = IdExam;
+            ViewBag.Enseignants = enseignants;
+            ViewBag.Vacataires = vacataires;
+            ViewBag.Type = type;
+            ViewBag.Locals = locals;
+
             return View(emploiExam);
         }
         [Authorize(Roles = "Directeur, Coordonnateur,Chef")]
@@ -561,20 +548,20 @@ namespace Projet.Areas.Coordonnateur.Controllers
             if (userId != null)
             {
                 user = _userManager.Users
-                  
+
                    .FirstOrDefault(u => u.Id == userId);
             }
             if (id != emploiExam.IdEmploiExam)
             {
                 return NotFound();
             }
-           
+
             if (ModelState.IsValid)
             {
                 try
                 {
-                    
-                  
+
+
                     var IdS = emploiExam.IdSemestre;
                     var IdJour = emploiExam.IdJour;
                     var IdSeance = emploiExam.IdSeance;
@@ -599,7 +586,7 @@ namespace Projet.Areas.Coordonnateur.Controllers
                        .Include(e => e.EmploiExamLocals)
                        .FirstOrDefaultAsync(e => e.IdEmploiExam == id);
 
-                   
+
 
                     var teacherOccupiedEN = _context.EmploiExams.Include(e => e.EmploiExamEnseignants).ThenInclude(e => e.Enseignant).Include(n => n.niveau).Include(m => m.matiere).FirstOrDefault(e =>
              e.EmploiExamEnseignants.Any(enseignant => EmploiExamEnseignants.Contains(enseignant.IdEnseignant)) &&
@@ -623,7 +610,7 @@ namespace Projet.Areas.Coordonnateur.Controllers
                                                e.IdJour != emploiExam.IdJour &&
                                                e.IdSeance != emploiExam.IdSeance &&
                                                e.IdSemestre == emploiExam.IdSemestre &&
-                                               e.IdMatiere == emploiExam.IdMatiere 
+                                               e.IdMatiere == emploiExam.IdMatiere
                                               );
 
 
@@ -641,7 +628,7 @@ namespace Projet.Areas.Coordonnateur.Controllers
 
 
 
-              
+
 
                     var localOccupied = _context.EmploiExams.Include(e => e.EmploiExamLocals).ThenInclude(e => e.Local).Include(e => e.matiere).Include(n => n.niveau).FirstOrDefault(e =>
                         e.EmploiExamLocals.Any(local => EmploiExamLocals.Contains(local.IdLocal)) &&
@@ -667,35 +654,35 @@ namespace Projet.Areas.Coordonnateur.Controllers
                             e.typeEmploi == emploiExam.typeEmploi &&
                             e.IdExamen == emploiExam.IdExamen &&
                              e.IdEmploiExam != id &&
-                            e.IdMatiere==emploiExam.IdMatiere &&
+                            e.IdMatiere == emploiExam.IdMatiere &&
                             e.IdJour == emploiExam.IdJour &&
                             (
                                 e.EmploiExamEnseignants.Any(enseignant => EmploiExamEnseignants.Contains(enseignant.IdEnseignant)) ||
                                 e.EmploiExamVacataires.Any(vacataire => EmploiExamVacataires.Contains(vacataire.IdVacataire))
                             ) &&
                             e.EmploiExamLocals.Any(local => EmploiExamLocals.Contains(local.IdLocal))
-                        ); 
+                        );
                     if (existingSession != null)
                     {
                         TempData["ExamMessage"] = $"La matière {(existingSession.matiere != null ? existingSession.matiere.NomMatiere : "")} pour le niveau {(existingSession.niveau != null ? existingSession.niveau.NomNiveau : "")}" +
                             $" est déjà programmée le {(existingSession.Jour != null ? existingSession.Jour.NomJour : "")} de {existingSession.Seance.dateDebut} à {existingSession.Seance.dateFin}.";
                         //existingSession
-                          return RedirectToAction("Edit", new { id });
+                        return RedirectToAction("Edit", new { id });
                     }
 
 
                     if (commonExam)
                     {
-                        var examexsiste = _context.EmploiExams.Include(e=>e.matiere).Include(e=>e.examen).FirstOrDefault(e => e.IdMatiere == e.IdMatiere);
+                        var examexsiste = _context.EmploiExams.Include(e => e.matiere).Include(e => e.examen).FirstOrDefault(e => e.IdMatiere == e.IdMatiere);
                         examexsiste.isComunExam = true;
                         existingEmploiExam.isComunExam = true;
                         existingEmploiExam.IdSemestre = emploiExam.IdSemestre;
-                        existingEmploiExam.IdSeance=emploiExam.IdSeance;
+                        existingEmploiExam.IdSeance = emploiExam.IdSeance;
                         existingEmploiExam.isComunExam = true;
                         existingEmploiExam.IdExamen = emploiExam.IdExamen;
                         existingEmploiExam.typeEmploi = emploiExam.typeEmploi;
-                        existingEmploiExam.IdMatiere=emploiExam.IdMatiere;
-                        existingEmploiExam.IdJour=emploiExam.IdJour;
+                        existingEmploiExam.IdMatiere = emploiExam.IdMatiere;
+                        existingEmploiExam.IdJour = emploiExam.IdJour;
                         existingEmploiExam.IdNiveau = emploiExam.IdNiveau;
                         existingEmploiExam.EmploiExamEnseignants.Clear();
                         existingEmploiExam.EmploiExamVacataires.Clear();
@@ -721,15 +708,15 @@ namespace Projet.Areas.Coordonnateur.Controllers
                         {
                             existingEmploiExam.EmploiExamLocals.Add(new EmploiExamLocal { IdLocal = localId });
                         }
-                       
+
                         await _context.SaveChangesAsync();
                         return RedirectToAction("EmploiExam", new { IdN, IdS, IdEx, Type });
                     }
 
-                
 
 
-                    if (teacherOccupiedEN!=null)
+
+                    if (teacherOccupiedEN != null)
                     {
 
                         string enseignantsMessage = "";
@@ -770,9 +757,9 @@ namespace Projet.Areas.Coordonnateur.Controllers
 
 
                         TempData["ExamMessage"] = "L'enseignant choisi est déjà occupé dans cette séance. Veuillez vérifier les disponibilités des enseignants ou vacataires, ou trouver une autre séance.";
-                        return RedirectToAction("Edit", new { id});
+                        return RedirectToAction("Edit", new { id });
                     }
-                    if (vacataireOccupied!=null)
+                    if (vacataireOccupied != null)
                     {
 
                         string enseignantsMessage = "";
@@ -813,9 +800,9 @@ namespace Projet.Areas.Coordonnateur.Controllers
 
 
 
-                        return RedirectToAction("Edit", new { id});
+                        return RedirectToAction("Edit", new { id });
                     }
-                    if (localOccupied!=null)
+                    if (localOccupied != null)
                     {
                         string localMessage = "";
                         string matiereMessage = "";
@@ -855,7 +842,7 @@ namespace Projet.Areas.Coordonnateur.Controllers
 
 
 
-                        return RedirectToAction("Edit", new { id});
+                        return RedirectToAction("Edit", new { id });
                     }
 
                     // Clear existing associations
@@ -869,7 +856,7 @@ namespace Projet.Areas.Coordonnateur.Controllers
                     existingEmploiExam.EmploiExamEnseignants.Clear();
                     existingEmploiExam.EmploiExamVacataires.Clear();
                     existingEmploiExam.EmploiExamLocals.Clear();
-               
+
                     // Update related association tables
                     foreach (var enseignantId in EmploiExamEnseignants)
                     {
@@ -885,7 +872,7 @@ namespace Projet.Areas.Coordonnateur.Controllers
                     {
                         existingEmploiExam.EmploiExamLocals.Add(new EmploiExamLocal { IdLocal = localId });
                     }
-                   
+
                     await _context.SaveChangesAsync();
                     if (user != null)
                     {
@@ -930,14 +917,14 @@ namespace Projet.Areas.Coordonnateur.Controllers
         // cette Action pour faire la suppression d un emploi 
         [Authorize(Roles = "Directeur, Coordonnateur,Chef")]
         [HttpGet]
-        public IActionResult DeleteAllEmplois(int idN, int idS, int idEX,string Type)
+        public IActionResult DeleteAllEmplois(int idN, int idS, int idEX, string Type)
         {
             try
             {
-                    var niveauNom = _context.Niveaus
-                      .Where(n => n.IdNiveau == idN)
-                      .Select(n => n.NomNiveau)
-                      .FirstOrDefault();
+                var niveauNom = _context.Niveaus
+                  .Where(n => n.IdNiveau == idN)
+                  .Select(n => n.NomNiveau)
+                  .FirstOrDefault();
                 var semestreNom = _context.semestres
                        .Where(n => n.IdSemestre == idS)
                        .Select(n => n.NomSemestre)
@@ -948,19 +935,19 @@ namespace Projet.Areas.Coordonnateur.Controllers
                 if (userId != null)
                 {
                     user = _userManager.Users
-                      
+
                        .FirstOrDefault(u => u.Id == userId);
                 }
                 // Remove records from EmploiExamEnseignant
                 var enseignantAssociations = _context.EmploiExamEnseignants
-                    .Where(ee => ee.EmploiExam.IdNiveau == idN && ee.EmploiExam.IdSemestre == idS && ee.EmploiExam.IdExamen == idEX && ee.EmploiExam.typeEmploi== Type)
+                    .Where(ee => ee.EmploiExam.IdNiveau == idN && ee.EmploiExam.IdSemestre == idS && ee.EmploiExam.IdExamen == idEX && ee.EmploiExam.typeEmploi == Type)
                     .ToList();
 
                 _context.EmploiExamEnseignants.RemoveRange(enseignantAssociations);
 
                 // Remove records from EmploiExamLocal
                 var localAssociations = _context.EmploiExamLocals
-                    .Where(el => el.EmploiExam.IdNiveau == idN && el.EmploiExam.IdSemestre == idS && el.EmploiExam.IdExamen == idEX && el.EmploiExam.typeEmploi==Type)
+                    .Where(el => el.EmploiExam.IdNiveau == idN && el.EmploiExam.IdSemestre == idS && el.EmploiExam.IdExamen == idEX && el.EmploiExam.typeEmploi == Type)
                     .ToList();
 
                 _context.EmploiExamLocals.RemoveRange(localAssociations);
@@ -973,8 +960,8 @@ namespace Projet.Areas.Coordonnateur.Controllers
                 _context.EmploiExamVacataires.RemoveRange(vacataireAssociations);
 
                 // Remove EmploiExam
-                var emploiExamsToDelete = _context.EmploiExams.Include(e=>e.examen).Include(e =>e.niveau).Include(e => e.matiere)
-                    .Where(e => e.IdNiveau == idN && e.IdSemestre == idS && e.IdExamen == idEX && e.typeEmploi==Type)
+                var emploiExamsToDelete = _context.EmploiExams.Include(e => e.examen).Include(e => e.niveau).Include(e => e.matiere)
+                    .Where(e => e.IdNiveau == idN && e.IdSemestre == idS && e.IdExamen == idEX && e.typeEmploi == Type)
                     .ToList();
 
                 _context.EmploiExams.RemoveRange(emploiExamsToDelete);
@@ -994,12 +981,12 @@ namespace Projet.Areas.Coordonnateur.Controllers
                 // Handle the exception as needed (logging, displaying an error message, etc.).
             }
 
-            return RedirectToAction("EmploiExam", new { IdN =idN, IdS = idS, IdEx = idEX,Type});
+            return RedirectToAction("EmploiExam", new { IdN = idN, IdS = idS, IdEx = idEX, Type });
         }
 
 
 
-       
+
 
         private bool EmploiExamExists(int id)
         {
@@ -1007,25 +994,27 @@ namespace Projet.Areas.Coordonnateur.Controllers
         }
         [Authorize(Roles = "Directeur, Coordonnateur,Chef")]
         [HttpGet]
-        public async Task<IActionResult> GeneratePdf(int IdN, int IdS, int IdEx ,string Type)
+        public async Task<IActionResult> GeneratePdf(int IdN, int IdS, int IdEx, string Type, int? module)
         {
             var emplois = await _context.EmploiExams
                .Include(e => e.matiere)
-               .ThenInclude(e => e.Enseignant)
+                    .ThenInclude(e => e.Enseignant)
                .Include(e => e.matiere)
-               .ThenInclude(e => e.Vacataire)
-               .Include(ex=>ex.examen)
+                    .ThenInclude(e => e.Vacataire)
+               .Include(ex => ex.examen)
                .Include(e => e.EmploiExamLocals)
-                   .ThenInclude(el => el.Local)
+                    .ThenInclude(el => el.Local)
                .Include(e => e.EmploiExamEnseignants)
-                   .ThenInclude(ee => ee.Enseignant)
+                    .ThenInclude(ee => ee.Enseignant)
                .Include(e => e.EmploiExamVacataires)
-                   .ThenInclude(ev => ev.Vacataire)
+                    .ThenInclude(ev => ev.Vacataire)
+
                .Where(e => e.IdNiveau == IdN && e.IdSemestre == IdS && e.IdExamen == IdEx)
                .ToListAsync();
+
             var examen = _context.Examens.FirstOrDefault(ex => ex.IdExamen == IdEx && ex.IdSemestre == IdS);
 
-           
+
             int anneeDebut;
             int anneeFin;
 
@@ -1039,12 +1028,13 @@ namespace Projet.Areas.Coordonnateur.Controllers
                 anneeFin = DateTime.Now.Year;
                 anneeDebut = anneeFin - 1;
             }
+
             var nomAnneeScolaire = $"{anneeDebut}/{anneeFin}";
             var jours = _context.Jours.ToList();
             var seances = _context.Seances.ToList();
             var semestre = _context.semestres.FirstOrDefault(s => s.IdSemestre == IdS);
             var niveau = _context.Niveaus
-                .Include(f => f.filiere).ThenInclude(d=>d.Departement)
+                .Include(f => f.filiere).ThenInclude(d => d.Departement)
                 .FirstOrDefault(e => e.IdNiveau == IdN);
             var type = Type;
 
@@ -1058,7 +1048,8 @@ namespace Projet.Areas.Coordonnateur.Controllers
                 Semestre = semestre,
                 nomAnneeScolaire = nomAnneeScolaire,
                 Examen = examen,
-                Type = type
+                Type = type,
+                Module = module
             };
 
             // Retournez la vue en tant que PDF en utilisant Rotativa
@@ -1068,14 +1059,14 @@ namespace Projet.Areas.Coordonnateur.Controllers
         public IActionResult Delete(int IdE)
         {
             string userId = HttpContext.Session.GetString("UserId");
-           
+
             if (userId != null)
             {
                 user = _userManager.Users
-                   
+
                    .FirstOrDefault(u => u.Id == userId);
             }
-            var emploiToDelete =  _context.EmploiExams.Find(IdE);
+            var emploiToDelete = _context.EmploiExams.Find(IdE);
             var IdS = emploiToDelete.IdSemestre;
             var IdN = emploiToDelete.IdNiveau;
             var IdEx = emploiToDelete.IdExamen;
@@ -1094,9 +1085,9 @@ namespace Projet.Areas.Coordonnateur.Controllers
                 .FirstOrDefault();
 
             //car dans Emploi QUI un Seance d exam on peut avoir plusieurs enseignant dans tout les enseignant ont meme idExam (select choix multiple)
-            var EmploiExamLocal=  _context.EmploiExamLocals.Where(e=>e.IdEmploiExam== IdE).ToList();
-            var EmploiExamEnseignant=  _context.EmploiExamEnseignants.Where(e => e.IdEmploiExam == IdE).ToList();
-            var EmploiExamVacataire=_context.EmploiExamVacataires.Where(e => e.IdEmploiExam == IdE).ToList();
+            var EmploiExamLocal = _context.EmploiExamLocals.Where(e => e.IdEmploiExam == IdE).ToList();
+            var EmploiExamEnseignant = _context.EmploiExamEnseignants.Where(e => e.IdEmploiExam == IdE).ToList();
+            var EmploiExamVacataire = _context.EmploiExamVacataires.Where(e => e.IdEmploiExam == IdE).ToList();
             if (EmploiExamLocal != null)
             {
                 _context.EmploiExamLocals.RemoveRange(EmploiExamLocal);
@@ -1117,20 +1108,19 @@ namespace Projet.Areas.Coordonnateur.Controllers
             {
                 _context.EmploiExams.Remove(emploiToDelete);
                 _context.SaveChanges();
-                if (user != null )
+                if (user != null)
                 {
 
-                    _logger.LogInformation($"L'utilisateur {user.NomComplet} a effectué une opération de suppression Examen N°  {emploiToDelete?.examen?.NumeroExamen} {emploiToDelete?.matiere?.NomMatiere?? ""}  dans l 'emploi des examens de {niveauNom}");
+                    _logger.LogInformation($"L'utilisateur {user.NomComplet} a effectué une opération de suppression Examen N°  {emploiToDelete?.examen?.NumeroExamen} {emploiToDelete?.matiere?.NomMatiere ?? ""}  dans l 'emploi des examens de {niveauNom}");
 
                 }
             }
-           
 
-            return RedirectToAction("EmploiExam", new {IdN,IdS,IdEx,Type });
-            }
-           
-        
+
+            return RedirectToAction("EmploiExam", new { IdN, IdS, IdEx, Type });
+        }
+
+
 
     }
-    }
-
+}

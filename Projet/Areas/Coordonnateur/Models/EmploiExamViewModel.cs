@@ -15,5 +15,7 @@ namespace Projet.Areas.Coordonnateur.Models
         public string? nomAnneeScolaire { get; set; }
         public string? NomVacataire { get; set; }
         public string? NomEnseignant { get; set; }
+
+        public int? Module { get; set; }
     }
 }

@@ -414,6 +414,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTWF0aWVyZXNcRmlyc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/PC/Desktop/Platforme-ENSAS/Projet/Areas/Responsable/Views/Matieres/MatieresCommuns.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTWF0aWVyZXNcTWF0aWVyZXNDb21tdW5zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/PC/Desktop/Platforme-ENSAS/Projet/Areas/Responsable/Views/Niveaux/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcUmVzcG9uc2FibGVcVmlld3NcTml2ZWF1eFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
