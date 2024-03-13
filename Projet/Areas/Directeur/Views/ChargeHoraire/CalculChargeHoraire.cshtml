@@ -3,20 +3,17 @@
 @using Projet.Areas.Coordonnateur.Models
 @using Projet.Areas.Responsable.Models;
 
-        @if (User.IsInRole("Coordonnateur"))
-        {
-            Layout = "~/Areas/Coordonnateur/Views/Shared/_CordDashbord.cshtml";
-        }
-
-        else if (User.IsInRole("Directeur"))
-        {
-            Layout = "~/Areas/Directeur/Views/Shared/_Directeur.cshtml";
-        }
+@if (User.IsInRole("Coordonnateur"))
+{
+    Layout = "~/Areas/Coordonnateur/Views/Shared/_CordDashbord.cshtml";
+}
+else if (User.IsInRole("Directeur"))
+{
+    Layout = "~/Areas/Directeur/Views/Shared/_Directeur.cshtml";
+}
 else if (User.IsInRole("Chef"))
 {
-
     Layout = "~/Areas/Chef/Views/Shared/_Chef.cshtml";
-
 }
 
 
@@ -59,8 +56,7 @@ else if (User.IsInRole("Chef"))
                         <input type="hidden" name="DId" value="@ViewBag.DId">
                     }
                     <input type="hidden" name="VId" value="">
-                   
-                  
+
                     <span id="clearSearch" class="input-group-addon clear-search">&times;</span>
                     <div class="input-group-append">
                         <button class="btn btn-primary " type="submit"><i class="bi bi-search"></i></button>
@@ -152,23 +148,19 @@ else if (User.IsInRole("Chef"))
                         <span id="clearSearch" class="input-group-addon clear-search">&times;</span>
                         <div class="input-group-append">
                             <button class="btn btn-primary " type="submit"><i class="bi bi-search"></i></button>
-                       
-                    @if (ViewBag.SemestreId != null && @ViewBag.DId != null)
+                        </div>
+                        <a href="@Url.Action("DownloadExcelAnnuel", "ChargeHoraire", new { area = "Directeur", IdS = @ViewBag.SemestreId,DId = @ViewBag.DId })" class="btn btn-success ml-1 btn-sm"><i class="typcn typcn-download mx-0"></i> xlsx</a>
 
-                    {
-                                <a href="@Url.Action("DownloadExcelAnnuel", "ChargeHoraire", new { area = "Directeur", IdS = @ViewBag.SemestreId,DId = @ViewBag.DId })" class="btn btn-success ml-1 btn-sm"><i class="typcn typcn-download mx-0"></i> xlsx</a>
-
-                    }
-                    @if (@ViewBag.DId != null && ViewBag.SemestreId == null)
-                    {
-                                <a href="@Url.Action("DownloadExcelAnnuel", "ChargeHoraire", new { area = "Directeur",DId= @ViewBag.DId })" class="btn btn-success ml-1 btn-sm"><i class="typcn typcn-download mx-0"></i> xlsx</a>
-
-                    }
-                </div>
+                        @* @if (ViewBag.SemestreId != null && @ViewBag.DId != null)
+                        {
+                            <a href="@Url.Action("DownloadExcelAnnuel", "ChargeHoraire", new { area = "Directeur", IdS = @ViewBag.SemestreId,DId = @ViewBag.DId })" class="btn btn-success ml-1 btn-sm"><i class="typcn typcn-download mx-0"></i> xlsx</a>
+                        }
+                        @if (@ViewBag.DId != null && ViewBag.SemestreId == null)
+                        {
+                            <a href="@Url.Action("DownloadExcelAnnuel", "ChargeHoraire", new { area = "Directeur",DId= @ViewBag.DId })" class="btn btn-success ml-1 btn-sm"><i class="typcn typcn-download mx-0"></i> xlsx</a>
+                        } *@
+                    </div>
                 </form>
-          
-           
-
         </div>
     }
     </div>
@@ -237,11 +229,10 @@ else if (User.IsInRole("Chef"))
                                     @if (enseignantResultat.Enseignant != null)
                                     {
                                         @(
-                                $"{enseignantResultat.Enseignant.PrenomEnseignant} {enseignantResultat.Enseignant.NomEnseignant}"
-                                )
+                                            $"{enseignantResultat.Enseignant.NomEnseignant} {enseignantResultat.Enseignant.PrenomEnseignant}"
+                                        )
                                     }
                                     else
-
                                     {
                                         @enseignantResultat.NomComplet
                                     }
@@ -263,12 +254,12 @@ else if (User.IsInRole("Chef"))
                                 <td style="">
                                     @if (vacataireResultat.vacataire != null)
                                     {
-                                        @($"{vacataireResultat.vacataire.Prenom} {vacataireResultat.vacataire.Nom}")
+                                        @($"{vacataireResultat.vacataire.Nom} {vacataireResultat.vacataire.Prenom}")
                                     }
                                     else
                                     {
                                         @vacataireResultat.NomComplet
-                                            }
+                                    }
                                 </td>
                                 <td>@vacataireResultat.NomDepartement</td>
                                 <td>@vacataireResultat.GradeName</td>

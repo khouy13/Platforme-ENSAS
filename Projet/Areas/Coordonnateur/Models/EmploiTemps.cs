@@ -26,21 +26,26 @@ namespace Projet.Areas.Coordonnateur.Models
         [ForeignKey(nameof(IdJour))]
         [InverseProperty("EmploisJour")]
         public Jour? Jour { get; set; }
+
         public int IdNiveau { get; set; }
         [ForeignKey(nameof(IdNiveau))]
         [InverseProperty("EmploisNiveau")]
         public Niveau? Niveau { get; set; }
+
         public int? IdSemestre { get; set; }
         [ForeignKey(nameof(IdSemestre))]
         [InverseProperty("EmploisSemestre")]
         public Semestre? semestre { get; set; }
+
         public int? IdEnseignant { get; set; }
         [ForeignKey(nameof(IdEnseignant))]
         public Enseignant? Enseignant { get; set; }
+
         [InverseProperty("EmploisEnseignat")]
         public int? IdVacataire { get; set; }
         [ForeignKey(nameof(IdVacataire))]
         public Vacataire? Vacataire { get; set; }
+
         [InverseProperty("EmploisVacataire")]
         public int? IdGroupe { get; set; }
         [ForeignKey(nameof(IdGroupe))]
@@ -67,7 +72,6 @@ namespace Projet.Areas.Coordonnateur.Models
         [InverseProperty("EmploisTypeEnseignement")]
         public TypeEnseignement? TypeEnseignement { get; set; }
         public bool? isComuncours { get; set; }
-
     }
 }
 

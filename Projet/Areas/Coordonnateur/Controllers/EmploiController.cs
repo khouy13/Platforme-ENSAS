@@ -1,33 +1,24 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Projet.Data;
-using Microsoft.AspNetCore.Http;
-
-using System;
 using Microsoft.EntityFrameworkCore;
-
 using Projet.Areas.Coordonnateur.Models;
-
 using Microsoft.AspNetCore.Mvc.ViewEngines;
-using System.Linq;
 using System.Text;
 using Projet.Models;
 using Rotativa.AspNetCore;
 using System.Diagnostics;
-using NuGet.Packaging.Signing;
-using Humanizer;
 using Microsoft.AspNetCore.Authorization;
 using System.Data;
-
 using Projet.Areas.Responsable.Models;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Identity;
-using DocumentFormat.OpenXml.InkML;
 using Microsoft.IdentityModel.Tokens;
+using System.Text.RegularExpressions;
 
 namespace Projet.Areas.Coordenateur.Controllers
 {
-    [Area("coordonnateur")]
 
+    [Area("coordonnateur")]
     public class EmploiController : Controller
     {
         private ApplicationUser user;
@@ -123,15 +114,19 @@ namespace Projet.Areas.Coordenateur.Controllers
             ViewBag.Enseignants = Enseignants;
             var jour = _context.Jours.Where(e => e.IdJour == IdJour).FirstOrDefault();
             var seance = _context.Seances.Where(m => m.IdSeance == IdSeance).FirstOrDefault();
-            var matieres = _context.Matieres.Include(e => e.MatiereNiveaus).ThenInclude(e => e.Niveau).ThenInclude(e => e.NiveauMatieres).Where(e => e.MatiereNiveaus.Any(e => e.IdNiveau == IdN)).ToList();
+            var matieres = _context.Matieres.Include(e => e.MatiereNiveaus).ThenInclude(e => e.Niveau).ThenInclude(e => e.NiveauMatieres)
+                            .Where(e => e.MatiereNiveaus.Any(e => e.IdNiveau == IdN))
+                            .ToList();
+
             ViewBag.matieres = matieres;
             ViewBag.IdSemestre = IdS;
-            var jours = _context.Jours;
+            //It must be list
+            //var jours = _context.Jours;
+            var jours = _context.Jours.ToList();
             var vacataires = _context.vacataires.ToList();
             ViewBag.Vacataires = vacataires;
 
             var seances = _context.Seances.ToList();
-
 
             var Local = _context.Locals.ToList();
             ViewBag.Local = Local;
@@ -148,6 +143,80 @@ namespace Projet.Areas.Coordenateur.Controllers
             ViewBag.Seances = IdSeance;
             ViewBag.Jours = IdJour;
             return View();
+        }
+
+        [NonAction]
+        bool CommunOrEqualMatiere(int? IdMatiere1, int? IdMatiere2)
+        {
+            if (IdMatiere1 != null && IdMatiere2 != null && IdMatiere1 == IdMatiere2)
+            {
+                return true;
+            }
+            var Matiere1 = _context.Matieres.Where(e => e.IdMatiere == IdMatiere1).FirstOrDefault();
+            var Matiere2 = _context.Matieres.Where(e => e.IdMatiere == IdMatiere2).FirstOrDefault();
+            if (Matiere1 == null || Matiere2 == null)
+            {
+                return false;
+            }
+            //Remove WhiteSpaces
+            var matier1Nom = Regex.Replace(Matiere1.NomMatiere, @"\s+", "");
+            var matier2Nom = Regex.Replace(Matiere2.NomMatiere, @"\s+", "");
+            //Verifier Si Le nom est Le meme
+            //Si Deux Matiere On Le meme Nom Ils Sont Considere Comme communes
+            if (matier1Nom.Equals(matier2Nom))
+            {
+                return true;
+            }
+
+            //Check if Related in Table Matiere Commun
+            bool isCommun = _context.MatiereCommuns.Any(e => (e.MainMatiereId == IdMatiere1 && e.RelatedMatiereId == IdMatiere2)
+            || (e.MainMatiereId == IdMatiere2 && e.RelatedMatiereId == IdMatiere1));
+
+            return isCommun;
+        }
+
+        [NonAction]
+        bool IsMatiereCommun(int? IdMatiere1, int? IdMatiere2)
+        {
+            return CommunOrEqualMatiere(IdMatiere1, IdMatiere2);
+            //if (!CommunOrEqualMatiere(IdMatiere1,IdMatiere2))
+            //{
+            //    return true;
+            //}
+            //////cas ou matiere est lie a une autre matiere (car sa nomination est la meme pour ces matiere reliees)
+            //var RelatedMatieres = _context.Matieres.AsEnumerable()
+            //    .Where( e => CommunOrEqualMatiere(e.IdMatiere,IdMatiere1) && e.IdMatiere!=IdMatiere1)
+            //    .Select(e=>Regex.Replace(e.NomMatiere, @"\s+",""));
+
+            //foreach (var NomMatiere in RelatedMatieres)
+            //{
+            //    if (matier2Nom.Equals(NomMatiere))
+            //    {
+            //        return true;
+            //    }
+            //}
+
+            //return false;
+        }
+
+        [NonAction]
+        bool CommonCourse(EmploiTemps e,EmploiTemps emploi)
+        {
+            bool var = 
+                    //e.SemaineDebut == emploi.SemaineDebut &&
+                    //e.SemaineFin == emploi.SemaineFin &&
+                    //emploi.IdLocal != null && e.IdLocal == emploi.IdLocal &&
+                    emploi.IdSeance != null && e.IdSeance == emploi.IdSeance &&
+                    emploi.IdJour != null && e.IdJour == emploi.IdJour &&
+                    emploi.IdSemestre != null && e.IdSemestre == emploi.IdSemestre &&
+                    // Car On specifie juste un , soit enseignant ou vacataire
+                    ((emploi.IdEnseignant != null && e.IdEnseignant == emploi.IdEnseignant)
+                    || (emploi.IdVacataire != null && e.IdVacataire == emploi.IdVacataire)) &&
+                    IsMatiereCommun(emploi.IdMatiere, e.IdMatiere)
+                    //&& emploi.IdMatiere != null && e.IdMatiere == emploi.IdMatiere
+                    &&
+                    (e.IdNiveau != emploi.IdNiveau || e.IdGroupe != emploi.IdGroupe);
+            return var;
         }
 
         [Authorize(Roles = "Directeur, Coordonnateur,Chef")]
@@ -169,6 +238,11 @@ namespace Projet.Areas.Coordenateur.Controllers
             var semD = emploi.SemaineDebut;
             var semF = emploi.SemaineFin;
             var IdS = emploi.IdSemestre;
+            if (semD > semF)
+            {
+                TempData["EmploiMessage"] = "La Semaine De Fin Doit Être Supérieure à la Semaine De Début !";
+                return RedirectToAction("AddSeance", new { IdN, IdSeance, IdJour, IdS });
+            }
             string nomMatiere = null;
             var niveauNom = _context.Niveaus
                 .Where(n => n.IdNiveau == IdN)
@@ -183,33 +257,21 @@ namespace Projet.Areas.Coordenateur.Controllers
                 .Select(n => n.NomSeance)
                 .FirstOrDefault();
 
-
-
-            var emploiTempsList = _context.EmploiTemps
-                .Include(e => e.Matiere) // Inclure la table des matières
+            var emploiTempsList = _context.EmploiTemps.Include(e => e.Matiere)
                 .ToList();
 
             bool commonCourse = emploiTempsList
-                .Any(e =>
-                    e.SemaineDebut == emploi.SemaineDebut &&
-                    e.IdLocal == emploi.IdLocal &&
-                    e.IdSeance == emploi.IdSeance &&
-                    e.IdSemestre == emploi.IdSemestre &&
-                   e.IdEnseignant == emploi.IdEnseignant &&
-                   e.IdVacataire == emploi.IdVacataire &&
-                   e.IdMatiere == emploi.IdMatiere
-                    &&
-                    (e.IdNiveau != emploi.IdNiveau || e.IdGroupe != emploi.IdGroupe));
-
-
+                .Any(e=>CommonCourse(e,emploi));
 
             if (commonCourse)
             {
-                var emploicommunexsiste = _context.EmploiTemps.FirstOrDefault(e => e.IdMatiere == emploi.IdMatiere);
-                if (emploicommunexsiste != null)
+                var ListOfCommonSessions = emploiTempsList.Where(e => CommonCourse(e, emploi));
+
+                foreach (var course in ListOfCommonSessions)
                 {
-                    emploicommunexsiste.isComuncours = true;
+                    course.isComuncours = true;
                 }
+
                 // Ajouter l'emploi du temps à la base de données pour une séance commune
                 emploi.isComuncours = true;
                 _context.EmploiTemps.Add(emploi);
@@ -217,36 +279,36 @@ namespace Projet.Areas.Coordenateur.Controllers
 
                 if (user != null && user.Enseignant != null)
                 {
-
                     _logger.LogInformation($"L'utilisateur {user.Enseignant.NomComplet} a effectué une opération d'ajout de {nonseance} du {nonjour} dans l'emploi du temps de {niveauNom}.");
-
                 }
 
-
-                TempData["EmploiMessage"] = "Séance commune ajoutée avec succès.";
+                TempData["EmploiMessage"] = TempData["EmploiMessage"] ??"" +"Séance commune ajoutée avec succès.";
                 return RedirectToAction("TempsEmploi", new { IdN, IdS });
             }
 
             // ici pour recuperer Enseignant 
-            var teacherOccupiedEmpoloi = _context.EmploiTemps.Include(n => n.Niveau).Include(m => m.Matiere).FirstOrDefault(e =>
-            e.IdEnseignant == emploi.IdEnseignant &&
-            e.IdSeance == emploi.IdSeance &&
-            e.IdJour == emploi.IdJour &&
-            e.IdNiveau != emploi.IdNiveau &&
-            e.IdSemestre == emploi.IdSemestre &&
-            ((e.SemaineDebut <= emploi.SemaineDebut && emploi.SemaineDebut <= e.SemaineFin) ||
-            (e.SemaineDebut <= emploi.SemaineFin && emploi.SemaineFin <= e.SemaineFin))
-            );
+            var teacherOccupiedEmpoloi = _context.EmploiTemps.Include(n => n.Niveau).Include(m => m.Matiere)
+                .FirstOrDefault(e =>
+                    e.IdEnseignant == emploi.IdEnseignant &&
+                    e.IdSeance == emploi.IdSeance &&
+                    e.IdJour == emploi.IdJour &&
+                    e.IdNiveau != emploi.IdNiveau &&
+                    e.IdSemestre == emploi.IdSemestre &&
+                    ((e.SemaineDebut <= emploi.SemaineDebut && emploi.SemaineDebut <= e.SemaineFin) ||
+                    (e.SemaineDebut <= emploi.SemaineFin && emploi.SemaineFin <= e.SemaineFin))
+                );
 
-            var matchingVacataireOccupied = _context.EmploiTemps.Include(n => n.Niveau).Include(m => m.Matiere).FirstOrDefault(e =>
-            e.IdVacataire == emploi.IdVacataire &&
-            e.IdSeance == emploi.IdSeance &&
-            e.IdJour == emploi.IdJour &&
-            e.IdNiveau != emploi.IdNiveau &&
-            e.IdSemestre == emploi.IdSemestre &&
-            ((e.SemaineDebut <= emploi.SemaineDebut && emploi.SemaineDebut <= e.SemaineFin) ||
-            (e.SemaineDebut <= emploi.SemaineFin && emploi.SemaineFin <= e.SemaineFin))
-            );
+            var matchingVacataireOccupied = _context.EmploiTemps.Include(n => n.Niveau).Include(m => m.Matiere)
+                .FirstOrDefault(e =>
+                    e.IdVacataire == emploi.IdVacataire &&
+                    e.IdSeance == emploi.IdSeance &&
+                    e.IdJour == emploi.IdJour &&
+                    e.IdNiveau != emploi.IdNiveau &&
+                    e.IdSemestre == emploi.IdSemestre &&
+                    ((e.SemaineDebut <= emploi.SemaineDebut && emploi.SemaineDebut <= e.SemaineFin) ||
+                    (e.SemaineDebut <= emploi.SemaineFin && emploi.SemaineFin <= e.SemaineFin))
+                );
+
             if (teacherOccupiedEmpoloi != null)
             {
                 var enseignantOccupe = _context.Enseignants.FirstOrDefault(e => e.IdEnseignant == emploi.IdEnseignant);
@@ -329,8 +391,6 @@ namespace Projet.Areas.Coordenateur.Controllers
 
         [HttpGet] // Utiliser HttpGet au lieu de HttpPost
         public IActionResult Delete(int IdEmploi)
-
-
         {
             string userId = HttpContext.Session.GetString("UserId");
 
@@ -361,17 +421,26 @@ namespace Projet.Areas.Coordenateur.Controllers
             }
             else
             {
+                //ici on cherche les seances communes avec cette seance 
+                //si le nombre est un on le fait false
+                var listOfCommonSessions = _context.EmploiTemps.ToList()
+                                           .Where(e=>CommonCourse(e,emploiToDelete) && e.IdEmploi != emploiToDelete.IdEmploi);
+
+                if (listOfCommonSessions.Count() == 1)
+                {
+                    foreach (var el in listOfCommonSessions)
+                    {
+                        el.isComuncours = false;
+                    }
+                }
+
                 _context.EmploiTemps.Remove(emploiToDelete);
                 _context.SaveChanges();
                 TempData["EmploiMessage"] = "Seance  du temps a été supprimé avec succès.";
                 if (user != null && user.Enseignant != null)
                 {
-
                     _logger.LogInformation($"L'utilisateur {user.Enseignant.NomComplet} a effectué une opération de suppression  de {nonseance} du  {nonjour} dans l 'emploi de temps de {niveauNom}");
-
                 }
-
-
             }
 
             return RedirectToAction("TempsEmploi", new { IdN, IdS });
@@ -440,11 +509,10 @@ namespace Projet.Areas.Coordenateur.Controllers
 
         [Authorize(Roles = "Directeur, Coordonnateur,Chef")]
         [HttpPost]
-        public IActionResult Edit(int IdEmploi, EmploiTemps emploiToEdit)
+        public IActionResult Edit(int IdEmploi, EmploiTemps newEmploi)
         {
-            //Matrab add constion of existance
-            ViewBag.idNeveau = emploiToEdit.IdNiveau;
-            ViewBag.IdSemestre = emploiToEdit.IdSemestre;
+            ViewBag.idNeveau = newEmploi.IdNiveau;
+            ViewBag.IdSemestre = newEmploi.IdSemestre;
             string userId = HttpContext.Session.GetString("UserId");
 
             if (userId != null)
@@ -453,8 +521,8 @@ namespace Projet.Areas.Coordenateur.Controllers
                    .Include(u => u.Enseignant)
                    .FirstOrDefault(u => u.Id == userId);
             }
-            var IdN = emploiToEdit.IdNiveau;
-            var IdS = emploiToEdit.IdSemestre;
+            var IdN = newEmploi.IdNiveau;
+            var IdS = newEmploi.IdSemestre;
 
             var niveauNom = _context.Niveaus
                   .Where(n => n.IdNiveau == IdN)
@@ -462,12 +530,12 @@ namespace Projet.Areas.Coordenateur.Controllers
                   .FirstOrDefault();
 
             var nonjour = _context.Jours
-              .Where(n => n.IdJour == emploiToEdit.IdJour)
+              .Where(n => n.IdJour == newEmploi.IdJour)
               .Select(n => n.NomJour)
               .FirstOrDefault();
 
             var nonseance = _context.Seances
-                .Where(n => n.IdSeance == emploiToEdit.IdSeance)
+                .Where(n => n.IdSeance == newEmploi.IdSeance)
                 .Select(n => n.NomSeance)
                 .FirstOrDefault();
 
@@ -475,61 +543,76 @@ namespace Projet.Areas.Coordenateur.Controllers
 
             if (ModelState.IsValid)
             {
-                var semD = emploiToEdit.SemaineDebut;
-                var semF = emploiToEdit.SemaineFin;
+                var semD = newEmploi.SemaineDebut;
+                var semF = newEmploi.SemaineFin;
 
-                var existingEmploi = _context.EmploiTemps
+                var oldEmploi = _context.EmploiTemps
                     .FirstOrDefault(e => e.IdEmploi == IdEmploi);
 
-                if (existingEmploi == null)
+                if (oldEmploi == null)
                 {
                     TempData["EmploiMessage"] = "L'emploi du temps à éditer n'a pas été trouvé.";
                     return RedirectToAction("TempsEmploi", new { IdN, IdS });
                 }
 
 
-                // A Discuter !!!  - MATRAB
-
                 bool commonCourse = _context.EmploiTemps
                 .AsEnumerable()
                 .Any(e =>
-                    e.SemaineDebut == emploiToEdit.SemaineDebut &&
-                    e.IdLocal == emploiToEdit.IdLocal &&
-                    e.IdSeance == emploiToEdit.IdSeance &&
-                    e.IdSemestre == emploiToEdit.IdSemestre &&
-                    e.IdEnseignant == emploiToEdit.IdEnseignant &&
-                    e.IdVacataire == emploiToEdit.IdVacataire &&
-                    e.IdMatiere == emploiToEdit.IdMatiere
-                    &&
-                    (e.IdNiveau != emploiToEdit.IdNiveau || e.IdGroupe != emploiToEdit.IdGroupe)
+                    CommonCourse(e,newEmploi) && e.IdEmploi != IdEmploi
                 );
+
+                //check old data and reset the isCommonCourse
+                //Check if OldEmploi has CommonCourses & handle them
+                //Placed Here To Not Be Repeated
+                var oldEmploiCommonCourses = _context.EmploiTemps
+                        .AsEnumerable().Where(e => CommonCourse(e, oldEmploi) && e.IdEmploi != IdEmploi);
+
+                if (oldEmploiCommonCourses.Count() == 1 && !CommonCourse(oldEmploi, newEmploi))
+                {
+                    foreach (var commonSession in oldEmploiCommonCourses)
+                    {
+                        commonSession.isComuncours = false;
+                    }
+                }
 
                 if (commonCourse)
                 {
                     // Mettre à jour les propriétés de l'emploi du temps existant avec les nouvelles valeurs
+                    //var emploicommunexsiste = _context.EmploiTemps.FirstOrDefault(e => e.IdMatiere == existingEmploi.IdMatiere);
+                    //emploicommunexsiste.isComuncours = true;
 
-                    // Matrab = why get emploi by matiere 
-                    var emploicommunexsiste = _context.EmploiTemps.FirstOrDefault(e => e.IdMatiere == existingEmploi.IdMatiere);
-                    emploicommunexsiste.isComuncours = true;
-                    existingEmploi.isComuncours = true;
-                    existingEmploi.IdMatiere = emploiToEdit.IdMatiere;
-                    existingEmploi.IdTypeEnseignement = emploiToEdit.IdTypeEnseignement;
-                    existingEmploi.SemaineDebut = emploiToEdit.SemaineDebut;
-                    existingEmploi.SemaineFin = emploiToEdit.SemaineFin;
-                    existingEmploi.IdGroupe = emploiToEdit.IdGroupe;
-                    existingEmploi.Date = emploiToEdit.Date;
-                    existingEmploi.IdNiveau = emploiToEdit.IdNiveau;
-                    existingEmploi.IdJour = emploiToEdit.IdJour;
-                    existingEmploi.IdEnseignant = emploiToEdit.IdEnseignant;
-                    existingEmploi.IdLocal = emploiToEdit.IdLocal;
-                    existingEmploi.IdVacataire = emploiToEdit.IdVacataire;
+                    var commonSessionsList = _context.EmploiTemps
+                                     .AsEnumerable().Where(e => CommonCourse(e,newEmploi) && e.IdEmploi!= IdEmploi);
+
+                    foreach ( var commonSession in commonSessionsList )
+                    {
+                        commonSession.isComuncours = true;
+                    }
+
+                    oldEmploi.isComuncours = true;
+                    oldEmploi.IdMatiere = newEmploi.IdMatiere;
+                    oldEmploi.IdTypeEnseignement = newEmploi.IdTypeEnseignement;
+                    oldEmploi.SemaineDebut = newEmploi.SemaineDebut;
+                    oldEmploi.SemaineFin = newEmploi.SemaineFin;
+                    oldEmploi.IdGroupe = newEmploi.IdGroupe;
+                    oldEmploi.Date = newEmploi.Date;
+                    oldEmploi.IdNiveau = newEmploi.IdNiveau;
+                    oldEmploi.IdJour = newEmploi.IdJour;
+                    oldEmploi.IdEnseignant = newEmploi.IdEnseignant;
+                    oldEmploi.IdLocal = newEmploi.IdLocal;
+                    oldEmploi.IdVacataire = newEmploi.IdVacataire;
                     if (user != null && user.Enseignant != null)
                     {
                         _logger.LogInformation($"L'utilisateur {user.Enseignant.NomComplet} a effectué une opération de Modification  de {nonseance} du {nonjour} dans l 'emploi de temps de {niveauNom}");
                     }
                     _context.SaveChanges();
-                    TempData["EmploiMessage"] = "L'emploi du temps a été mis à jour avec succès.";
+                    TempData["EmploiMessage"] = "L'emploi du temps a été mis à jour avec succès,Cette Seance est Commune!";
                     return RedirectToAction("TempsEmploi", new { IdN, IdS });
+                }
+                else
+                {
+                    oldEmploi.isComuncours = false;
                 }
 
                 // Vérification pour éviter les conflits de séances
@@ -541,55 +624,57 @@ namespace Projet.Areas.Coordenateur.Controllers
                     .FirstOrDefault
                     (e =>
                         e.IdEmploi != IdEmploi &&
-                        emploiToEdit.IdLocal != null &&
-                        e.IdLocal == emploiToEdit.IdLocal &&
+                        newEmploi.IdLocal != null &&
+                        e.IdLocal == newEmploi.IdLocal &&
                         ((e.SemaineDebut <= semD && semD <= e.SemaineFin) || (e.SemaineDebut <= semF && semF <= e.SemaineFin)) &&
-                        e.IdSeance == emploiToEdit.IdSeance &&
-                        e.IdJour == emploiToEdit.IdJour &&
-                        e.IdSemestre == emploiToEdit.IdSemestre &&
-                        e.IdEnseignant != emploiToEdit.IdEnseignant
+                        e.IdSeance == newEmploi.IdSeance &&
+                        e.IdJour == newEmploi.IdJour &&
+                        e.IdSemestre == newEmploi.IdSemestre &&
+                        e.IdEnseignant != newEmploi.IdEnseignant
                     );
 
                 bool existingSession = _context.EmploiTemps
                 .Any(e =>
                     e.IdEmploi != IdEmploi &&
-                    e.IdJour == emploiToEdit.IdJour &&
-                    emploiToEdit.IdSeance != null &&
-                    e.IdSeance == emploiToEdit.IdSeance &&
-                    e.IdNiveau == emploiToEdit.IdNiveau &&
-                    e.IdSemestre == emploiToEdit.IdSemestre &&
+                    e.IdJour == newEmploi.IdJour &&
+                    newEmploi.IdSeance != null &&
+                    e.IdSeance == newEmploi.IdSeance &&
+                    e.IdNiveau == newEmploi.IdNiveau &&
+                    e.IdSemestre == newEmploi.IdSemestre &&
                     ((e.SemaineDebut <= semD && semD <= e.SemaineFin) || (e.SemaineDebut <= semF && semF <= e.SemaineFin)) &&
-                    e.IdGroupe == emploiToEdit.IdGroupe);
+                    e.IdGroupe == newEmploi.IdGroupe);
 
 
-                var teacherOccupied = _context.EmploiTemps
+                var teacherOccupied = _context
+                    .EmploiTemps
                     .Include(n => n.Niveau)
                     .Include(m => m.Matiere)
                     .Include(e => e.Enseignant)
-                    .FirstOrDefault(e =>
+                    .FirstOrDefault
+                    (e =>
                         e.IdEmploi != IdEmploi &&
-                        emploiToEdit.IdEnseignant != null &&
-                        e.IdEnseignant == emploiToEdit.IdEnseignant &&
-                        e.IdSeance == emploiToEdit.IdSeance &&
-                        e.IdJour == emploiToEdit.IdJour &&
-                        e.IdSemestre == emploiToEdit.IdSemestre &&
+                        newEmploi.IdEnseignant != null &&
+                        e.IdEnseignant == newEmploi.IdEnseignant &&
+                        e.IdSeance == newEmploi.IdSeance &&
+                        e.IdJour == newEmploi.IdJour &&
+                        e.IdSemestre == newEmploi.IdSemestre &&
                         ((e.SemaineDebut <= semD && semD <= e.SemaineFin) || (e.SemaineDebut <= semF && semF <= e.SemaineFin))
-                );
+                    );
 
                 var vacataireOccupied = _context.EmploiTemps.Include(n => n.Niveau).Include(m => m.Matiere).Include(e => e.Vacataire).FirstOrDefault(e =>
                       e.IdEmploi != IdEmploi &&
-                      emploiToEdit.IdVacataire != null &&
-                      e.IdVacataire == emploiToEdit.IdVacataire &&
-                      e.IdSeance == emploiToEdit.IdSeance &&
-                      e.IdJour == emploiToEdit.IdJour &&
-                      e.IdSemestre == emploiToEdit.IdSemestre &&
+                      newEmploi.IdVacataire != null &&
+                      e.IdVacataire == newEmploi.IdVacataire &&
+                      e.IdSeance == newEmploi.IdSeance &&
+                      e.IdJour == newEmploi.IdJour &&
+                      e.IdSemestre == newEmploi.IdSemestre &&
                       ((e.SemaineDebut <= semD && semD <= e.SemaineFin) ||
                       (e.SemaineDebut <= semF && semF <= e.SemaineFin))
                   );
 
                 if (localOccupied != null)
                 {
-                    var salleOccupee = _context.Locals.FirstOrDefault(l => l.IdLocal == emploiToEdit.IdLocal);
+                    var salleOccupee = _context.Locals.FirstOrDefault(l => l.IdLocal == newEmploi.IdLocal);
                     if (salleOccupee != null)
                     {
                         TempData["EmploiMessage"] = $"{salleOccupee.NomLocal} est déjà occupé  de S-{semD} S-{semF}" +
@@ -620,19 +705,18 @@ namespace Projet.Areas.Coordenateur.Controllers
                 }
                 else
                 {
-
-                    existingEmploi.IdMatiere = emploiToEdit.IdMatiere;
-                    existingEmploi.IdTypeEnseignement = emploiToEdit.IdTypeEnseignement;
-                    existingEmploi.SemaineDebut = emploiToEdit.SemaineDebut;
-                    existingEmploi.SemaineFin = emploiToEdit.SemaineFin;
-                    existingEmploi.IdGroupe = emploiToEdit.IdGroupe;
-                    existingEmploi.Date = emploiToEdit.Date;
-                    existingEmploi.IdNiveau = emploiToEdit.IdNiveau;
-                    existingEmploi.IdSeance = emploiToEdit.IdSeance;
-                    existingEmploi.IdSemestre = emploiToEdit.IdSemestre;
-                    existingEmploi.IdJour = emploiToEdit.IdJour;
-                    existingEmploi.IdEnseignant = emploiToEdit.IdEnseignant;
-                    existingEmploi.IdLocal = emploiToEdit.IdLocal;
+                    oldEmploi.IdMatiere = newEmploi.IdMatiere;
+                    oldEmploi.IdTypeEnseignement = newEmploi.IdTypeEnseignement;
+                    oldEmploi.SemaineDebut = newEmploi.SemaineDebut;
+                    oldEmploi.SemaineFin = newEmploi.SemaineFin;
+                    oldEmploi.IdGroupe = newEmploi.IdGroupe;
+                    oldEmploi.Date = newEmploi.Date;
+                    oldEmploi.IdNiveau = newEmploi.IdNiveau;
+                    oldEmploi.IdSeance = newEmploi.IdSeance;
+                    oldEmploi.IdSemestre = newEmploi.IdSemestre;
+                    oldEmploi.IdJour = newEmploi.IdJour;
+                    oldEmploi.IdEnseignant = newEmploi.IdEnseignant;
+                    oldEmploi.IdLocal = newEmploi.IdLocal;
                     if (user != null && user.Enseignant != null)
                     {
 
@@ -645,25 +729,49 @@ namespace Projet.Areas.Coordenateur.Controllers
                 }
             }
 
+            //Matrab === Depuis Ici Il y a Beaucoup d'erreurs
+
             // Si la validation a échoué, réafficher la vue avec les erreurs
-            var Enseignants = _context.Enseignants.ToList();
-            ViewBag.Enseignants = Enseignants;
-            //var matieres = _context.Matieres.Where(m => m.IdNiveau == emploiToEdit.IdNiveau).ToList();
-            var matieres = _context.Matieres
-                .Include(e => e.MatiereNiveaus)
-                .ThenInclude(e => e.Niveau)
-                .ThenInclude(e => e.NiveauMatieres)
-                .Where(e => e.MatiereNiveaus.Any(e => e.IdNiveau == emploiToEdit.IdNiveau))
-                .ToList();
+            //var Enseignants = _context.Enseignants.ToList();
+            //ViewBag.Enseignants = Enseignants;
 
-            ViewBag.matieres = matieres;
-            ViewBag.Local = _context.Locals.ToList();
-            var groupe = _context.Groupes.Where(m => m.IdNiveau == emploiToEdit.IdNiveau).ToList();
-            ViewBag.groupe = groupe;
-            var TypEnseignant = _context.TypeEnseignements.ToList();
-            ViewBag.TypEnseignant = TypEnseignant;
+            //var jours = _context.Jours.ToList();
+            //var seances = _context.Seances.ToList();
+            //ViewData["IdJour"] = new SelectList(jours, "IdJour", "NomJour", emploiToEdit.IdJour);
+            //ViewData["IdSeance"] = new SelectList(seances, "IdSeance", "NomSeance", emploiToEdit.IdSeance);
 
-            return View(emploiToEdit);
+            ////var matieres = _context.Matieres.Where(m => m.IdNiveau == emploiToEdit.IdNiveau).ToList();
+            //var matieres = _context.Matieres
+            //    .Include(e => e.MatiereNiveaus)
+            //        .ThenInclude(e => e.Niveau)
+            //        .ThenInclude(e => e.NiveauMatieres)
+            //    .Where(e => e.MatiereNiveaus
+            //    .Any(e => e.IdNiveau == emploiToEdit.IdNiveau))
+            //    .ToList();
+
+            //var vacataires = _context.vacataires.ToList();
+            //ViewBag.Vacataires = vacataires;
+
+            //ViewBag.matieres = matieres;
+            //ViewBag.Local = _context.Locals.ToList();
+            //var groupe = _context.Groupes.Where(m => m.IdNiveau == emploiToEdit.IdNiveau).ToList();
+            //ViewBag.groupe = groupe;
+            //var TypEnseignant = _context.TypeEnseignements.ToList();
+            //ViewBag.TypEnseignant = TypEnseignant;
+            if (newEmploi.SemaineDebut == 0)
+            {
+                TempData["EmploiMessage"] = "La Semaine De Debut Est Obligatoire !";
+            }
+            else if (newEmploi.SemaineFin == 0)
+            {
+                TempData["EmploiMessage"] = "La Semaine De Fin Est Obligatoire !";
+            }
+            else
+            {
+                TempData["EmploiMessage"] = "Données nécessaires sont manquantes !";
+            }
+
+            return RedirectToAction("Edit", new { IdEmploi, IdN });
         }
 
         [Authorize(Roles = "Directeur, Coordonnateur,Chef")]
@@ -713,7 +821,6 @@ namespace Projet.Areas.Coordenateur.Controllers
             // Retournez la vue en tant que PDF en utilisant Rotativa
             return new ViewAsPdf("GeneratePdf", model);
         }
-
 
         public IActionResult Error()
         {
@@ -770,4 +877,5 @@ namespace Projet.Areas.Coordenateur.Controllers
 
 
     }
+
 }
