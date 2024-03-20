@@ -1,0 +1,10 @@
+﻿
+@if (!string.IsNullOrEmpty(TempData["Message"] as string))
+{
+    <span class="container d-flex mx-auto justify-content-end">
+        <span class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["Message"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </span>
+    </span>
+}

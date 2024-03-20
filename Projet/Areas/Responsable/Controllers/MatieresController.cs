@@ -345,11 +345,7 @@ namespace Projet.Areas.Responsable.Controllers
             return View(emplois);
         }
 
-        [HttpGet]
-        [Authorize(Roles = "Admin,Directeur")]
-        public IActionResult MatieresCommuns()
-        {
-            return View();
-        }
+        
+
     }
 }

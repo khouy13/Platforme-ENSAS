@@ -7,53 +7,41 @@ using System.Runtime.Intrinsics.X86;
 using Microsoft.AspNetCore.Mvc;
 using OfficeOpenXml;
 using Rotativa.AspNetCore;
-using Microsoft.Extensions.Logging;
 using NLog;
 using NLog.Web;
-using Microsoft.AspNetCore.Identity.UI.Services;
-using System.Configuration;
-using Microsoft.Extensions.Configuration;
-using Projet.Services;
-using Projet.Models;
 using Microsoft.AspNetCore.Http.Features;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 logger.Debug("init main");
 
 try { 
-var builder = WebApplication.CreateBuilder(args);
+    var builder = WebApplication.CreateBuilder(args);
 
-
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddControllersWithViews();
+    builder.Services.AddEndpointsApiExplorer();
+    builder.Services.AddControllersWithViews();
     // NLog: Setup NLog for Dependency injection
-builder.Logging.ClearProviders();
+    builder.Logging.ClearProviders();
     builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);
     builder.Host.UseNLog();
-    Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
-  
-   
+        Directory.SetCurrentDirectory(AppDomain.CurrentDomain.BaseDirectory);
 
     builder.Services.AddRazorPages();
-builder.Services.AddSession(); // Add session configuration
+    builder.Services.AddSession(); // Add session configuration
     builder.Services.Configure<FormOptions>(p =>
-    {
-        p.ValueLengthLimit = int.MaxValue;
-        p.MultipartBoundaryLengthLimit = int.MaxValue;
-        p.MemoryBufferThreshold = int.MaxValue;
-    });
-
-
+        {
+            p.ValueLengthLimit = int.MaxValue;
+            p.MultipartBoundaryLengthLimit = int.MaxValue;
+            p.MemoryBufferThreshold = int.MaxValue;
+        });
 
     builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<AppDbContext>(option =>
-option.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionDb")), ServiceLifetime.Scoped);
+    builder.Services.AddDbContext<AppDbContext>(option => option.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionDb")), ServiceLifetime.Scoped);
 
+    builder.Services.AddDefaultIdentity<ApplicationUser>().AddDefaultTokenProviders().AddRoles<IdentityRole>()
+                    .AddEntityFrameworkStores<AppDbContext>();
 
-builder.Services.AddDefaultIdentity<ApplicationUser>().AddDefaultTokenProviders().AddRoles<IdentityRole>()
-   .AddEntityFrameworkStores<AppDbContext>();
+    builder.Services.AddScoped<CommunCoursesHandler>();
 
-  
     var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -63,6 +51,7 @@ if (!app.Environment.IsDevelopment())
     // The default HSTS loggg is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
 }
+
 using (var scope = app.Services.CreateScope())
 {
     var serviceProvider = scope.ServiceProvider;

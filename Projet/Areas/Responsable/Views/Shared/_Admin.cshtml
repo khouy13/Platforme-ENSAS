@@ -253,7 +253,7 @@
                 </div>
             </div>
 
-            <nav class="sidebar sidebar-offcanvas " pl-3 pr-3" id="sidebar" style="width:auto">
+            <nav id="sidebar-admin" class="sidebar sidebar-offcanvas" pl-3 pr-3" id="sidebar" style="width:auto;">
                 <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link" href="@Url.Action("Index", "Responsable", new { area = "Responsable" })">
@@ -276,7 +276,7 @@
                                 <li class="nav-item"> <a class="nav-link" href="@Url.Action("First", "Vacataires", new { area = "Responsable" })">Gestion Des Vacataires</a></li>
 
                                 <li class="nav-item"> <a class="nav-link"  href="@Url.Action("First", "Matieres", new { area = "Responsable" })">Gestion Des Matières</a></li>
-                                <li class="nav-item"> <a class="nav-link" href="@Url.Action("MatieresCommuns", "Matieres", new { area = "Responsable" })">Matières Communes</a></li>
+                                <li class="nav-item"> <a class="nav-link" href="@Url.Action("Index", "MatieresCommuns", new { area = "Responsable" })">Matières Communes</a></li>
                                 <li class="nav-item"><a class="nav-link"  href="@Url.Action("Index", "Filieres", new { area = "Responsable" })">Gestion Des Filières</a></li>
                                 <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Niveaux", new { area = "Responsable" })">Gestion Des Niveaux</a></li>
                                 <li class="nav-item"><a class="nav-link" href="@Url.Action("Index", "Groupes", new { area = "Responsable" })">Gestion Des Groupes</a></li>
@@ -346,7 +346,7 @@
 
     </div>
 
-    @RenderSection("scripts", required: false)
+    
     <script src="~/asset/vendors/js/vendor.bundle.base.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="~/asset/vendors/chart.js/Chart.min.js"></script>
@@ -369,6 +369,7 @@
 
     <!-- Template Main JS File -->
     <script src="~/asset/asset2/js/main.js"></script>
+    @RenderSection("scripts", required: false)
 
     @* <script src="~/asset/js/dashboard.js"></script>*@
 

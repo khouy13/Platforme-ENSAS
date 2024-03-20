@@ -32,6 +32,9 @@ public partial class Matiere
     [ForeignKey(nameof(IdVacataire))]
     [InverseProperty("MatiereVacataire")]
     public virtual Vacataire? Vacataire { get; set; }
+
+    [InverseProperty(nameof(MatiereGroupeMatiere.Matiere))]
+    public virtual ICollection<MatiereGroupeMatiere>? MatiereGroupeMatieres { get; set; }
 }
 
 

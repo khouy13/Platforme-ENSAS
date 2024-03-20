@@ -27,9 +27,15 @@ namespace Projet.Areas.Coordenateur.Controllers
         private readonly ICompositeViewEngine _viewEngine;
         private readonly ILogger<EmploiController> _logger;
         private readonly UserManager<ApplicationUser> _userManager;
-        public EmploiController(AppDbContext _context, IHttpContextAccessor httpContextAccessor, ILogger<EmploiController> logger, UserManager<ApplicationUser> userManager)
+        private readonly CommunCoursesHandler cmH;
+        public EmploiController(CommunCoursesHandler _communCoursesHandler,
+            AppDbContext _context, 
+            IHttpContextAccessor httpContextAccessor, 
+            ILogger<EmploiController> logger, 
+            UserManager<ApplicationUser> userManager)
         {
             this._context = _context;
+            this.cmH = _communCoursesHandler;
             _logger = logger;
             _httpContextAccessor = httpContextAccessor;
             _userManager = userManager;
@@ -146,64 +152,6 @@ namespace Projet.Areas.Coordenateur.Controllers
             return View();
         }
 
-        [NonAction]
-        bool IsMatiereCommun(int? IdMatiere1, int? IdMatiere2)
-        {
-            if (IdMatiere1 != null && IdMatiere2 != null && IdMatiere1 == IdMatiere2)
-            {
-                return true;
-            }
-            var Matiere1 = _context.Matieres.Where(e => e.IdMatiere == IdMatiere1).FirstOrDefault();
-            var Matiere2 = _context.Matieres.Where(e => e.IdMatiere == IdMatiere2).FirstOrDefault();
-            if (Matiere1 == null || Matiere2 == null)
-            {
-                return false;
-            }
-            //Remove WhiteSpaces
-            var matier1Nom = Regex.Replace(Matiere1.NomMatiere, @"\s+", "");
-            var matier2Nom = Regex.Replace(Matiere2.NomMatiere, @"\s+", "");
-            //Verifier Si Le nom est Le meme
-            //Si Deux Matiere On Le meme Nom Ils Sont Considere Comme communes
-            if (matier1Nom.Equals(matier2Nom))
-            {
-                return true;
-            }
-
-            //Check if Related in Table Matiere Commun
-            bool isCommun = _context.MatiereCommuns.Any(e => (e.MainMatiereId == IdMatiere1 && e.RelatedMatiereId == IdMatiere2)
-                            || (e.MainMatiereId == IdMatiere2 && e.RelatedMatiereId == IdMatiere1));
-
-            return isCommun;
-
-            ////cas ou matiere est lie a une autre matiere (car sa nomination est la meme pour ces matiere reliees)
-            //var isRelated = _context.Matieres.AsEnumerable()
-            //    .Where( e => CommunOrEqualMatiere(e.IdMatiere,IdMatiere1) && e.IdMatiere!=IdMatiere1)
-            //    .Select( e => Regex.Replace(e.NomMatiere, @"\s+",""))
-            //    .Contains(matier2Nom);
-
-            //return isRelated;
-        }
-
-        [NonAction]
-        bool CommonCourse(EmploiTemps e,EmploiTemps emploi)
-        {
-            bool var = 
-                    //e.SemaineDebut == emploi.SemaineDebut &&
-                    //e.SemaineFin == emploi.SemaineFin &&
-                    //emploi.IdLocal != null && e.IdLocal == emploi.IdLocal &&
-                    emploi.IdSeance != null && e.IdSeance == emploi.IdSeance &&
-                    emploi.IdJour != null && e.IdJour == emploi.IdJour &&
-                    emploi.IdSemestre != null && e.IdSemestre == emploi.IdSemestre &&
-                    // Car On specifie juste un , soit enseignant ou vacataire
-                    ((emploi.IdEnseignant != null && e.IdEnseignant == emploi.IdEnseignant)
-                    || (emploi.IdVacataire != null && e.IdVacataire == emploi.IdVacataire)) &&
-                    IsMatiereCommun(emploi.IdMatiere, e.IdMatiere)
-                    //&& emploi.IdMatiere != null && e.IdMatiere == emploi.IdMatiere
-                    &&
-                    (e.IdNiveau != emploi.IdNiveau || e.IdGroupe != emploi.IdGroupe);
-            return var;
-        }
-            
         [Authorize(Roles = "Directeur, Coordonnateur,Chef")]
         [HttpPost]
         public IActionResult AddSeance(EmploiTemps emploi)
@@ -246,11 +194,11 @@ namespace Projet.Areas.Coordenateur.Controllers
                 .ToList();
 
             bool commonCourse = emploiTempsList
-                .Any(e=>CommonCourse(e,emploi));
+                .Any(e=> cmH.CommonCourse(e,emploi));
 
             if (commonCourse)
             {
-                var ListOfCommonSessions = emploiTempsList.Where(e => CommonCourse(e, emploi));
+                var ListOfCommonSessions = emploiTempsList.Where(e => cmH.CommonCourse(e, emploi));
 
                 foreach (var course in ListOfCommonSessions)
                 {
@@ -409,7 +357,7 @@ namespace Projet.Areas.Coordenateur.Controllers
                 //ici on cherche les seances communes avec cette seance 
                 //si le nombre est un on le fait false
                 var listOfCommonSessions = _context.EmploiTemps.ToList()
-                                           .Where(e=>CommonCourse(e,emploiToDelete) && e.IdEmploi != emploiToDelete.IdEmploi);
+                                           .Where(e=>cmH.CommonCourse(e,emploiToDelete) && e.IdEmploi != emploiToDelete.IdEmploi);
 
                 if (listOfCommonSessions.Count() == 1)
                 {
@@ -544,16 +492,16 @@ namespace Projet.Areas.Coordenateur.Controllers
                 bool commonCourse = _context.EmploiTemps
                 .AsEnumerable()
                 .Any(e =>
-                    CommonCourse(e,newEmploi) && e.IdEmploi != IdEmploi
+                    cmH.CommonCourse(e,newEmploi) && e.IdEmploi != IdEmploi
                 );
 
                 //check old data and reset the isCommonCourse
                 //Check if OldEmploi has CommonCourses & handle them
                 //Placed Here To Not Be Repeated
                 var oldEmploiCommonCourses = _context.EmploiTemps
-                        .AsEnumerable().Where(e => CommonCourse(e, oldEmploi) && e.IdEmploi != IdEmploi);
+                        .AsEnumerable().Where(e => cmH.CommonCourse(e, oldEmploi) && e.IdEmploi != IdEmploi);
 
-                if (oldEmploiCommonCourses.Count() == 1 && !CommonCourse(oldEmploi, newEmploi))
+                if (oldEmploiCommonCourses.Count() == 1 && !cmH.CommonCourse(oldEmploi, newEmploi))
                 {
                     foreach (var commonSession in oldEmploiCommonCourses)
                     {
@@ -568,7 +516,7 @@ namespace Projet.Areas.Coordenateur.Controllers
                     //emploicommunexsiste.isComuncours = true;
 
                     var commonSessionsList = _context.EmploiTemps
-                                     .AsEnumerable().Where(e => CommonCourse(e,newEmploi) && e.IdEmploi!= IdEmploi);
+                                     .AsEnumerable().Where(e => cmH.CommonCourse(e,newEmploi) && e.IdEmploi!= IdEmploi);
 
                     foreach ( var commonSession in commonSessionsList )
                     {
@@ -597,6 +545,7 @@ namespace Projet.Areas.Coordenateur.Controllers
                 }
                 else
                 {
+                    
                     oldEmploi.isComuncours = false;
                 }
 
@@ -714,24 +663,22 @@ namespace Projet.Areas.Coordenateur.Controllers
                 }
             }
 
-            //Matrab === Depuis Ici Il y a Beaucoup d'erreurs
-
-            // Si la validation a échoué, réafficher la vue avec les erreurs
+            //// Si la validation a échoué, réafficher la vue avec les erreurs
             //var Enseignants = _context.Enseignants.ToList();
             //ViewBag.Enseignants = Enseignants;
 
             //var jours = _context.Jours.ToList();
             //var seances = _context.Seances.ToList();
-            //ViewData["IdJour"] = new SelectList(jours, "IdJour", "NomJour", emploiToEdit.IdJour);
-            //ViewData["IdSeance"] = new SelectList(seances, "IdSeance", "NomSeance", emploiToEdit.IdSeance);
+            //ViewData["IdJour"] = new SelectList(jours, "IdJour", "NomJour", newEmploi.IdJour);
+            //ViewData["IdSeance"] = new SelectList(seances, "IdSeance", "NomSeance", newEmploi.IdSeance);
 
-            ////var matieres = _context.Matieres.Where(m => m.IdNiveau == emploiToEdit.IdNiveau).ToList();
+            //////var matieres = _context.Matieres.Where(m => m.IdNiveau == emploiToEdit.IdNiveau).ToList();
             //var matieres = _context.Matieres
             //    .Include(e => e.MatiereNiveaus)
             //        .ThenInclude(e => e.Niveau)
             //        .ThenInclude(e => e.NiveauMatieres)
             //    .Where(e => e.MatiereNiveaus
-            //    .Any(e => e.IdNiveau == emploiToEdit.IdNiveau))
+            //    .Any(e => e.IdNiveau == newEmploi.IdNiveau))
             //    .ToList();
 
             //var vacataires = _context.vacataires.ToList();
@@ -739,7 +686,7 @@ namespace Projet.Areas.Coordenateur.Controllers
 
             //ViewBag.matieres = matieres;
             //ViewBag.Local = _context.Locals.ToList();
-            //var groupe = _context.Groupes.Where(m => m.IdNiveau == emploiToEdit.IdNiveau).ToList();
+            //var groupe = _context.Groupes.Where(m => m.IdNiveau == newEmploi.IdNiveau).ToList();
             //ViewBag.groupe = groupe;
             //var TypEnseignant = _context.TypeEnseignements.ToList();
             //ViewBag.TypEnseignant = TypEnseignant;

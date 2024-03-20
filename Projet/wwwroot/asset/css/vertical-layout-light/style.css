@@ -24392,6 +24392,9 @@ div.tagsinput span.tag a {
     -o-transition: all 0.25s ease-out;
     transition: all 0.25s ease-out;
   }
+#sidebar-admin.sidebar-offcanvas {
+    right: -330px;
+}
   .sidebar-offcanvas.active {
     right: 0;
   }

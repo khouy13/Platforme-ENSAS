@@ -645,6 +645,23 @@ namespace Projet.Migrations
                     b.ToTable("Groupes");
                 });
 
+            modelBuilder.Entity("Projet.Areas.Responsable.Models.GroupeMatiere", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MatiereGroupe");
+                });
+
             modelBuilder.Entity("Projet.Areas.Responsable.Models.Matiere", b =>
                 {
                     b.Property<int>("IdMatiere")
@@ -672,7 +689,7 @@ namespace Projet.Migrations
                     b.ToTable("Matieres");
                 });
 
-            modelBuilder.Entity("Projet.Areas.Responsable.Models.MatiereCommun", b =>
+            modelBuilder.Entity("Projet.Areas.Responsable.Models.MatiereGroupeMatiere", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -680,19 +697,19 @@ namespace Projet.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("MainMatiereId")
+                    b.Property<int>("GroupMatiereId")
                         .HasColumnType("int");
 
-                    b.Property<int>("RelatedMatiereId")
+                    b.Property<int>("MatiereId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("MainMatiereId");
+                    b.HasIndex("GroupMatiereId");
 
-                    b.HasIndex("RelatedMatiereId");
+                    b.HasIndex("MatiereId");
 
-                    b.ToTable("MatiereCommuns");
+                    b.ToTable("MatiereGroupeMatieres");
                 });
 
             modelBuilder.Entity("Projet.Areas.Responsable.Models.MatiereNiveau", b =>
@@ -1191,23 +1208,23 @@ namespace Projet.Migrations
                     b.Navigation("Vacataire");
                 });
 
-            modelBuilder.Entity("Projet.Areas.Responsable.Models.MatiereCommun", b =>
+            modelBuilder.Entity("Projet.Areas.Responsable.Models.MatiereGroupeMatiere", b =>
                 {
-                    b.HasOne("Projet.Areas.Responsable.Models.Matiere", "MainMatiere")
-                        .WithMany("RelatedMatieres")
-                        .HasForeignKey("MainMatiereId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                    b.HasOne("Projet.Areas.Responsable.Models.GroupeMatiere", "GroupeMatiere")
+                        .WithMany("MatiereGroupeMatieres")
+                        .HasForeignKey("GroupMatiereId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Projet.Areas.Responsable.Models.Matiere", "RelatedMatiere")
-                        .WithMany()
-                        .HasForeignKey("RelatedMatiereId")
-                        .OnDelete(DeleteBehavior.Restrict)
+                    b.HasOne("Projet.Areas.Responsable.Models.Matiere", "Matiere")
+                        .WithMany("MatiereGroupeMatieres")
+                        .HasForeignKey("MatiereId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("MainMatiere");
+                    b.Navigation("GroupeMatiere");
 
-                    b.Navigation("RelatedMatiere");
+                    b.Navigation("Matiere");
                 });
 
             modelBuilder.Entity("Projet.Areas.Responsable.Models.MatiereNiveau", b =>
@@ -1355,15 +1372,20 @@ namespace Projet.Migrations
                     b.Navigation("EmploisGroupe");
                 });
 
+            modelBuilder.Entity("Projet.Areas.Responsable.Models.GroupeMatiere", b =>
+                {
+                    b.Navigation("MatiereGroupeMatieres");
+                });
+
             modelBuilder.Entity("Projet.Areas.Responsable.Models.Matiere", b =>
                 {
                     b.Navigation("EmploiMatiereExam");
 
                     b.Navigation("EmploisMatiere");
 
-                    b.Navigation("MatiereNiveaus");
+                    b.Navigation("MatiereGroupeMatieres");
 
-                    b.Navigation("RelatedMatieres");
+                    b.Navigation("MatiereNiveaus");
                 });
 
             modelBuilder.Entity("Projet.Areas.Responsable.Models.Niveau", b =>

@@ -42,7 +42,9 @@ namespace Projet.Data
 
         public  DbSet<Matiere> Matieres { get; set; }
 
-        public  DbSet<MatiereCommun> MatiereCommuns { get; set; }
+        public  DbSet<GroupeMatiere> MatiereGroupe { get; set; }
+
+        public  DbSet<MatiereGroupeMatiere> MatiereGroupeMatieres { get; set; }
 
         public  DbSet<Niveau> Niveaus { get; set; }
 

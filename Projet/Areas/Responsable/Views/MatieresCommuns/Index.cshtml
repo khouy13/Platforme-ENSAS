@@ -1,0 +1,106 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Matieres Communs";
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+
+<style>
+    .card .text{
+        background-color:lightgrey;
+    }
+    .clear-search {
+        cursor: pointer;
+        display: none;
+        padding: 6px 10px;
+        border-radius: 0 4px 4px 0;
+        background-color: #ccc;
+        border: 1px solid #ccc;
+        border-left: none;
+    }
+    .cursor-pointer{
+        cursor:pointer;
+    }
+</style>
+
+<partial name="~/Areas/Responsable/Views/Shared/_Notification.cshtml"></partial>
+
+<div class="row mb-2">
+    <div class="col-md-9"></div>
+    <div class="col-md-3 text-end">
+        <form asp-controller="MatieresCommuns" asp-action="Index" asp-area="Responsable" class="form-inline">
+            <div class="input-group">
+                <input id="searchInput" class="form-control" type="text" name="SearchText" placeholder="Recherche..." value="@ViewBag.SearchText" />
+                <span id="clearSearch" class="input-group-addon clear-search">&times;</span>
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit"><i class="bi bi-search"></i></button>
+                    <a asp-action="Create" asp-controller="MatieresCommuns" asp-area="Responsable" class="btn btn-primary ml-1"><i class="bi bi-plus"></i></a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+@if (ViewBag.matiereGrouped==null || ViewBag.matiereGrouped.Count == 0)
+{
+    <div class="card container d-flex flex-column flex-wrap mt-3 p-5 position-relative align-items-center justify-content-center">
+        <h4>Liste Des Matieres Communes est Vide !</h4>
+    </div>
+}
+
+@foreach (var element in ViewBag.matiereGrouped)
+{
+    var goupId = element.Id;
+    <div class="card container d-flex flex-column flex-wrap mt-2 p-2 position-relative">
+        <h4>@element.Name</h4>
+        <div class="d-flex flex-row flex-wrap">
+            @foreach (var el in element.MatieresRelated)
+            {
+                <p class="text p-1 m-1 rounded">@el.Matiere.NomMatiere</p>
+            }
+        </div>
+        <div class="position-absolute top-0 end-0 m-2">
+             @* <a><i class="bi bi-trash3-fill text-danger cursor-pointer"></i></a>
+             <a class="btn btn-success btn-sm" asp-action="Edit" asp-route-GroupId="@goupId">
+                <i class="bi bi-pencil-fill"></i>
+            </a> *@
+            <button type="button" class="btn btn-danger btn-sm ml-2 open-dialog" data-goupId="@goupId">
+                <i class="bi bi-trash3-fill"></i>
+            </button>
+        </div>
+    </div>
+}
+
+<div class="modal fade" id="confirmDeleteAllModal" tabindex="-1" aria-labelledby="confirmDeleteAllModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirmDeleteAllModalLabel">Confirmer la suppression</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Êtes-vous sûr de vouloir supprimer ce groupe des matieres communes ?
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Annuler</button>
+                <form method="post" asp-action="Delete" asp-controller="MatieresCommuns">
+                    <input type="hidden" name="GroupId" id="input-goupid"/>
+                    <button type="submit" class="btn btn-danger" id="confirmDeleteAllButtonModal">Supprimer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $(".open-dialog").click(function () {
+                var goupId = $(this).attr('data-goupId');
+                $('#input-goupid').val(goupId);
+                $('#confirmDeleteAllModal').modal('show');
+            });
+        });
+    </script>
+}

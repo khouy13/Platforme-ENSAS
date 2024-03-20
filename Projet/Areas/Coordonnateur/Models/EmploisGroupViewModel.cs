@@ -2,7 +2,7 @@
 {
     public class EmploisGroupViewModel
     {
-        public List<GroupInfoEnseignant> GroupesInfosEnseignant { get; set; }
+        public List<GroupInfos> GroupesInfosEnseignant { get; set; }
         public List<GroupeInfoVacataire> GroupesInfosVacataire { get; set; }
     }
 }

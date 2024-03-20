@@ -1,4 +1,5 @@
-﻿using Fingers10.ExcelExport.ActionResults;
+﻿using DocumentFormat.OpenXml.Drawing;
+using Fingers10.ExcelExport.ActionResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -6,6 +7,8 @@ using Projet.Areas.Admin.Models;
 using Projet.Areas.Coordonnateur.Models;
 using Projet.Areas.Responsable.Models;
 using Projet.Data;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
 
 namespace Projet.Areas.Directeur.Controllers
 {
@@ -13,14 +16,14 @@ namespace Projet.Areas.Directeur.Controllers
     public class ChargeHoraireController : Controller
     {
         private readonly AppDbContext _context;
-       
+
         public ChargeHoraireController(AppDbContext context)
         {
             _context = context;
         }
 
         [HttpGet]
-        public ActionResult CalculChargeHoraire(int? IdS=null, int pg = 1,  int? EId = null, int? VId = null, int? DId = null, int? GId = null)
+        public IActionResult CalculChargeHoraire(int? IdS=null, int pg = 1,  int? EId = null, int? VId = null, int? DId = null, int? GId = null)
         {
             const int pageSize = 7;
            
@@ -33,7 +36,7 @@ namespace Projet.Areas.Directeur.Controllers
             List<Enseignant> enseignants;
             List<Vacataire> vacataires;
             List<EmploiTemps> emploiTemps = new List<EmploiTemps>();
-            List<GroupInfoEnseignant> GroupInfoEnseignants = new List<GroupInfoEnseignant>();
+            List<GroupInfos> GroupInfoEnseignants = new List<GroupInfos>();
             List<GroupeInfoVacataire> GroupeInfoVacataires = new List<GroupeInfoVacataire>();
            
             ViewBag.GId = GId;
@@ -103,7 +106,7 @@ namespace Projet.Areas.Directeur.Controllers
                                                         .ToList();
                         if (emploiTemps.Count() == 0)
                         {
-                            GroupInfoEnseignants.Add(new GroupInfoEnseignant
+                            GroupInfoEnseignants.Add(new GroupInfos
                             {
                                 IsComuncours =false,
                                 NombreElements =0, 
@@ -121,7 +124,7 @@ namespace Projet.Areas.Directeur.Controllers
                                            .ToList();
                     foreach (var groupe in resultatGroupe)
                     {
-                        GroupInfoEnseignants.Add(new GroupInfoEnseignant
+                        GroupInfoEnseignants.Add(new GroupInfos
                         {
                             IsComuncours = groupe.Key.isComuncours,
                             NombreElements = groupe.Key.isComuncours == true ? groupe.Count() / 2 : groupe.Count(),
@@ -183,7 +186,7 @@ namespace Projet.Areas.Directeur.Controllers
 
                     if (emploiTemps.Count() == 0)
                     {
-                        GroupInfoEnseignants.Add(new GroupInfoEnseignant
+                        GroupInfoEnseignants.Add(new GroupInfos
                         {
                             IsComuncours = false,
                             NombreElements = 0,
@@ -203,7 +206,7 @@ namespace Projet.Areas.Directeur.Controllers
                                            .ToList();
                     foreach (var groupe in resultatGroupe)
                     {
-                        GroupInfoEnseignants.Add(new GroupInfoEnseignant
+                        GroupInfoEnseignants.Add(new GroupInfos
                         {
                             IsComuncours = groupe.Key.isComuncours,
                             NombreElements = groupe.Key.isComuncours == true ? groupe.Count() / 2 : groupe.Count(),
@@ -256,16 +259,6 @@ namespace Projet.Areas.Directeur.Controllers
 
                 }
 
-
-
-
-
-
-
-
-
-
-
             }
 
             foreach (var groupeInfoVacataire in GroupeInfoVacataires)
@@ -291,7 +284,7 @@ namespace Projet.Areas.Directeur.Controllers
 
                 //ici on fait le calcul Nombre d heure de travail du le debut jisqu a la fin :
                 Nombre_Total_heure = ((groupeInfoVacataire.PremierEmploi?.SemaineFin-groupeInfoVacataire.PremierEmploi?.SemaineDebut)+1)*groupeInfoVacataire.NombreElements*2,
-                    Nomsemestre= groupeInfoVacataire.PremierEmploi?.semestre.NomSemestre
+                    NomSemestre= groupeInfoVacataire.PremierEmploi?.semestre.NomSemestre
                 });
             }
             foreach (var groupeInfoEnseig in GroupInfoEnseignants)
@@ -325,18 +318,108 @@ namespace Projet.Areas.Directeur.Controllers
 
         }
 
+        public List<GroupInfos> GetChargesGroupInfos(int IdTeacher,bool IsVacataire=false)
+        {
+            List<EmploiTemps> emplois;
+            string NomComplet,GradeName, Departement,NomSemestre, TypeEnseignement;
+            int SemaineDebut, SemaineFin;
+            var CommunComparer = new CommunCoursesComparer(_context);
+            var unionComparer = new UnionComparer();
+
+            if (IsVacataire)
+            {
+                //ici on a recuperer tous les Emploi de l vacataire
+                emplois = _context.EmploiTemps.Include(m => m.Matiere).Include(m => m.Vacataire)
+                                .Where(e => e.IdVacataire == IdTeacher).ToList();
+                var vacataire = _context.vacataires.Where(e => e.IdVacataire == IdTeacher).First();
+                NomComplet = vacataire.NomComplet;
+                Departement = vacataire.departement != null ? vacataire.departement.NomDepartementt : "N/A";
+                GradeName = vacataire.gradeEnseigant != null ? vacataire.gradeEnseigant.GradeName : "Grade non spécifié";
+            }
+            else
+            {
+                //ici on a recuperer tous les Emploi de l enseignanat
+                emplois = _context.EmploiTemps.Include(m => m.Matiere).Include(m => m.Enseignant)
+                                .Where(e => e.IdEnseignant == IdTeacher).ToList();
+                var enseignant = _context.Enseignants.Where(e => e.IdEnseignant == IdTeacher).First();
+                NomComplet = enseignant.NomComplet;
+                Departement = enseignant.departement != null ? enseignant.departement.NomDepartementt : "N/A";
+                GradeName = enseignant.gradeEnseigant != null ? enseignant.gradeEnseigant.GradeName : "Grade non spécifié";
+            }
+
+            List<GroupInfos> infos = new List<GroupInfos>();
+            if (emplois.Count == 0)
+            {
+                infos.Add(new GroupInfos
+                {
+                    IsComuncours = false,
+                    NombreElements = 0,
+                    PremierEmploi = null,
+                    NomComplet = NomComplet,
+                    IsVacataire = IsVacataire,
+                    NomSemestre = "",
+                    TypeEnseignement = "",
+                    // Exemple pour vacataire.departement.NomDepartementt
+                    Departement = Departement,
+                    // Exemple pour vacataire.gradeEnseigant.GradeName
+                    GradeName = GradeName,
+                });
+            }
+            else
+            {
+                SemaineDebut = emplois.First().SemaineDebut;
+                SemaineFin = emplois.First().SemaineFin;
+                NomSemestre = _context.semestres.Where(e => e.IdSemestre == emplois.First().IdSemestre).FirstOrDefault()?.NomSemestre??"";
+                TypeEnseignement = _context.TypeEnseignements.Where(e => e.Id == emplois.First().IdTypeEnseignement).FirstOrDefault()?.NomEn ?? "0";
+
+                var resultatGroupe = emplois
+                               .GroupBy(et => et, CommunComparer)
+                               .Select(et => new ChargesHoraires { Seances = et.ToList(), IsCommun = et.Count() > 1 })
+                               .GroupBy(et => et, unionComparer)
+                               .Select(et =>
+                               {
+                                   var ChargesGroupes = et.ToList();
+                                   ChargesHoraires charge = new() { IsCommun = ChargesGroupes.First().IsCommun };
+                                   foreach (var chh in ChargesGroupes)
+                                   {
+                                       charge.Seances.AddRange(chh.Seances);
+                                   }
+                                   return charge;
+                               })
+                               .ToList();
+
+                foreach (var charge in resultatGroupe)
+                {
+                    infos.Add(new GroupInfos
+                    {
+                        NomComplet = NomComplet,
+                        SemaineDebut = SemaineDebut,
+                        SemaineFin = SemaineFin,
+                        NomSemestre = NomSemestre,
+                        TypeEnseignement = TypeEnseignement,
+                        Departement = Departement,
+                        GradeName = GradeName,
+                        IsVacataire= IsVacataire,
+                        IsComuncours = charge.IsCommun,
+                        NombreElements = charge.IsCommun ? 1 : charge.Seances.Count,
+                        PremierEmploi = charge.Seances.FirstOrDefault(),
+                        IdMatieres = charge.IsCommun ? charge.Seances.Select(e => e.IdMatiere).ToList() : new List<int?>() { charge.Seances.First().IdMatiere }
+                    });
+                }
+            }
+            return infos;
+        }
+
         [HttpGet]
         public IActionResult DownloadExcelAnnuel(int? DId,int? IdS)
         {
-            List<ExportChargeViewModel> excel = new List<ExportChargeViewModel>();
+            List<ExportChargeViewModel> excel = new();
             var resultats = new List<object>();
             List<Enseignant> enseignants;
             List<Vacataire> vacataires;
 
             List<EmploiTemps> emploiTemps = new List<EmploiTemps>();
-            List<GroupInfoEnseignant> GroupInfoEnseignants = new List<GroupInfoEnseignant>();
-
-            List<GroupeInfoVacataire> GroupeInfoVacataires = new List<GroupeInfoVacataire>();
+            List<GroupInfos> groupInfos = new List<GroupInfos>();
 
             if (DId != null)
             {
@@ -351,270 +434,121 @@ namespace Projet.Areas.Directeur.Controllers
             }
             else
             {
-                enseignants = _context.Enseignants.Include(e => e.departement).Include(p => p.gradeEnseigant).OrderBy(e=>e.NomEnseignant).ToList();
-                vacataires = _context.vacataires.Include(v => v.departement).Include(p => p.gradeEnseigant).OrderBy(e=>e.Nom).ToList();
+                enseignants = _context.Enseignants
+                    .Include(e => e.departement).Include(p => p.gradeEnseigant)
+                    .OrderBy(e=>e.NomEnseignant)
+                    .ToList();
+                vacataires = _context.vacataires.Include(v => v.departement)
+                    .Include(p => p.gradeEnseigant)
+                    .OrderBy(e=>e.Nom)
+                    .ToList();
             }
             //Par semestre:
             if (IdS != null)
             {
-
                 foreach (var enseignant in enseignants)
                 {
-                    //ici on a recuperer tous les Emploi de l enseignanat
-                    emploiTemps = _context.EmploiTemps.Include(m => m.Matiere).Include(m => m.Enseignant).Include(t => t.TypeEnseignement)
-                                    .Where(e => e.IdEnseignant == enseignant.IdEnseignant && e.IdSemestre == IdS)
-                                    .ToList();
-                    if (emploiTemps.Count() == 0)
-                    {
-                        GroupInfoEnseignants.Add(new GroupInfoEnseignant
-                        {
-                            IsComuncours = false,
-                            NombreElements = 0,
-                            PremierEmploi = null,
-                            NomComplet = enseignant.NomComplet,
-                            // Exemple pour vacataire.departement.NomDepartementt
-                            Departement = enseignant.departement != null ? enseignant.departement.NomDepartementt : "N/A",
-
-                            // Exemple pour vacataire.gradeEnseigant.GradeName
-                            GradeName = enseignant.gradeEnseigant != null ? enseignant.gradeEnseigant.GradeName : "Grade non spécifié",
-                        });
-                    }
-
-                    var resultatGroupe= emploiTemps
-                                        .GroupBy(e => new { e.IdMatiere, e.IdTypeEnseignement, e.isComuncours })
-                                        .ToList();
-                    foreach (var groupe in resultatGroupe)
-                    {
-                        GroupInfoEnseignants.Add(new GroupInfoEnseignant
-                        {
-                            IsComuncours = groupe.Key.isComuncours,
-                            NombreElements = groupe.Key.isComuncours == true ? groupe.Count() / 2 : groupe.Count(),
-                            PremierEmploi = groupe.FirstOrDefault() // Assignez l'élément à afficher
-                        });
-                    }
+                    groupInfos.AddRange(GetChargesGroupInfos(enseignant.IdEnseignant));
                 }
                 foreach (var vacataire in vacataires)
                 {
-                    //ici on a recuperer tous les Emploi de l enseignanat
-                    emploiTemps = _context.EmploiTemps.Include(m => m.Matiere).Include(m => m.Vacataire).Include(t => t.TypeEnseignement)
-                                            .Include(s => s.semestre)
-                                            .Where(e => e.IdVacataire == vacataire.IdVacataire && e.IdSemestre == IdS)
-                                                        .ToList();
-                    if (emploiTemps.Count() == 0)
-                    {
-                        GroupeInfoVacataires.Add(new GroupeInfoVacataire
-                        {
-                            IsComuncours = false,
-                            NombreElements = 0,
-                            PremierEmploi = null,
-                            NomComplet = vacataire.NomComplet,
-                            // Exemple pour vacataire.departement.NomDepartementt
-                            Departement = vacataire.departement != null ? vacataire.departement.NomDepartementt : "N/A",
-
-                            // Exemple pour vacataire.gradeEnseigant.GradeName
-                            GradeName = vacataire.gradeEnseigant != null ? vacataire.gradeEnseigant.GradeName : "Grade non spécifié",
-
-
-                        });
-                    }
-
-                    var resultatGroupe = emploiTemps
-                   .GroupBy(e => new { e.IdMatiere, e.IdTypeEnseignement, e.isComuncours })
-                                           .ToList();
-                    foreach (var groupe in resultatGroupe)
-                    {
-                        GroupeInfoVacataires.Add(
-                             new GroupeInfoVacataire
-                             {
-
-                                 IsComuncours = groupe.Key.isComuncours,
-                                 NombreElements = groupe.Key.isComuncours == true ? groupe.Count() / 2 : groupe.Count(),
-                                 PremierEmploi = groupe.FirstOrDefault() // Assignez l'élément à afficher
-                             });
-
-                    }
-
+                    groupInfos.AddRange(GetChargesGroupInfos(vacataire.IdVacataire, true));
                 }
             }
 
             else {
+                
                 foreach (var enseignant in enseignants)
                 {
-                    //ici on a recuperer tous les Emploi de l enseignanat
-                    emploiTemps = _context.EmploiTemps.Include(m => m.Matiere).Include(m => m.Enseignant).Include(t => t.TypeEnseignement)
-                                           .Include(s => s.semestre)
-                                           .Where(e=> e.IdEnseignant == enseignant.IdEnseignant)
-                                           .ToList();
-                    if (emploiTemps.Count() == 0)
-                    {
-                        GroupInfoEnseignants.Add(new GroupInfoEnseignant
-                        {
-                            IsComuncours = false,
-                            NombreElements = 0,
-                            PremierEmploi = null,
-                            NomComplet = enseignant.NomComplet,
-                            // Exemple pour vacataire.departement.NomDepartementt
-                            Departement = enseignant.departement != null ? enseignant.departement.NomDepartementt : "N/A",
-
-                            // Exemple pour vacataire.gradeEnseigant.GradeName
-                            GradeName = enseignant.gradeEnseigant != null ? enseignant.gradeEnseigant.GradeName : "Grade non spécifié",
-
-                        });
-                    }
-
-                    var resultatGroupe= emploiTemps
-                                        .GroupBy(e => new { e.IdMatiere, e.IdTypeEnseignement, e.isComuncours })
-                                        .ToList();
-                    foreach (var groupe in resultatGroupe)
-                    {
-                        GroupInfoEnseignants.Add(new GroupInfoEnseignant
-                        {
-                            IsComuncours = groupe.Key.isComuncours,
-                            NombreElements = groupe.Key.isComuncours == true ? groupe.Count() / 2 : groupe.Count(),
-                            PremierEmploi = groupe.FirstOrDefault() // Assignez l'élément à afficher
-                        });
-                    }
+                    groupInfos.AddRange(GetChargesGroupInfos(enseignant.IdEnseignant));
                 }
                 foreach (var vacataire in vacataires)
                 {
-                    //ici on a recuperer tous les Emploi de l enseignanat
-                    emploiTemps = _context.EmploiTemps.Include(m => m.Matiere).Include(m => m.Vacataire).Include(t => t.TypeEnseignement)
-                                            .Include(s => s.semestre)
-                                            .Where(e => e.IdVacataire == vacataire.IdVacataire)
-                                                        .ToList();
-                        if (emploiTemps.Count() == 0)
-                        {
-                            GroupeInfoVacataires.Add(new GroupeInfoVacataire
-                            {
-                                IsComuncours = false,
-                                NombreElements = 0,
-                                PremierEmploi = null,
-                                NomComplet = vacataire.NomComplet,
-                                // Exemple pour vacataire.departement.NomDepartementt
-                                Departement = vacataire.departement != null ? vacataire.departement.NomDepartementt : "N/A",
+                    groupInfos.AddRange(GetChargesGroupInfos(vacataire.IdVacataire, true));
+                }
+            }
 
-                                // Exemple pour vacataire.gradeEnseigant.GradeName
-                                GradeName = vacataire.gradeEnseigant != null ? vacataire.gradeEnseigant.GradeName : "Grade non spécifié",
-
-
-                            });
-                        }
-
-                        var resultatGroupe = emploiTemps
-                   .GroupBy(e => new { e.IdMatiere, e.IdTypeEnseignement, e.isComuncours })
-                                           .ToList();
-                        foreach (var groupe in resultatGroupe)
-                        {
-                            GroupeInfoVacataires.Add(
-                                 new GroupeInfoVacataire
-                                 {
-
-                                     IsComuncours = groupe.Key.isComuncours,
-                                     NombreElements = groupe.Key.isComuncours == true ? groupe.Count() / 2 : groupe.Count(),
-                                     PremierEmploi = groupe.FirstOrDefault() // Assignez l'élément à afficher
-                                 });
-
-                        }
-
-
-
-
+            foreach (var groupInfo in groupInfos)
+            {
+                var MatiereNomList = groupInfo.IdMatieres?.Select(e =>
+                {
+                    var matiere = _context.Matieres.Where(m => m.IdMatiere == e).FirstOrDefault();
+                    if (matiere == null)
+                    {
+                        return "";
                     }
-            }
-            foreach (var groupeInfoVacataire in GroupeInfoVacataires)
-            {
+                    return matiere.NomMatiere;
+                });
+                string matieres = string.Join(",", MatiereNomList?.Select(x => x.ToString()) ?? Enumerable.Empty<string>());
+                var nombreTotalHeures = (groupInfo.SemaineFin??0 - groupInfo.SemaineDebut??0 + 1)*(groupInfo.NombreElements??0)*2;
 
-                resultats.Add(new ResultatChargeHoraireVacataire
+                excel.Add(new ExportChargeViewModel
                 {
-                    vacataire = groupeInfoVacataire.PremierEmploi?.Vacataire,
-
-                    GradeName = groupeInfoVacataire.PremierEmploi?.Vacataire.gradeEnseigant != null ? groupeInfoVacataire.PremierEmploi?.Vacataire.gradeEnseigant.GradeName : groupeInfoVacataire.GradeName,
-                    NomDepartement = groupeInfoVacataire.PremierEmploi?.Vacataire.departement?.NomDepartementt ?? groupeInfoVacataire.Departement,
-                    ChargeHoraire = groupeInfoVacataire.NombreElements,
-                    NomComplet = groupeInfoVacataire.NomComplet,
-                    TypeEnseignement = groupeInfoVacataire.PremierEmploi?.TypeEnseignement.NomEn,
-                    SemaineDebut = groupeInfoVacataire.PremierEmploi?.SemaineDebut,
-                    Matiere= groupeInfoVacataire.PremierEmploi?.Matiere.NomMatiere,
-                    SemaineFin = groupeInfoVacataire.PremierEmploi?.SemaineFin,
-                    //isComuncours = groupeInfoVacataire.IsComuncours.ToString(),
-                    isComuncours = groupeInfoVacataire.IsComuncours.HasValue ? (groupeInfoVacataire.IsComuncours.Value ? "oui" : "non") : "non",
-
-                    Nombre_Total_heure = ((groupeInfoVacataire.PremierEmploi?.SemaineFin - groupeInfoVacataire.PremierEmploi?.SemaineDebut) + 1) * groupeInfoVacataire.NombreElements * 2,
-                    Nomsemestre = groupeInfoVacataire.PremierEmploi?.semestre.NomSemestre
+                    Role = groupInfo.IsVacataire ? "Vacataire":"Enseignant",
+                    NomComplet = groupInfo.NomComplet,
+                    NomDepartement = groupInfo.Departement,
+                    TypeEnseignement = groupInfo.TypeEnseignement,
+                    Grade = groupInfo.GradeName,
+                    //Charge Horaire
+                    Nombre_de_seance_par_Semaine = groupInfo.NombreElements.ToString(),
+                    SemaineDebut = groupInfo.SemaineDebut,
+                    SemaineFin = groupInfo.SemaineFin,
+                    Matiere = matieres,
+                    isComuncours = (groupInfo.IsComuncours ?? false) ? "oui" : "non",
+                    Semestre = groupInfo.NomSemestre,
+                    Nombre_Total_heure = nombreTotalHeures
                 });
             }
-            foreach (var groupeInfoEnseig in GroupInfoEnseignants)
-            {
-
-                resultats.Add(new ResultatChargeHoraire
-                {
-                    Enseignant = groupeInfoEnseig.PremierEmploi?.Enseignant,
-
-                    GradeName = groupeInfoEnseig.PremierEmploi?.Enseignant.gradeEnseigant != null ? groupeInfoEnseig.PremierEmploi?.Enseignant.gradeEnseigant.GradeName : groupeInfoEnseig.GradeName,
-                    NomDepartement = groupeInfoEnseig.PremierEmploi?.Enseignant.departement?.NomDepartementt ?? groupeInfoEnseig.Departement,
-                    ChargeHoraire = groupeInfoEnseig.NombreElements,
-                    NomComplet = groupeInfoEnseig.NomComplet,
-                    TypeEnseignement = groupeInfoEnseig.PremierEmploi?.TypeEnseignement.NomEn,
-                    SemaineDebut = groupeInfoEnseig.PremierEmploi?.SemaineDebut,
-                    SemaineFin = groupeInfoEnseig.PremierEmploi?.SemaineFin,
-                    Matiere = groupeInfoEnseig.PremierEmploi?.Matiere.NomMatiere,
-                    //isComuncours = groupeInfoEnseig.IsComuncours.ToString(),
-                    isComuncours = groupeInfoEnseig.IsComuncours.HasValue ? (groupeInfoEnseig.IsComuncours.Value ? "oui" : "non") : "non",
-                    Nombre_Total_heure = ((groupeInfoEnseig.PremierEmploi?.SemaineFin - groupeInfoEnseig.PremierEmploi?.SemaineDebut) + 1) * groupeInfoEnseig.NombreElements * 2,
-                    Nomsemestre = groupeInfoEnseig.PremierEmploi?.semestre.NomSemestre
-                });
-            }
-
-            foreach (var resultat in resultats)
-            {
-                if (resultat is ResultatChargeHoraire)
-                {
-                    var result = (ResultatChargeHoraire)resultat;
-                    excel.Add(new ExportChargeViewModel
-                    {
-                       
-                       NomComplet = result.Enseignant != null? result.Enseignant.NomComplet: result.NomComplet,
-                         NomDepartement = result.NomDepartement,
-                        TypeEnseignement=result.TypeEnseignement,
-                        Grade = result.GradeName,
-                        Nombre_de_seance_par_Semaine =result.ChargeHoraire.ToString(),
-                        SemaineDebut=result.SemaineDebut,
-                        SemaineFin=result.SemaineFin,
-                        Matiere=result.Matiere,
-                        isComuncours=result.isComuncours,
-                        Semestre=result.Nomsemestre,
-                        Nombre_Total_heure=result.Nombre_Total_heure,
-
-                        
-
-                    });
-                }
-                else if (resultat is ResultatChargeHoraireVacataire)
-                {
-                    var result = (ResultatChargeHoraireVacataire)resultat;
-                    excel.Add(new ExportChargeViewModel
-                    {
-                       
-                        NomComplet = result.vacataire != null ? result.vacataire.NomComplet : result.NomComplet,
-                        NomDepartement = result.NomDepartement,
-                        TypeEnseignement = result.TypeEnseignement,
-                        Grade = result.GradeName,
-                        Nombre_de_seance_par_Semaine = result.ChargeHoraire.ToString(),
-                        SemaineDebut = result.SemaineDebut,
-                        SemaineFin = result.SemaineFin,
-                        Matiere = result.Matiere,
-                        isComuncours = result.isComuncours,
-                         Semestre = result.Nomsemestre,
-                        Nombre_Total_heure = result.Nombre_Total_heure,
-
-                    });
-                }
-            }
-            
             return new ExcelResult<ExportChargeViewModel>(excel, "Sheet1", "chargeHoraireAnnuels");
         }
+    }
 
-         
+    public class CommunCoursesComparer : IEqualityComparer<EmploiTemps>
+    {
+        private readonly AppDbContext _context;
+        public CommunCoursesComparer(AppDbContext _context)
+        {
+            this._context = _context;
+        }
+        public bool Equals(EmploiTemps? x, EmploiTemps? y)
+        {
+            if (x == null || y == null)
+            {
+                return false;
+            }
+            var e = new CommunCoursesHandler(_context);
+            return e.CommonCourse(x, y)
+                    && y.IdTypeEnseignement == x.IdTypeEnseignement;
+        }
 
+        public int GetHashCode([DisallowNull] EmploiTemps obj)
+        {
+            return 0;
+        }
+    }
+    public class UnionComparer : IEqualityComparer<ChargesHoraires>
+    {
+        public bool Equals(ChargesHoraires? x, ChargesHoraires? y)
+        {
+            if (x == null || y == null || !x.Seances.Any() || !y.Seances.Any() || x.IsCommun || y.IsCommun)
+            {
+                return false;
+            }
+            var cdt = x.Seances.First().IdTypeEnseignement == y.Seances.First().IdTypeEnseignement
+                && x.Seances.First().IdMatiere == y.Seances.First().IdMatiere 
+                && x.Seances.First().SemaineDebut == y.Seances.First().SemaineDebut
+                && x.Seances.First().SemaineFin == y.Seances.First().SemaineFin;
+            return cdt;
+        }
+
+        public int GetHashCode([DisallowNull] ChargesHoraires obj)
+        {
+            return 0;
+        }
+    }
+    public class ChargesHoraires
+    {
+        public List<EmploiTemps> Seances { get; set;} = new List<EmploiTemps>();
+        public bool IsCommun { get; set;}
     }
 }

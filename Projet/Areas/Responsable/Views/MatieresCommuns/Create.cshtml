@@ -1,0 +1,48 @@
+﻿@model Projet.Areas.Responsable.Models.MatiereGroupMatiereVM
+
+@addTagHelper *, AuthoringTagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using Projet.Areas.Responsable.Models
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Areas/Responsable/Views/Shared/_Admin.cshtml";
+}
+
+<div class="row">
+    @* <partial name="~/Areas/Responsable/Views/Shared/_Notification.cshtml"></partial> *@
+    <partial name="~/Areas/Responsable/Views/Shared/_Notification.cshtml"></partial>
+    <div class="card shadow p-3 mb-5 bg-white rounded mt-3 custom-card mx-auto" style="max-width: 600px; overflow-y: auto;">
+        <div class="card-body">
+            <form method="post" asp-action="Create">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="GroupeId"/>
+                <div class="form-group">
+                    <label asp-for="Name">Nomination :</label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="MatiereIds">Matieres :</label>
+                    <select class="form-select" asp-for="MatiereIds" multiple >
+                        @foreach (var M in ViewBag.Matieres)
+                        {
+                            <option value="@M.IdMatiere">@M.NomMatiere</option>
+                        }
+                    </select>
+                    <span asp-validation-for="MatiereIds" class="text-danger"></span>
+                </div>
+                <div class="form-group mt-1">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                    <a class="btn btn-secondary" href="@Url.Action("Index", "MatieresCommuns", new { area = "Responsable" })">Annuler</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+@section Scripts {
+    <partial name="~/Views/Shared/_ValidationScriptsPartial.cshtml" />
+}

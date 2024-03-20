@@ -14,10 +14,12 @@ namespace Projet.Areas.Coordonnateur.Models
         public Semestre? Semestre { get; set; }
         public EmploiExam emploiExam { get; set; }
 
-        public string? Nomsemestre { get; set; }
+        public string? NomSemestre { get; set; }
         public int? ChargeHoraire { get; set; }
         public string? NomDepartement { get; set; }
-        
+
+        public bool? IsVacataire { get; set; }
+
         public string? isComuncours { get; set; }
         public string? TypeEnseignement { get; set; }
         public string? Matiere { get; set; }
