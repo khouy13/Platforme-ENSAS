@@ -10,6 +10,7 @@ using Rotativa.AspNetCore;
 using NLog;
 using NLog.Web;
 using Microsoft.AspNetCore.Http.Features;
+using Projet;
 
 var logger = NLog.LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
 logger.Debug("init main");
@@ -19,6 +20,7 @@ try {
 
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddControllersWithViews();
+    builder.Services.AddTransient<IEmailSend, EmailSend>();
     // NLog: Setup NLog for Dependency injection
     builder.Logging.ClearProviders();
     builder.Logging.SetMinimumLevel(Microsoft.Extensions.Logging.LogLevel.Trace);

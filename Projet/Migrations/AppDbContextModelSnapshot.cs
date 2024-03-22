@@ -486,6 +486,35 @@ namespace Projet.Migrations
                     b.ToTable("Locals");
                 });
 
+            modelBuilder.Entity("Projet.Areas.Coordonnateur.Models.Message", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("EmailSender")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("EmailSenderPassword")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsMessageActive")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Messages");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            IsMessageActive = false
+                        });
+                });
+
             modelBuilder.Entity("Projet.Areas.Coordonnateur.Models.Seance", b =>
                 {
                     b.Property<int>("IdSeance")
@@ -1211,7 +1240,7 @@ namespace Projet.Migrations
             modelBuilder.Entity("Projet.Areas.Responsable.Models.MatiereGroupeMatiere", b =>
                 {
                     b.HasOne("Projet.Areas.Responsable.Models.GroupeMatiere", "GroupeMatiere")
-                        .WithMany("MatiereGroupeMatieres")
+                        .WithMany("MatieresRelated")
                         .HasForeignKey("GroupMatiereId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -1374,7 +1403,7 @@ namespace Projet.Migrations
 
             modelBuilder.Entity("Projet.Areas.Responsable.Models.GroupeMatiere", b =>
                 {
-                    b.Navigation("MatiereGroupeMatieres");
+                    b.Navigation("MatieresRelated");
                 });
 
             modelBuilder.Entity("Projet.Areas.Responsable.Models.Matiere", b =>

@@ -51,8 +51,14 @@ namespace Projet.Data
         public  DbSet<Seance> Seances { get; set; }
         public DbSet<RegisterViewModel> Accounts { get; set; }
 
+        public DbSet<Message> Messages { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Message>().HasData(
+                new Message { Id = 1, IsMessageActive = false }
+        );
+
             base.OnModelCreating(modelBuilder);
         }
     }

@@ -14,6 +14,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
 using System.Text.RegularExpressions;
+using DocumentFormat.OpenXml.Spreadsheet;
 
 namespace Projet.Areas.Coordenateur.Controllers
 {
@@ -28,19 +29,20 @@ namespace Projet.Areas.Coordenateur.Controllers
         private readonly ILogger<EmploiController> _logger;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly CommunCoursesHandler cmH;
+        private readonly IEmailSend _mail;
         public EmploiController(CommunCoursesHandler _communCoursesHandler,
             AppDbContext _context, 
             IHttpContextAccessor httpContextAccessor, 
             ILogger<EmploiController> logger, 
-            UserManager<ApplicationUser> userManager)
+            UserManager<ApplicationUser> userManager,
+        IEmailSend email)
         {
             this._context = _context;
             this.cmH = _communCoursesHandler;
             _logger = logger;
             _httpContextAccessor = httpContextAccessor;
             _userManager = userManager;
-
-
+            _mail=email;
         }
         
         [Authorize(Roles = "Directeur, Coordonnateur,Chef")]
@@ -125,8 +127,8 @@ namespace Projet.Areas.Coordenateur.Controllers
                             .Where(e => e.MatiereNiveaus.Any(e => e.IdNiveau == IdN))
                             .ToList();
 
-            ViewBag.matieres = matieres;
             ViewBag.IdSemestre = IdS;
+            ViewBag.matieres = matieres;
             //It must be list
             //var jours = _context.Jours;
             var jours = _context.Jours.ToList();
@@ -209,6 +211,7 @@ namespace Projet.Areas.Coordenateur.Controllers
                 emploi.isComuncours = true;
                 _context.EmploiTemps.Add(emploi);
                 _context.SaveChanges();
+                sendMessage(emploi);
 
                 if (user != null && user.Enseignant != null)
                 {
@@ -310,6 +313,7 @@ namespace Projet.Areas.Coordenateur.Controllers
                 // Ajouter l'emploi du temps à la base de données
                 _context.EmploiTemps.Add(emploi);
                 _context.SaveChanges();
+                sendMessage(emploi);
                 if (user != null && user.Enseignant != null)
                 {
 
@@ -369,6 +373,7 @@ namespace Projet.Areas.Coordenateur.Controllers
 
                 _context.EmploiTemps.Remove(emploiToDelete);
                 _context.SaveChanges();
+                sendMessage(emploiToDelete);
                 TempData["EmploiMessage"] = "Seance  du temps a été supprimé avec succès.";
                 if (user != null && user.Enseignant != null)
                 {
@@ -540,6 +545,7 @@ namespace Projet.Areas.Coordenateur.Controllers
                         _logger.LogInformation($"L'utilisateur {user.Enseignant.NomComplet} a effectué une opération de Modification  de {nonseance} du {nonjour} dans l 'emploi de temps de {niveauNom}");
                     }
                     _context.SaveChanges();
+                    sendMessage(newEmploi);
                     TempData["EmploiMessage"] = "L'emploi du temps a été mis à jour avec succès,Cette Seance est Commune!";
                     return RedirectToAction("TempsEmploi", new { IdN, IdS });
                 }
@@ -658,6 +664,7 @@ namespace Projet.Areas.Coordenateur.Controllers
 
                     }
                     _context.SaveChanges();
+                    sendMessage(newEmploi);
                     TempData["EmploiMessage"] = "L'emploi du temps a été mis à jour avec succès.";
                     return RedirectToAction("TempsEmploi", new { IdN, IdS });
                 }
@@ -790,6 +797,7 @@ namespace Projet.Areas.Coordenateur.Controllers
 
                 _context.EmploiTemps.RemoveRange(emploisToDelete);
                 _context.SaveChanges();
+                
                 if (user != null && user.Enseignant != null)
                 {
 
@@ -806,6 +814,29 @@ namespace Projet.Areas.Coordenateur.Controllers
             return RedirectToAction("TempsEmploi", new { IdN, IdS }); // Redirigez vers la vue principale ou une autre vue appropriée.
         }
 
+        public void sendMessage(EmploiTemps emploi)
+        {
+            var message = _context.Messages.FirstOrDefault();
+
+            if (message != null && message.IsMessageActive)
+            {
+                try
+                {
+                    var enseignant = _context.Enseignants.Find(emploi.IdEnseignant);
+                    if (enseignant != null)
+                    {
+                        var emailBody = $"<html><body>Cher/Chère {enseignant.NomComplet},<br><br>Changement d'emploi du temps à noter.<br><br><a href='https://localhost:7006/'>https://localhost:7006</a><br><br>Cordialement,<br><br>Ensa safi</body></html>";
+
+                        _mail.SendEmailAsync(enseignant.Email, "Notification", emailBody);
+                    }
+                }
+                catch (Exception e)
+                {
+                    _logger.LogError(e, "An error occurred while sending the notification email to the instructor.");
+                     TempData["MessageErreur"] = "Il y a une erreur lors de l'envoi de message de notification au professeur.";
+                }
+            }
+        }
 
 
     }

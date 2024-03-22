@@ -19,6 +19,11 @@
         ViewBag.filiere = filieres;
     }
 }
+
+<li class="nav-item">
+    <a asp-action="Index" asp-controller="Message" asp-area="coordonnateur" class="nav-link">Gestion Du Message</a>
+</li>
+
 @if (ViewBag.filiere != null)
 {
     @foreach (var f in ViewBag.filiere)

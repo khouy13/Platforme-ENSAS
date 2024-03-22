@@ -1,0 +1,2005 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\areas\\coordonnateur\\views\\message\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\areas\\coordonnateur\\views\\message\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20240321220745_addtablemessage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20240321220745_addtablemessage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20240321220745_addtablemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20240321220745_addtablemessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20240315114149_groupmatieremigration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20240315114149_groupmatieremigration.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20240315114149_groupmatieremigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20240315114149_groupmatieremigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20240229212324_addvalidation.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20240229212324_addvalidation.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20240229212324_addvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20240229212324_addvalidation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20231011151552_responsable2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20231011151552_responsable2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20231011151552_responsable2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20231011151552_responsable2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20231011151116_responsable.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20231011151116_responsable.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20231011151116_responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20231011151116_responsable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230925212612_iscomuncours5.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230925212612_iscomuncours5.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230925212612_iscomuncours5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230925212612_iscomuncours5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230925211502_iscomuncours4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230925211502_iscomuncours4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230925211502_iscomuncours4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230925211502_iscomuncours4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230925205604_iscomuncours2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230925205604_iscomuncours2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230925205604_iscomuncours2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230925205604_iscomuncours2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230925165959_iscomuncours.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230925165959_iscomuncours.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230925165959_iscomuncours.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230925165959_iscomuncours.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230925143134_matiereniveau3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230925143134_matiereniveau3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230925143134_matiereniveau3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230925143134_matiereniveau3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230925091815_matiereniveau2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230925091815_matiereniveau2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230925091815_matiereniveau2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230925091815_matiereniveau2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230925085637_matiereniveau.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230925085637_matiereniveau.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230925085637_matiereniveau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230925085637_matiereniveau.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230924220234_chef.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230924220234_chef.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230924220234_chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230924220234_chef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230924165534_typelocal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230924165534_typelocal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230924165534_typelocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230924165534_typelocal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230922184238_gradeenseignant.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230922184238_gradeenseignant.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230922184238_gradeenseignant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230922184238_gradeenseignant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230922182557_removegradeenseignantproperty.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230922182557_removegradeenseignantproperty.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230922182557_removegradeenseignantproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230922182557_removegradeenseignantproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230922160203_plusieurscordonn.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230922160203_plusieurscordonn.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230922160203_plusieurscordonn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230922160203_plusieurscordonn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230922122618_generation-password.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230922122618_generation-password.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230922122618_generation-password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230922122618_generation-password.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230921132850_departementvactaire.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230921132850_departementvactaire.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230921132850_departementvactaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230921132850_departementvactaire.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230901174840_emploiexam.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230901174840_emploiexam.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230901174840_emploiexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230901174840_emploiexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230831213411_migrationnn.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230831213411_migrationnn.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230831213411_migrationnn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230831213411_migrationnn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230831212406_migggg.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230831212406_migggg.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230831212406_migggg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230831212406_migggg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230831042929_miggg.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230831042929_miggg.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230831042929_miggg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230831042929_miggg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230830152009_migrationassoc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230830152009_migrationassoc.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230830152009_migrationassoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230830152009_migrationassoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230830141321_migrationassociation.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230830141321_migrationassociation.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230830141321_migrationassociation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230830141321_migrationassociation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230829131806_migratemploiexam4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230829131806_migratemploiexam4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230829131806_migratemploiexam4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230829131806_migratemploiexam4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230829131349_migratemploiexam3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230829131349_migratemploiexam3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230829131349_migratemploiexam3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230829131349_migratemploiexam3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230829125616_migratemploiexam2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230829125616_migratemploiexam2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230829125616_migratemploiexam2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230829125616_migratemploiexam2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230829123937_migratemploiexam.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230829123937_migratemploiexam.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230829123937_migratemploiexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230829123937_migratemploiexam.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230825215219_migid2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230825215219_migid2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230825215219_migid2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230825215219_migid2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230825203221_migid.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230825203221_migid.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230825203221_migid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230825203221_migid.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230825201846_migiduser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230825201846_migiduser.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230825201846_migiduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230825201846_migiduser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230825173653_idenvac.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230825173653_idenvac.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230825173653_idenvac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230825173653_idenvac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230825122039_emailenseignat.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230825122039_emailenseignat.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230825122039_emailenseignat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230825122039_emailenseignat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230824120303_filiereabr.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230824120303_filiereabr.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230824120303_filiereabr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230824120303_filiereabr.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230823131915_maigrationvac.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230823131915_maigrationvac.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230823131915_maigrationvac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230823131915_maigrationvac.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230822094405_semestresfd3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230822094405_semestresfd3.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230822094405_semestresfd3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230822094405_semestresfd3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230822093905_semestresfd2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230822093905_semestresfd2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230822093905_semestresfd2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230822093905_semestresfd2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230822093531_semestresfd.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230822093531_semestresfd.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230822093531_semestresfd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230822093531_semestresfd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230821234001_semestre7.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230821234001_semestre7.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230821234001_semestre7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230821234001_semestre7.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230821233039_semestre5.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230821233039_semestre5.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230821233039_semestre5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230821233039_semestre5.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230817115929_migrationemploie.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230817115929_migrationemploie.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230817115929_migrationemploie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230817115929_migrationemploie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230817000905_migrationemplois.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230817000905_migrationemplois.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230817000905_migrationemplois.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230817000905_migrationemplois.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230812134710_profileimage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230812134710_profileimage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230812134710_profileimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230812134710_profileimage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230812110944_profile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230812110944_profile.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230812110944_profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230812110944_profile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230812012512_second4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230812012512_second4.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230812012512_second4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230812012512_second4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230811223624_second2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230811223624_second2.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230811223624_second2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230811223624_second2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230811191328_second.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230811191328_second.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230811191328_second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230811191328_second.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230811181624_first.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230811181624_first.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\migrations\\20230811181624_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\migrations\\20230811181624_first.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\areas\\coordonnateur\\views\\coordonnateur\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\areas\\coordonnateur\\views\\coordonnateur\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\areas\\coordonnateur\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\areas\\coordonnateur\\controllers\\messagecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\areas\\coordonnateur\\controllers\\emploicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\areas\\coordonnateur\\controllers\\emploicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\emailsend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\emailsend.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\areas\\coordonnateur\\views\\emploi\\addseance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\areas\\coordonnateur\\views\\emploi\\addseance.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\areas\\coordonnateur\\views\\emploi\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\areas\\coordonnateur\\views\\emploi\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\areas\\chef\\views\\shared\\_cheffiliereniveauexam.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\areas\\chef\\views\\shared\\_cheffiliereniveauexam.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\areas\\chef\\views\\shared\\_cheffiliereniveau.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\areas\\chef\\views\\shared\\_cheffiliereniveau.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\areas\\directeur\\views\\shared\\_directeurfiliereniveau.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\areas\\directeur\\views\\shared\\_directeurfiliereniveau.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\areas\\coordonnateur\\views\\shared\\_filiereniveau.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\areas\\coordonnateur\\views\\shared\\_filiereniveau.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\areas\\coordonnateur\\views\\shared\\_enseignant.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\areas\\coordonnateur\\views\\shared\\_enseignant.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|c:\\users\\lenovo\\desktop\\ensas\\platforme-ensas\\projet\\projet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1F17FF68-DC16-4F5C-B16E-7B2C9C04066C}|Projet\\Projet.csproj|solutionrelative:projet\\projet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Projet\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:32.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "20240321220745_addTableMessage.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20240321220745_addTableMessage.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20240321220745_addTableMessage.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20240321220745_addTableMessage.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20240321220745_addTableMessage.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:32.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20240321220745_addTableMessage.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20240321220745_addTableMessage.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20240321220745_addTableMessage.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20240321220745_addTableMessage.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20240321220745_addTableMessage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:31.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Coordonnateur\\Views\\Message\\Index.cshtml",
+              "RelativeDocumentMoniker": "Projet\\Areas\\Coordonnateur\\Views\\Message\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Coordonnateur\\Views\\Message\\Index.cshtml",
+              "RelativeToolTip": "Projet\\Areas\\Coordonnateur\\Views\\Message\\Index.cshtml",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAwBQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T22:13:07.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20240315114149_GroupMatiereMigration.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20240315114149_GroupMatiereMigration.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20240315114149_GroupMatiereMigration.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20240315114149_GroupMatiereMigration.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20240315114149_GroupMatiereMigration.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:31.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20240315114149_GroupMatiereMigration.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20240315114149_GroupMatiereMigration.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20240315114149_GroupMatiereMigration.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20240315114149_GroupMatiereMigration.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20240315114149_GroupMatiereMigration.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:31.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20240229212324_addValidation.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20240229212324_addValidation.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20240229212324_addValidation.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20240229212324_addValidation.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20240229212324_addValidation.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:31.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20240229212324_addValidation.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20240229212324_addValidation.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20240229212324_addValidation.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20240229212324_addValidation.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20240229212324_addValidation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:30.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20231011151552_responsable2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20231011151552_responsable2.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20231011151552_responsable2.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20231011151552_responsable2.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20231011151552_responsable2.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:30.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20231011151552_responsable2.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20231011151552_responsable2.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20231011151552_responsable2.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20231011151552_responsable2.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20231011151552_responsable2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:30.081Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20231011151116_responsable.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20231011151116_responsable.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20231011151116_responsable.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20231011151116_responsable.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20231011151116_responsable.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:29.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20231011151116_responsable.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20231011151116_responsable.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20231011151116_responsable.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20231011151116_responsable.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20231011151116_responsable.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:29.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "20230925212612_isComuncours5.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925212612_isComuncours5.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230925212612_isComuncours5.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925212612_isComuncours5.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230925212612_isComuncours5.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:29.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "20230925212612_isComuncours5.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925212612_isComuncours5.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230925212612_isComuncours5.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925212612_isComuncours5.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230925212612_isComuncours5.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:29.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "20230925211502_isComuncours4.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925211502_isComuncours4.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230925211502_isComuncours4.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925211502_isComuncours4.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230925211502_isComuncours4.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:28.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20230925211502_isComuncours4.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925211502_isComuncours4.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230925211502_isComuncours4.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925211502_isComuncours4.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230925211502_isComuncours4.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:28.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20230925205604_isComuncours2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925205604_isComuncours2.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230925205604_isComuncours2.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925205604_isComuncours2.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230925205604_isComuncours2.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:28.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20230925205604_isComuncours2.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925205604_isComuncours2.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230925205604_isComuncours2.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925205604_isComuncours2.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230925205604_isComuncours2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:27.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20230925165959_isComuncours.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925165959_isComuncours.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230925165959_isComuncours.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925165959_isComuncours.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230925165959_isComuncours.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:27.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20230925165959_isComuncours.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925165959_isComuncours.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230925165959_isComuncours.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925165959_isComuncours.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230925165959_isComuncours.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:27.366Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20230925143134_MatiereNiveau3.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925143134_MatiereNiveau3.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230925143134_MatiereNiveau3.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925143134_MatiereNiveau3.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230925143134_MatiereNiveau3.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:27.123Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20230925143134_MatiereNiveau3.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925143134_MatiereNiveau3.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230925143134_MatiereNiveau3.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925143134_MatiereNiveau3.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230925143134_MatiereNiveau3.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:26.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20230925091815_MatiereNiveau2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925091815_MatiereNiveau2.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230925091815_MatiereNiveau2.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925091815_MatiereNiveau2.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230925091815_MatiereNiveau2.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:26.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20230925091815_MatiereNiveau2.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925091815_MatiereNiveau2.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230925091815_MatiereNiveau2.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925091815_MatiereNiveau2.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230925091815_MatiereNiveau2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:26.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20230925085637_MatiereNiveau.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925085637_MatiereNiveau.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230925085637_MatiereNiveau.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925085637_MatiereNiveau.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230925085637_MatiereNiveau.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:25.703Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20230925085637_MatiereNiveau.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925085637_MatiereNiveau.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230925085637_MatiereNiveau.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230925085637_MatiereNiveau.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230925085637_MatiereNiveau.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:25.453Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20230924220234_chef.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230924220234_chef.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230924220234_chef.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230924220234_chef.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230924220234_chef.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:25.165Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20230924220234_chef.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230924220234_chef.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230924220234_chef.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230924220234_chef.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230924220234_chef.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:24.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "20230924165534_TypeLocal.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230924165534_TypeLocal.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230924165534_TypeLocal.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230924165534_TypeLocal.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230924165534_TypeLocal.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:24.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20230924165534_TypeLocal.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230924165534_TypeLocal.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230924165534_TypeLocal.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230924165534_TypeLocal.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230924165534_TypeLocal.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:24.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20230922184238_GradeEnseignant.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230922184238_GradeEnseignant.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230922184238_GradeEnseignant.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230922184238_GradeEnseignant.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230922184238_GradeEnseignant.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:24.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20230922184238_GradeEnseignant.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230922184238_GradeEnseignant.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230922184238_GradeEnseignant.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230922184238_GradeEnseignant.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230922184238_GradeEnseignant.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:23.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20230922182557_RemoveGradeEnseignantProperty.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230922182557_RemoveGradeEnseignantProperty.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230922182557_RemoveGradeEnseignantProperty.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230922182557_RemoveGradeEnseignantProperty.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230922182557_RemoveGradeEnseignantProperty.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:23.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "20230922182557_RemoveGradeEnseignantProperty.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230922182557_RemoveGradeEnseignantProperty.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230922182557_RemoveGradeEnseignantProperty.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230922182557_RemoveGradeEnseignantProperty.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230922182557_RemoveGradeEnseignantProperty.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:23.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20230922160203_plusieursCordonn.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230922160203_plusieursCordonn.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230922160203_plusieursCordonn.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230922160203_plusieursCordonn.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230922160203_plusieursCordonn.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:23.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20230922160203_plusieursCordonn.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230922160203_plusieursCordonn.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230922160203_plusieursCordonn.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230922160203_plusieursCordonn.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230922160203_plusieursCordonn.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:22.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "20230922122618_generation-password.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230922122618_generation-password.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230922122618_generation-password.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230922122618_generation-password.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230922122618_generation-password.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:22.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "20230922122618_generation-password.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230922122618_generation-password.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230922122618_generation-password.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230922122618_generation-password.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230922122618_generation-password.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:21.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "20230921132850_departementVactaire.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230921132850_departementVactaire.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230921132850_departementVactaire.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230921132850_departementVactaire.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230921132850_departementVactaire.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:21.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "20230921132850_departementVactaire.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230921132850_departementVactaire.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230921132850_departementVactaire.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230921132850_departementVactaire.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230921132850_departementVactaire.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:21.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "20230901174840_emploiExam.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230901174840_emploiExam.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230901174840_emploiExam.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230901174840_emploiExam.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230901174840_emploiExam.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:20.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20230901174840_emploiExam.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230901174840_emploiExam.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230901174840_emploiExam.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230901174840_emploiExam.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230901174840_emploiExam.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:20.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "20230831213411_migrationnn.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230831213411_migrationnn.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230831213411_migrationnn.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230831213411_migrationnn.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230831213411_migrationnn.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:20.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "20230831213411_migrationnn.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230831213411_migrationnn.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230831213411_migrationnn.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230831213411_migrationnn.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230831213411_migrationnn.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:19.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "20230831212406_migggg.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230831212406_migggg.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230831212406_migggg.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230831212406_migggg.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230831212406_migggg.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:19.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "20230831212406_migggg.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230831212406_migggg.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230831212406_migggg.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230831212406_migggg.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230831212406_migggg.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:19.444Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "20230831042929_miggg.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230831042929_miggg.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230831042929_miggg.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230831042929_miggg.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230831042929_miggg.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:19.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "20230831042929_miggg.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230831042929_miggg.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230831042929_miggg.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230831042929_miggg.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230831042929_miggg.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:18.965Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "20230830152009_migrationAssoc.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230830152009_migrationAssoc.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230830152009_migrationAssoc.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230830152009_migrationAssoc.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230830152009_migrationAssoc.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:18.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "20230830152009_migrationAssoc.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230830152009_migrationAssoc.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230830152009_migrationAssoc.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230830152009_migrationAssoc.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230830152009_migrationAssoc.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:18.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "20230830141321_migrationAssociation.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230830141321_migrationAssociation.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230830141321_migrationAssociation.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230830141321_migrationAssociation.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230830141321_migrationAssociation.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:18.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "20230830141321_migrationAssociation.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230830141321_migrationAssociation.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230830141321_migrationAssociation.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230830141321_migrationAssociation.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230830141321_migrationAssociation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:17.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "20230829131806_migratEmploiExam4.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230829131806_migratEmploiExam4.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230829131806_migratEmploiExam4.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230829131806_migratEmploiExam4.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230829131806_migratEmploiExam4.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:17.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "20230829131806_migratEmploiExam4.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230829131806_migratEmploiExam4.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230829131806_migratEmploiExam4.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230829131806_migratEmploiExam4.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230829131806_migratEmploiExam4.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:17.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "20230829131349_migratEmploiExam3.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230829131349_migratEmploiExam3.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230829131349_migratEmploiExam3.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230829131349_migratEmploiExam3.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230829131349_migratEmploiExam3.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:17.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "20230829131349_migratEmploiExam3.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230829131349_migratEmploiExam3.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230829131349_migratEmploiExam3.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230829131349_migratEmploiExam3.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230829131349_migratEmploiExam3.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:17.008Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "20230829125616_migratEmploiExam2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230829125616_migratEmploiExam2.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230829125616_migratEmploiExam2.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230829125616_migratEmploiExam2.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230829125616_migratEmploiExam2.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:16.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "20230829125616_migratEmploiExam2.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230829125616_migratEmploiExam2.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230829125616_migratEmploiExam2.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230829125616_migratEmploiExam2.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230829125616_migratEmploiExam2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:16.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "20230829123937_migratEmploiExam.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230829123937_migratEmploiExam.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230829123937_migratEmploiExam.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230829123937_migratEmploiExam.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230829123937_migratEmploiExam.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:16.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "20230829123937_migratEmploiExam.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230829123937_migratEmploiExam.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230829123937_migratEmploiExam.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230829123937_migratEmploiExam.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230829123937_migratEmploiExam.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:15.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "20230825215219_migId2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825215219_migId2.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230825215219_migId2.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825215219_migId2.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230825215219_migId2.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:15.455Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "20230825215219_migId2.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825215219_migId2.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230825215219_migId2.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825215219_migId2.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230825215219_migId2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:15.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "20230825203221_migId.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825203221_migId.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230825203221_migId.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825203221_migId.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230825203221_migId.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:14.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "20230825203221_migId.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825203221_migId.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230825203221_migId.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825203221_migId.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230825203221_migId.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:14.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "20230825201846_migIdUser.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825201846_migIdUser.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230825201846_migIdUser.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825201846_migIdUser.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230825201846_migIdUser.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:14.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "20230825201846_migIdUser.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825201846_migIdUser.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230825201846_migIdUser.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825201846_migIdUser.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230825201846_migIdUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:14.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "20230825173653_IdENVAC.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825173653_IdENVAC.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230825173653_IdENVAC.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825173653_IdENVAC.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230825173653_IdENVAC.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:14.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "20230825173653_IdENVAC.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825173653_IdENVAC.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230825173653_IdENVAC.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825173653_IdENVAC.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230825173653_IdENVAC.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:13.968Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "20230825122039_emailEnseignat.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825122039_emailEnseignat.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230825122039_emailEnseignat.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825122039_emailEnseignat.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230825122039_emailEnseignat.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:13.74Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "20230825122039_emailEnseignat.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825122039_emailEnseignat.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230825122039_emailEnseignat.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230825122039_emailEnseignat.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230825122039_emailEnseignat.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:13.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "20230824120303_filiereabr.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230824120303_filiereabr.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230824120303_filiereabr.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230824120303_filiereabr.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230824120303_filiereabr.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:13.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "20230824120303_filiereabr.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230824120303_filiereabr.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230824120303_filiereabr.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230824120303_filiereabr.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230824120303_filiereabr.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:12.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "20230823131915_maigrationVac.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230823131915_maigrationVac.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230823131915_maigrationVac.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230823131915_maigrationVac.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230823131915_maigrationVac.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:12.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "20230823131915_maigrationVac.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230823131915_maigrationVac.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230823131915_maigrationVac.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230823131915_maigrationVac.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230823131915_maigrationVac.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:12.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "20230822094405_semestreSFD3.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230822094405_semestreSFD3.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230822094405_semestreSFD3.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230822094405_semestreSFD3.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230822094405_semestreSFD3.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:12.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "20230822094405_semestreSFD3.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230822094405_semestreSFD3.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230822094405_semestreSFD3.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230822094405_semestreSFD3.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230822094405_semestreSFD3.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:12.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "20230822093905_semestreSFD2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230822093905_semestreSFD2.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230822093905_semestreSFD2.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230822093905_semestreSFD2.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230822093905_semestreSFD2.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:11.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "20230822093905_semestreSFD2.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230822093905_semestreSFD2.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230822093905_semestreSFD2.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230822093905_semestreSFD2.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230822093905_semestreSFD2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:11.596Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "20230822093531_semestreSFD.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230822093531_semestreSFD.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230822093531_semestreSFD.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230822093531_semestreSFD.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230822093531_semestreSFD.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:11.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 79,
+              "Title": "20230822093531_semestreSFD.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230822093531_semestreSFD.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230822093531_semestreSFD.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230822093531_semestreSFD.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230822093531_semestreSFD.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:11.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "20230821234001_Semestre7.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230821234001_Semestre7.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230821234001_Semestre7.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230821234001_Semestre7.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230821234001_Semestre7.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:10.739Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
+              "Title": "20230821234001_Semestre7.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230821234001_Semestre7.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230821234001_Semestre7.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230821234001_Semestre7.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230821234001_Semestre7.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:10.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 82,
+              "Title": "20230821233039_Semestre5.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230821233039_Semestre5.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230821233039_Semestre5.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230821233039_Semestre5.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230821233039_Semestre5.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:10.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 83,
+              "Title": "20230821233039_Semestre5.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230821233039_Semestre5.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230821233039_Semestre5.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230821233039_Semestre5.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230821233039_Semestre5.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:10.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 84,
+              "Title": "20230817115929_migrationEmploie.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230817115929_migrationEmploie.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230817115929_migrationEmploie.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230817115929_migrationEmploie.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230817115929_migrationEmploie.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:09.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 85,
+              "Title": "20230817115929_migrationEmploie.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230817115929_migrationEmploie.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230817115929_migrationEmploie.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230817115929_migrationEmploie.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230817115929_migrationEmploie.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:09.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 86,
+              "Title": "20230817000905_migrationEmplois.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230817000905_migrationEmplois.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230817000905_migrationEmplois.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230817000905_migrationEmplois.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230817000905_migrationEmplois.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:09.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 87,
+              "Title": "20230817000905_migrationEmplois.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230817000905_migrationEmplois.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230817000905_migrationEmplois.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230817000905_migrationEmplois.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230817000905_migrationEmplois.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:09.279Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 88,
+              "Title": "20230812134710_profileimage.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230812134710_profileimage.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230812134710_profileimage.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230812134710_profileimage.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230812134710_profileimage.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:09.097Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
+              "Title": "20230812134710_profileimage.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230812134710_profileimage.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230812134710_profileimage.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230812134710_profileimage.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230812134710_profileimage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:08.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "20230812110944_profile.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230812110944_profile.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230812110944_profile.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230812110944_profile.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230812110944_profile.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:08.55Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "20230812110944_profile.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230812110944_profile.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230812110944_profile.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230812110944_profile.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230812110944_profile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:08.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "20230812012512_Second4.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230812012512_Second4.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230812012512_Second4.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230812012512_Second4.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230812012512_Second4.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:08.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 93,
+              "Title": "20230812012512_Second4.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230812012512_Second4.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230812012512_Second4.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230812012512_Second4.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230812012512_Second4.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:07.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 94,
+              "Title": "20230811223624_Second2.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230811223624_Second2.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230811223624_Second2.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230811223624_Second2.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230811223624_Second2.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:07.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "20230811223624_Second2.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230811223624_Second2.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230811223624_Second2.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230811223624_Second2.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230811223624_Second2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:07.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 96,
+              "Title": "20230811191328_Second.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230811191328_Second.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230811191328_Second.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230811191328_Second.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230811191328_Second.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:07.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 97,
+              "Title": "20230811191328_Second.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230811191328_Second.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230811191328_Second.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230811191328_Second.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230811191328_Second.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:07.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 98,
+              "Title": "20230811181624_First.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230811181624_First.Designer.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230811181624_First.Designer.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230811181624_First.Designer.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230811181624_First.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:06.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 99,
+              "Title": "20230811181624_First.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230811181624_First.cs",
+              "RelativeDocumentMoniker": "Projet\\Migrations\\20230811181624_First.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Migrations\\20230811181624_First.cs",
+              "RelativeToolTip": "Projet\\Migrations\\20230811181624_First.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T01:02:06.581Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 103,
+              "Title": "EmailSend.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\EmailSend.cs",
+              "RelativeDocumentMoniker": "Projet\\EmailSend.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\EmailSend.cs",
+              "RelativeToolTip": "Projet\\EmailSend.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABsAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-22T00:37:39.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 104,
+              "Title": "AddSeance.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Coordonnateur\\Views\\Emploi\\AddSeance.cshtml",
+              "RelativeDocumentMoniker": "Projet\\Areas\\Coordonnateur\\Views\\Emploi\\AddSeance.cshtml",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Coordonnateur\\Views\\Emploi\\AddSeance.cshtml",
+              "RelativeToolTip": "Projet\\Areas\\Coordonnateur\\Views\\Emploi\\AddSeance.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACkAAABnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T22:24:40.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 101,
+              "Title": "MessageController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Coordonnateur\\Controllers\\MessageController.cs",
+              "RelativeDocumentMoniker": "Projet\\Areas\\Coordonnateur\\Controllers\\MessageController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Coordonnateur\\Controllers\\MessageController.cs",
+              "RelativeToolTip": "Projet\\Areas\\Coordonnateur\\Controllers\\MessageController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAswB8AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T22:12:51.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 100,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Coordonnateur\\Views\\Coordonnateur\\Index.cshtml",
+              "RelativeDocumentMoniker": "Projet\\Areas\\Coordonnateur\\Views\\Coordonnateur\\Index.cshtml",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Coordonnateur\\Views\\Coordonnateur\\Index.cshtml",
+              "RelativeToolTip": "Projet\\Areas\\Coordonnateur\\Views\\Coordonnateur\\Index.cshtml",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAFYAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T22:24:31.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 102,
+              "Title": "EmploiController.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Coordonnateur\\Controllers\\EmploiController.cs",
+              "RelativeDocumentMoniker": "Projet\\Areas\\Coordonnateur\\Controllers\\EmploiController.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Coordonnateur\\Controllers\\EmploiController.cs",
+              "RelativeToolTip": "Projet\\Areas\\Coordonnateur\\Controllers\\EmploiController.cs",
+              "ViewState": "AQIAAFQBAAAAAAAAAAAkwGcBAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T22:16:15.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 105,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Coordonnateur\\Views\\Emploi\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Projet\\Areas\\Coordonnateur\\Views\\Emploi\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Coordonnateur\\Views\\Emploi\\Edit.cshtml",
+              "RelativeToolTip": "Projet\\Areas\\Coordonnateur\\Views\\Emploi\\Edit.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAC4AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T22:55:59.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 109,
+              "Title": "_ChefFiliereNiveau.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Chef\\Views\\Shared\\_ChefFiliereNiveau.cshtml",
+              "RelativeDocumentMoniker": "Projet\\Areas\\Chef\\Views\\Shared\\_ChefFiliereNiveau.cshtml",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Chef\\Views\\Shared\\_ChefFiliereNiveau.cshtml",
+              "RelativeToolTip": "Projet\\Areas\\Chef\\Views\\Shared\\_ChefFiliereNiveau.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAqwBgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T22:22:19.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 108,
+              "Title": "_chefFiliereNiveauExam.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Chef\\Views\\Shared\\_chefFiliereNiveauExam.cshtml",
+              "RelativeDocumentMoniker": "Projet\\Areas\\Chef\\Views\\Shared\\_chefFiliereNiveauExam.cshtml",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Chef\\Views\\Shared\\_chefFiliereNiveauExam.cshtml",
+              "RelativeToolTip": "Projet\\Areas\\Chef\\Views\\Shared\\_chefFiliereNiveauExam.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T22:22:27.481Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 106,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Projet\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Projet\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAAAH0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T22:46:12.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 107,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Projet\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Projet\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AQIAAFQBAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T22:46:16.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 110,
+              "Title": "_DirecteurFiliereNiveau.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Directeur\\Views\\Shared\\_DirecteurFiliereNiveau.cshtml",
+              "RelativeDocumentMoniker": "Projet\\Areas\\Directeur\\Views\\Shared\\_DirecteurFiliereNiveau.cshtml",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Directeur\\Views\\Shared\\_DirecteurFiliereNiveau.cshtml",
+              "RelativeToolTip": "Projet\\Areas\\Directeur\\Views\\Shared\\_DirecteurFiliereNiveau.cshtml",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T22:21:15.594Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 111,
+              "Title": "_FiliereNiveau.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Coordonnateur\\Views\\Shared\\_FiliereNiveau.cshtml",
+              "RelativeDocumentMoniker": "Projet\\Areas\\Coordonnateur\\Views\\Shared\\_FiliereNiveau.cshtml",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Coordonnateur\\Views\\Shared\\_FiliereNiveau.cshtml",
+              "RelativeToolTip": "Projet\\Areas\\Coordonnateur\\Views\\Shared\\_FiliereNiveau.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T22:14:32.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 112,
+              "Title": "_Enseignant.cshtml",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Coordonnateur\\Views\\Shared\\_Enseignant.cshtml",
+              "RelativeDocumentMoniker": "Projet\\Areas\\Coordonnateur\\Views\\Shared\\_Enseignant.cshtml",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Areas\\Coordonnateur\\Views\\Shared\\_Enseignant.cshtml",
+              "RelativeToolTip": "Projet\\Areas\\Coordonnateur\\Views\\Shared\\_Enseignant.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-21T22:14:29.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 114,
+              "Title": "Projet",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Projet.csproj",
+              "RelativeDocumentMoniker": "Projet\\Projet.csproj",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Projet.csproj",
+              "RelativeToolTip": "Projet\\Projet.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-03-21T22:11:37.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 113,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Program.cs",
+              "RelativeDocumentMoniker": "Projet\\Program.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\Projet\\Program.cs",
+              "RelativeToolTip": "Projet\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-21T22:12:02.466Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

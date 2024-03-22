@@ -1,971 +1,971 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\appTrombinoscope.bundle.scp.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\appTrombinoscope.bundle.scp.css",
       "PackagePath": "staticwebassets\\appTrombinoscope.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\cadi3YAD.jpeg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\cadi3YAD.jpeg",
       "PackagePath": "staticwebassets\\cadi3YAD.jpeg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\folderFechierExcel\\student.csv",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\folderFechierExcel\\student.csv",
       "PackagePath": "staticwebassets\\folderFechierExcel\\student.csv"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageEnsa.jpg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageEnsa.jpg",
       "PackagePath": "staticwebassets\\imageEnsa.jpg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\BF3624.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\BF3624.png",
       "PackagePath": "staticwebassets\\imageFolder\\BF3624.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE1.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE1.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE1.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE10.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE10.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE10.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE100.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE100.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE100.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE11.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE11.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE11.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE12.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE12.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE12.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE13.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE13.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE13.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE14.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE14.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE14.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE15.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE15.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE15.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE16.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE16.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE16.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE17.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE17.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE17.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE18.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE18.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE18.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE19.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE19.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE19.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE2.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE2.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE2.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE20.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE20.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE20.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE21.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE21.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE21.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE22.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE22.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE22.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE23.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE23.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE23.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE24.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE24.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE24.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE25.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE25.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE25.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE26.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE26.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE26.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE27.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE27.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE27.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE28.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE28.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE28.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE29.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE29.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE29.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE3.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE3.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE3.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE30.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE30.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE30.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE31.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE31.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE31.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE32.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE32.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE32.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE33.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE33.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE33.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE34.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE34.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE34.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE35.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE35.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE35.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE36.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE36.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE36.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE37.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE37.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE37.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE38.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE38.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE38.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE39.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE39.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE39.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE4.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE4.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE4.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE40.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE40.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE40.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE41.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE41.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE41.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE42.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE42.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE42.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE43.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE43.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE43.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE44.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE44.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE44.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE45.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE45.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE45.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE46.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE46.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE46.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE47.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE47.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE47.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE48.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE48.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE48.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE49.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE49.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE49.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE5.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE5.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE5.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE50.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE50.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE50.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE51.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE51.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE51.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE52.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE52.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE52.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE53.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE53.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE53.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE54.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE54.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE54.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE55.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE55.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE55.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE56.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE56.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE56.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE57.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE57.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE57.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE58.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE58.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE58.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE59.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE59.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE59.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE6.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE6.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE6.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE60.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE60.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE60.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE61.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE61.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE61.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE62.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE62.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE62.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE63.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE63.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE63.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE64.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE64.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE64.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE65.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE65.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE65.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE66.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE66.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE66.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE67.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE67.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE67.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE68.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE68.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE68.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE69.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE69.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE69.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE7.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE7.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE7.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE70.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE70.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE70.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE71.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE71.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE71.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE72.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE72.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE72.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE73.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE73.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE73.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE74.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE74.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE74.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE75.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE75.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE75.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE76.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE76.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE76.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE77.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE77.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE77.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE78.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE78.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE78.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE79.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE79.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE79.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE8.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE8.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE8.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE80.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE80.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE80.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE81.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE81.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE81.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE82.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE82.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE82.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE83.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE83.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE83.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE84.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE84.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE84.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE85.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE85.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE85.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE86.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE86.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE86.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE87.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE87.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE87.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE88.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE88.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE88.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE89.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE89.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE89.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE9.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE9.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE9.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE90.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE90.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE90.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE91.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE91.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE91.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE92.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE92.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE92.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE93.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE93.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE93.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE94.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE94.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE94.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE95.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE95.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE95.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE96.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE96.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE96.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE97.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE97.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE97.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE98.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE98.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE98.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE99.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\CNE99.png",
       "PackagePath": "staticwebassets\\imageFolder\\CNE99.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\user.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\imageFolder\\user.png",
       "PackagePath": "staticwebassets\\imageFolder\\user.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\.gitattributes",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\.gitattributes",
       "PackagePath": "staticwebassets\\lib\\toastr\\.gitattributes"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\.gitignore",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\.gitignore",
       "PackagePath": "staticwebassets\\lib\\toastr\\.gitignore"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\.jscsrc",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\.jscsrc",
       "PackagePath": "staticwebassets\\lib\\toastr\\.jscsrc"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\.jshintrc",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\.jshintrc",
       "PackagePath": "staticwebassets\\lib\\toastr\\.jshintrc"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\.travis.yml",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\.travis.yml",
       "PackagePath": "staticwebassets\\lib\\toastr\\.travis.yml"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\CHANGELOG.md",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\CHANGELOG.md",
       "PackagePath": "staticwebassets\\lib\\toastr\\CHANGELOG.md"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\LICENSE",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\toastr"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\README.md",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\README.md",
       "PackagePath": "staticwebassets\\lib\\toastr\\README.md"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\build\\toastr.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\build\\toastr.css",
       "PackagePath": "staticwebassets\\lib\\toastr\\build\\toastr.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\build\\toastr.js.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\build\\toastr.js.map",
       "PackagePath": "staticwebassets\\lib\\toastr\\build\\toastr.js.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\build\\toastr.min.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\build\\toastr.min.css",
       "PackagePath": "staticwebassets\\lib\\toastr\\build\\toastr.min.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\build\\toastr.min.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\build\\toastr.min.js",
       "PackagePath": "staticwebassets\\lib\\toastr\\build\\toastr.min.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\demo.html",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\demo.html",
       "PackagePath": "staticwebassets\\lib\\toastr\\demo.html"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\gulpfile.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\gulpfile.js",
       "PackagePath": "staticwebassets\\lib\\toastr\\gulpfile.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\karma.conf.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\karma.conf.js",
       "PackagePath": "staticwebassets\\lib\\toastr\\karma.conf.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\content\\content\\toastr.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\content\\content\\toastr.css",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\content\\content\\toastr.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\content\\content\\toastr.less",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\content\\content\\toastr.less",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\content\\content\\toastr.less"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\content\\content\\toastr.min.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\content\\content\\toastr.min.css",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\content\\content\\toastr.min.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\content\\content\\toastr.scss",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\content\\content\\toastr.scss",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\content\\content\\toastr.scss"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\content\\scripts\\toastr.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\content\\scripts\\toastr.js",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\content\\scripts\\toastr.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\content\\scripts\\toastr.min.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\content\\scripts\\toastr.min.js",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\content\\scripts\\toastr.min.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\content\\scripts\\toastr.min.js.map",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\content\\scripts\\toastr.min.js.map",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\content\\scripts\\toastr.min.js.map"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.0.0.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.0.0.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.0.0.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.0.0.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.0.0.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.0.0.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.0.1.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.0.1.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.0.1.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.0.1.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.0.1.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.0.1.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.0.2.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.0.2.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.0.2.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.0.2.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.0.2.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.0.2.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.0.3.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.0.3.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.0.3.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.0.3.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.0.3.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.0.3.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.0.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.0.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.1.0.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.0.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.0.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.1.0.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.1.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.1.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.1.1.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.1.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.1.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.1.1.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.2.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.2.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.1.2.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.2.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.2.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.1.2.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.3.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.3.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.1.3.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.4.1.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.4.1.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.1.4.1.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.4.1.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.4.1.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.1.4.1.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.4.2.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.4.2.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.1.4.2.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.4.2.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.4.2.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.1.4.2.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.4.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.4.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.1.4.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.4.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.4.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.1.4.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.5.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.5.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.1.5.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.5.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.1.5.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.1.5.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.2.0.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.2.0.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.2.0.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.2.0.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.2.0.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.2.0.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.2.1.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.2.1.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.2.1.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.2.1.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.2.1.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.2.1.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.2.2.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.2.2.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.2.2.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.2.2.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.2.2.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.2.2.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.3.0.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.3.0.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.3.0.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.3.0.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.3.0.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.3.0.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.3.1.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.3.1.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.3.1.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.3.1.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.1.3.1.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.1.3.1.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.2.0.0-rc1.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.2.0.0-rc1.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.2.0.0-rc1.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.2.0.0-rc1.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.2.0.0-rc1.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.2.0.0-rc1.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.2.0.1.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.2.0.1.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.2.0.1.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.2.0.1.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.2.0.1.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.2.0.1.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.2.0.2.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.2.0.2.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.2.0.2.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.2.0.2.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.2.0.2.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.2.0.2.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.2.0.3.nupkg",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.2.0.3.nupkg",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.2.0.3.nupkg"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.2.0.3.nuspec",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\nuget\\toastr.2.0.3.nuspec",
       "PackagePath": "staticwebassets\\lib\\toastr\\nuget\\toastr.2.0.3.nuspec"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\package-lock.json",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\package-lock.json",
       "PackagePath": "staticwebassets\\lib\\toastr\\package-lock.json"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\package.json",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\package.json",
       "PackagePath": "staticwebassets\\lib\\toastr\\package.json"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\release checklist.md",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\release checklist.md",
       "PackagePath": "staticwebassets\\lib\\toastr\\release checklist.md"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\tests\\qunit\\qunit.css",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\tests\\qunit\\qunit.css",
       "PackagePath": "staticwebassets\\lib\\toastr\\tests\\qunit\\qunit.css"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\tests\\qunit\\qunit.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\tests\\qunit\\qunit.js",
       "PackagePath": "staticwebassets\\lib\\toastr\\tests\\qunit\\qunit.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\tests\\toastr-tests.html",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\tests\\toastr-tests.html",
       "PackagePath": "staticwebassets\\lib\\toastr\\tests\\toastr-tests.html"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\tests\\unit\\qunit-helper.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\tests\\unit\\qunit-helper.js",
       "PackagePath": "staticwebassets\\lib\\toastr\\tests\\unit\\qunit-helper.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\tests\\unit\\toastr-tests.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\tests\\unit\\toastr-tests.js",
       "PackagePath": "staticwebassets\\lib\\toastr\\tests\\unit\\toastr-tests.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\tests\\unit\\x.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\tests\\unit\\x.js",
       "PackagePath": "staticwebassets\\lib\\toastr\\tests\\unit\\x.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\toastr-icon.png",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\toastr-icon.png",
       "PackagePath": "staticwebassets\\lib\\toastr\\toastr-icon.png"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\toastr.js",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\toastr.js",
       "PackagePath": "staticwebassets\\lib\\toastr\\toastr.js"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\toastr.less",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\toastr.less",
       "PackagePath": "staticwebassets\\lib\\toastr\\toastr.less"
     },
     {
-      "Id": "C:\\Users\\PC\\Desktop\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\toastr.scss",
+      "Id": "C:\\Users\\lenovo\\Desktop\\Ensas\\Platforme-ENSAS\\appTrombinoscope\\wwwroot\\lib\\toastr\\toastr.scss",
       "PackagePath": "staticwebassets\\lib\\toastr\\toastr.scss"
     },
     {
